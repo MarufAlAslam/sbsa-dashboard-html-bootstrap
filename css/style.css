@@ -124,3 +124,17 @@ svg.rotate {
 .text-golden {
   color: #ab8650;
 }
+
+.py-20 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.px-28 {
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+.fs-36 {
+  font-size: 30px !important;
+}
