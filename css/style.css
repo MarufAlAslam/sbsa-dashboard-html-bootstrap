@@ -70,3 +70,52 @@ svg.rotate {
   border-radius: 16px !important;
   font-weight: 600 !important;
 }
+
+.main-body {
+  height: 100vh;
+  overflow-y: scroll;
+  padding: 20px;
+}
+
+.fs-24 {
+  font-size: 24px !important;
+}
+.fs-16 {
+  font-size: 16px !important;
+}
+
+.search-filter {
+  background-color: #f8f8f8;
+  border: 1px solid #eaeaea;
+  border-radius: 8px;
+  padding: 7px 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.form-control{
+  outline: unset !important;
+  box-shadow: unset !important;
+}
+
+.gap-20 {
+  gap: 20px;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.fs-14 {
+  font-size: 14px !important;
+}
+.fs-12 {
+  font-size: 12px !important;
+}
+.text-golden{
+  color: #AB8650;
+}
