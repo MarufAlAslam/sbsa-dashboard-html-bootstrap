@@ -18,3 +18,55 @@
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+.menu a:hover svg path,
+.menu .btn:hover svg path,
+.menu a.active svg path,
+.menu .btn.active svg path {
+  fill: #ab8650 !important;
+}
+
+.menu a,
+.menu .btn {
+  padding: 12px 14px !important;
+  border-radius: 4px !important;
+  width: 100%;
+  font-size: 15px;
+}
+
+.menu a:hover,
+.menu .btn:hover,
+.menu a.active,
+.menu .btn.active {
+  background-color: #1d1e1d !important;
+  border: unset !important;
+  outline: unset !important;
+}
+
+svg {
+  transition: 0.2s;
+}
+
+svg.rotate {
+  transform: rotate(180deg);
+}
+
+.child-menu a {
+  padding-left: 55px !important;
+  font-size: 13px;
+  padding-right: 0 !important;
+}
+
+.child-menu {
+  display: none;
+}
+
+.child-menu.active {
+  display: block;
+}
+
+.badge {
+  background-color: rgba(249, 250, 251, 0.1) !important;
+  border-radius: 16px !important;
+  font-weight: 600 !important;
+}
