@@ -1,0 +1,20 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.sidebar {
+  width: 270px;
+  padding: 20px;
+  background-color: #0d1317;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
