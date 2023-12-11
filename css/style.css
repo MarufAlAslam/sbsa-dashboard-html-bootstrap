@@ -74,7 +74,12 @@ svg.rotate {
 .main-body {
   height: 100vh;
   overflow-y: scroll;
-  padding: 20px;
+}
+
+.topbar {
+  padding: 20px 28px;
+  border-bottom: 1px solid #e4e4e4;
+  background: #fff;
 }
 
 .fs-24 {
@@ -95,7 +100,7 @@ svg.rotate {
   overflow: hidden;
 }
 
-.form-control{
+.form-control {
   outline: unset !important;
   box-shadow: unset !important;
 }
@@ -116,6 +121,6 @@ svg.rotate {
 .fs-12 {
   font-size: 12px !important;
 }
-.text-golden{
-  color: #AB8650;
+.text-golden {
+  color: #ab8650;
 }
