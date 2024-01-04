@@ -309,6 +309,72 @@ img.vertical {
   /* right: -25px; */
 }
 
+/* sales orders */
+.tab-items {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+
+.tab-item {
+  border: 1px solid #dcdcde;
+  border-radius: 6px;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.p-30 {
+  padding: 30px;
+}
+
+.data-holder {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.text-muted {
+  color: #84818a !important;
+}
+
+.text-blue {
+  color: #3c8ef9;
+}
+
+.text-green {
+  color: #1dbf73;
+}
+
+.text-red {
+  color: #ff4e4e;
+}
+
+.text-orange {
+  color: #ff9f38;
+}
+
+.text-purple {
+  color: #9d55e5;
+}
+
+.text-history {
+  color: #31572c;
+}
+
+.text-dark-custom {
+  color: #2e2c34;
+}
+
+.fs-12 {
+  font-size: 12px !important;
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
