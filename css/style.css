@@ -384,6 +384,72 @@ img.vertical {
   padding: 8px 10px;
 }
 
+.bg-grey {
+  background-color: #f8f8f8 !important;
+}
+
+table.rounded-10 {
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+th,
+td {
+  padding: 5px 10px !important;
+  text-align: center;
+}
+
+.py-20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+
+.new-badge {
+  background-color: #34c75926;
+  color: #34c759 !important;
+  border-radius: 30px;
+  padding: 5px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.no-badge {
+  background-color: #ff3b3026;
+  color: #ff3b30 !important;
+  border-radius: 30px;
+  padding: 5px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.black-badge {
+  background-color: #fff;
+  color: #000 !important;
+  border-radius: 30px;
+  border: 1px solid black !important;
+  padding: 3px 15px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 3px;
+}
+
+.back-btn {
+  border-radius: 8px;
+  border: 1px solid #c8c8d0;
+  background: #fff;
+  box-shadow: 0px 0px 2px 0px #e5e7eb;
+}
+
+.back-btn.active{
+  background-color: #ab8650;
+  border: 1px solid #ab8650;
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
