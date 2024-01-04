@@ -445,9 +445,13 @@ td {
   box-shadow: 0px 0px 2px 0px #e5e7eb;
 }
 
-.back-btn.active{
+.back-btn.active {
   background-color: #ab8650;
   border: 1px solid #ab8650;
+}
+
+.text-gray {
+  color: #84818a;
 }
 
 @media screen and (max-width: 1200px) {
@@ -464,6 +468,15 @@ td {
 }
 
 @media screen and (max-width: 992px) {
+  .hid {
+    display: none;
+  }
+  .pagg {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+    transform: scale(0.8);
+  }
   .sidebar {
     position: fixed;
     z-index: 1000;
@@ -533,6 +546,20 @@ td {
     position: relative;
     right: -13px;
   }
+
+  .tab-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .col-s-2 {
+    grid-column: span 2;
+  }
+
+  .d-table {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -575,5 +602,26 @@ td {
   .to-left-history {
     position: relative;
     left: -10px;
+  }
+  .p-30 {
+    padding: 15px;
+  }
+  .tab-item {
+    padding: 10px;
+  }
+  .data-holder {
+    padding: 15px;
+  }
+  .tab-item .items .fs-14 {
+    font-size: 11px !important;
+  }
+  h2.fs-30.fw-bold.text-dark-custom {
+    font-size: 20px;
+  }
+  .flex-mob {
+    flex-wrap: wrap;
+    justify-content: flex-start !important;
+    align-items: center !important;
+    gap: 10px !important;
   }
 }
