@@ -369,10 +369,19 @@ img.vertical {
 
 .text-dark-custom {
   color: #2e2c34;
+  margin: 10px 0;
 }
 
 .fs-12 {
   font-size: 12px !important;
+}
+
+.btn.filter-btn {
+  border: 1px solid #dcdcde !important;
+  background: #fff;
+  box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
+  display: flex;
+  padding: 8px 10px;
 }
 
 @media screen and (max-width: 1200px) {
