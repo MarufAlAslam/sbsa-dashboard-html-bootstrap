@@ -61,3 +61,8 @@ reports.addEventListener("click", () => {
   reportsArrow.classList.add("rotate");
   reportsItems.classList.add("active");
 });
+
+
+$('.menu-btn').click(function () {
+  $('.sidebar').toggleClass('active');
+});

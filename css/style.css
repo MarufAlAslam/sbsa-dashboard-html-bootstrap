@@ -86,6 +86,7 @@ svg.rotate {
 .fs-24 {
   font-size: 24px !important;
 }
+
 .fs-16 {
   font-size: 16px !important;
 }
@@ -116,12 +117,15 @@ svg.rotate {
   border-radius: 50%;
   object-fit: cover;
 }
+
 .fs-14 {
   font-size: 14px !important;
 }
+
 .fs-12 {
   font-size: 12px !important;
 }
+
 .text-golden {
   color: #ab8650;
 }
@@ -148,6 +152,7 @@ svg.rotate {
   padding: 8px 16px;
   font-weight: 600;
 }
+
 .node-badge-violet {
   color: #9d4edd;
   border-radius: 6px;
@@ -156,6 +161,7 @@ svg.rotate {
   padding: 8px 16px;
   font-weight: 600;
 }
+
 .node-badge-sky {
   color: #1e96fc;
   border-radius: 6px;
@@ -187,42 +193,246 @@ svg.rotate {
 }
 
 .node-between {
-  height: 350px;
+  height: 355px;
   padding: 0 10px;
   margin-top: 40px;
 }
+
 .arrow-space {
   height: 205px;
+}
+
+.icon-holder.amortization {
+  position: relative;
+  top: 10px;
 }
 
 .mb-145 {
   margin-bottom: 145px;
 }
 
-.text-badge{
-  background-color: #EDEDED;
+.text-badge {
+  background-color: #ededed;
 }
-.node-badge-pink{
-  color: #FF206E;
+
+.node-badge-pink {
+  color: #ff206e;
   border-radius: 6px;
-  background: #FF206E26;
+  background: #ff206e26;
   display: inline-block;
   padding: 8px 16px;
   font-weight: 600;
 }
-.node-badge-orange{
-  color: #FF6700;
+
+.node-badge-orange {
+  color: #ff6700;
   border-radius: 6px;
-  background: #FF670033;
+  background: #ff670033;
   display: inline-block;
   padding: 8px 16px;
   font-weight: 600;
 }
-.node-badge-brown{
-  color: #5C4742;
+
+.node-badge-brown {
+  color: #5c4742;
   border-radius: 6px;
-  background: #5C474226;
+  background: #5c474226;
   display: inline-block;
   padding: 8px 16px;
   font-weight: 600;
+}
+
+.mobile-nodes {
+  display: none !important;
+}
+
+.mobile-top {
+  display: none;
+}
+
+.icon-holder {
+  position: relative;
+  cursor: pointer;
+}
+.fs-13 {
+  font-size: 13px !important;
+}
+.drops {
+  bottom: -90px;
+  min-width: 200px;
+  display: none;
+  z-index: 1000;
+}
+
+.icon-holder:hover .drops {
+  display: block;
+}
+
+/* fixes */
+img.vertical {
+  height: 105px;
+  position: relative;
+  top: -20px;
+}
+.icon-holder.history-node.text-center {
+  position: relative;
+  top: -25px;
+}
+.node3 .connectors svg {
+  position: relative;
+  top: -10px;
+}
+.top-nodes .connectors svg {
+  position: relative;
+  top: -10px;
+}
+.node5 .connectors svg {
+  position: relative;
+  top: -15px;
+}
+.node-top .connectors svg {
+  position: relative;
+  top: -10px;
+}
+.top6-node .connectors svg {
+  position: relative;
+  top: -20px;
+}
+
+.reconciliations {
+  position: relative;
+  left: 20px;
+}
+
+.node-loan {
+  position: relative;
+  /* right: -25px; */
+}
+
+@media screen and (max-width: 1200px) {
+  .text-badge {
+    font-size: 12px;
+    line-height: 2.4;
+  }
+  .nodes-1 {
+    transform: scale(0.8);
+  }
+  .mt-xl {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sidebar {
+    position: fixed;
+    z-index: 1000;
+    transition: 0.5s;
+    transform: translateX(-100%);
+  }
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .topbar {
+    height: 0;
+    opacity: 0;
+    padding: 0;
+  }
+
+  button.btn.d-flex.justify-content-center.gap-2.align-items-center.ms-auto.fs-14.bg-white.shadow-sm.dropdown-toggle {
+    width: 100%;
+    height: 44px;
+    margin-top: 20px;
+  }
+
+  .nodes {
+    display: none !important;
+  }
+
+  .mobile-nodes {
+    display: block !important;
+  }
+
+  .mobile-nodes.d-flex {
+    display: flex !important;
+  }
+
+  .mobile-padding-top {
+    padding-top: 20px;
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .mobile-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .no-flex {
+    display: block !important;
+  }
+
+  .mobile-nodes svg {
+    width: 100%;
+  }
+  .mobile-nodes {
+    display: block !important;
+    width: 50%;
+    margin: auto;
+  }
+  .sidebar-logo {
+    display: none;
+  }
+  .to-right {
+    position: relative;
+    right: -13px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .fs-36 {
+    font-size: 25px !important;
+  }
+  .mobile-nodes {
+    display: block !important;
+    width: 100%;
+    margin: auto;
+  }
+  .to-top {
+    position: relative;
+    top: -20px;
+  }
+  .to-top-min {
+    position: relative;
+    top: -10px;
+  }
+  .to-bottom {
+    position: relative;
+    top: 2px;
+  }
+  .to-bottom-max {
+    position: relative;
+    top: 11px;
+  }
+  svg.edi-arrow {
+    position: relative;
+    top: 25px;
+  }
+  .to-right-edi {
+    position: relative;
+    right: -20px;
+  }
+  .to-left-bulk {
+    position: relative;
+    left: -8px;
+  }
+  .to-left-history {
+    position: relative;
+    left: -10px;
+  }
 }
