@@ -339,6 +339,20 @@ img.vertical {
   border-radius: 8px;
 }
 
+th,
+td {
+  vertical-align: middle;
+  text-align: center;
+}
+table input.form-check.mb-0 {
+  display: block;
+  margin: auto !important;
+}
+
+.mobile-data {
+  display: none;
+}
+
 .text-muted {
   color: #84818a !important;
 }
@@ -482,6 +496,14 @@ td {
     z-index: 1000;
     transition: 0.5s;
     transform: translateX(-100%);
+    top: 0;
+    background: black;
+    padding-top: 50px;
+  }
+  div#mobile-nav img {
+    position: relative;
+    z-index: 100000;
+    width: 160px;
   }
   .sidebar.active {
     transform: translateX(0);
@@ -559,6 +581,10 @@ td {
 
   .d-table {
     display: none !important;
+  }
+
+  .mobile-data {
+    display: block;
   }
 }
 

@@ -38,7 +38,7 @@
 
   <body>
     <main class="d-flex justify-content-between align-items-start no-flex">
-      <div class="mobile-top bg-black py-2">
+      <div class="mobile-top bg-black py-2" id="mobile-nav">
         <a href="">
           <img src="../../img/logo.png" class="img-fluid logo" alt="" />
         </a>
@@ -678,7 +678,7 @@
             <div class="tab-items">
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-1 justify-content-center align-items-start"
+                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
                   <img src="../../img/i1.svg" class="img-fluid" alt="" />
                   <div class="items">
@@ -694,7 +694,7 @@
               </div>
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-1 justify-content-center align-items-start"
+                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
                   <img src="../../img/i2.svg" class="img-fluid" alt="" />
                   <div class="items">
@@ -712,7 +712,7 @@
               </div>
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-1 justify-content-center align-items-start"
+                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
                   <img src="../../img/i3.svg" class="img-fluid" alt="" />
                   <div class="items">
@@ -730,7 +730,7 @@
               </div>
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-1 justify-content-center align-items-start"
+                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
                   <img src="../../img/i4.svg" class="img-fluid" alt="" />
                   <div class="items">
@@ -746,7 +746,7 @@
               </div>
               <div class="tab-item col-s-2">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-1 justify-content-center align-items-start"
+                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
                   <img src="../../img/i5.svg" class="img-fluid" alt="" />
                   <div class="items">
@@ -823,10 +823,10 @@
             <!-- table filters -->
 
             <!-- table -->
-            <table class="table d-table mb-0 mt-4 rounded-10">
+            <table class="table d-table mb-0 mt-4">
               <thead>
                 <tr>
-                  <th class="bg-grey border-e border-top">
+                  <th class="bg-grey border border-top">
                     <input
                       type="checkbox"
                       class="form-check mb-0"
@@ -835,38 +835,216 @@
                     />
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold"
-                      >Sales Channel</span
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
                     >
+                      <span class="text-muted fs-14 fw-semibold"
+                        >Sales Channel</span
+                      >
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold"
-                      >Purchase Order</span
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
                     >
+                      <span class="text-muted fs-14 fw-semibold"
+                        >Purchase Order</span
+                      >
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold">Invoice #</span>
-                  </th>
-                  <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold"
-                      >Order Status</span
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
                     >
+                      <span class="text-muted fs-14 fw-semibold"
+                        >Invoice #</span
+                      >
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold"
-                      >Purchase Date</span
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
                     >
+                      <span class="text-muted fs-14 fw-semibold"
+                        >Order Status</span
+                      >
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold">Amount</span>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <span class="text-muted fs-14 fw-semibold"
+                        >Purchase Date</span
+                      >
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold">Dropship</span>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <span class="text-muted fs-14 fw-semibold">Amount</span>
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
                   <th class="bg-grey border">
-                    <span class="text-muted fs-14 fw-semibold">Synced</span>
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <span class="text-muted fs-14 fw-semibold">Dropship</span>
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
                   </th>
-                  <th class="bg-grey border-top border-bottom">
+                  <th class="bg-grey border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <span class="text-muted fs-14 fw-semibold">Synced</span>
+                      <button class="btn p-0">
+                        <svg
+                          width="13"
+                          height="12"
+                          viewBox="0 0 13 12"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                            fill="#737373"
+                          />
+                          <path
+                            d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                            fill="#737373"
+                          />
+                        </svg>
+                      </button>
+                    </div>
+                  </th>
+                  <th class="bg-grey border">
                     <span class="text-muted fs-14 fw-semibold">Action</span>
                   </th>
                 </tr>
@@ -874,670 +1052,7 @@
 
               <tbody>
                 <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
-                    <input
-                      type="checkbox"
-                      class="form-check mb-0"
-                      name=""
-                      id=""
-                    />
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <div
-                      class="d-flex justify-content-center align-items-center gap-2"
-                    >
-                      <img src="../../img/sbsa.svg" alt="" />
-                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
-                    </div>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="text-dark fs-14 fw-semibold new-badge"
-                      >New</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
-                    <span class="text-muted fs-12 fw-semibold d-block"
-                      >6:08 PM</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
-                  </td>
-                  <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
-                    >
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
-                  </td>
-                  <td class="bg-white py-20 border-top border text-center">
-                    <span class="bg-white fs-14 fw-semibold black-badge"
-                      >View <i class="fa fa-chevron-right"></i
-                    ></span>
-                  </td>
-                </tr>
-                <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
+                  <td class="bg-white py-20 border">
                     <input
                       type="checkbox"
                       class="form-check mb-0"
@@ -1586,7 +1101,7 @@
                   </td>
                 </tr>
                 <tr>
-                  <td class="bg-white py-20 border-top border-bottom">
+                  <td class="bg-white py-20 border">
                     <input
                       type="checkbox"
                       class="form-check mb-0"
@@ -1623,9 +1138,644 @@
                     <span class="text-dark fs-14 fw-semibold">$8640.00</span>
                   </td>
                   <td class="bg-white py-20 border-top border">
-                    <span class="text-dark fs-14 fw-semibold no-badge"
-                      >No</span
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
                     >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="fa fa-search new-badge"></span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="bg-white fs-14 fw-semibold black-badge"
+                      >View <i class="fa fa-chevron-right"></i
+                    ></span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="bg-white py-20 border">
+                    <input
+                      type="checkbox"
+                      class="form-check mb-0"
+                      name=""
+                      id=""
+                    />
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <div
+                      class="d-flex justify-content-center align-items-center gap-2"
+                    >
+                      <img src="../../img/sbsa.svg" alt="" />
+                      <span class="text-dark fs-14 fw-semibold">SBSA</span>
+                    </div>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">90-3356</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">SB09441</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border text-center">
+                    <span class="text-dark fs-14 fw-semibold new-badge"
+                      >New</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                    <span class="text-muted fs-12 fw-semibold d-block"
+                      >6:08 PM</span
+                    >
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold">$8640.00</span>
+                  </td>
+                  <td class="bg-white py-20 border-top border">
+                    <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="fa fa-search new-badge"></span>

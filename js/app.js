@@ -62,7 +62,6 @@ reports.addEventListener("click", () => {
   reportsItems.classList.add("active");
 });
 
-
-$('.menu-btn').click(function () {
-  $('.sidebar').toggleClass('active');
+$(".menu-btn").click(function () {
+  $(".sidebar, #mobile-nav").toggleClass("active");
 });
