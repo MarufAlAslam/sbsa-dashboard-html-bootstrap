@@ -676,11 +676,15 @@
           <div class="data-holder shadow">
             <!-- tabs -->
             <div class="tab-items">
-              <div class="tab-item">
+              <div class="tab-item active">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
+                  class="d-flex w-100 justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
-                  <img src="../../img/i1.svg" class="img-fluid" alt="" />
+                  <img
+                    src="../../img/i1.svg"
+                    class="img-fluid icon-img"
+                    alt=""
+                  />
                   <div class="items">
                     <span class="fs-14 text-blue fw-semibold">New Order</span>
                     <h2 class="fs-30 fw-bold text-dark-custom">56</h2>
@@ -694,9 +698,13 @@
               </div>
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
+                  class="d-flex w-100 justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
-                  <img src="../../img/i2.svg" class="img-fluid" alt="" />
+                  <img
+                    src="../../img/i2.svg"
+                    class="img-fluid icon-img"
+                    alt=""
+                  />
                   <div class="items">
                     <span class="fs-14 text-orange fw-semibold"
                       >Pending Order</span
@@ -712,9 +720,13 @@
               </div>
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
+                  class="d-flex w-100 justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
-                  <img src="../../img/i3.svg" class="img-fluid" alt="" />
+                  <img
+                    src="../../img/i3.svg"
+                    class="img-fluid icon-img"
+                    alt=""
+                  />
                   <div class="items">
                     <span class="fs-14 text-purple fw-semibold"
                       >Back Ordered</span
@@ -730,9 +742,13 @@
               </div>
               <div class="tab-item">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
+                  class="d-flex w-100 justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
-                  <img src="../../img/i4.svg" class="img-fluid" alt="" />
+                  <img
+                    src="../../img/i4.svg"
+                    class="img-fluid icon-img"
+                    alt=""
+                  />
                   <div class="items">
                     <span class="fs-14 text-red fw-semibold">Cancelled</span>
                     <h2 class="fs-30 fw-bold text-dark-custom">0</h2>
@@ -746,9 +762,13 @@
               </div>
               <div class="tab-item col-s-2">
                 <div
-                  class="d-flex justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
+                  class="d-flex w-100 justify-content-start h-100 align-items-start gap-3 justify-content-center align-items-start"
                 >
-                  <img src="../../img/i5.svg" class="img-fluid" alt="" />
+                  <img
+                    src="../../img/i5.svg"
+                    class="img-fluid icon-img"
+                    alt=""
+                  />
                   <div class="items">
                     <span class="fs-14 text-history fw-semibold">History</span>
                     <h2 class="fs-30 fw-bold text-dark-custom">279</h2>
@@ -764,7 +784,7 @@
             <!-- tabs -->
 
             <!-- table filters -->
-            <div class="table-filters py-4">
+            <div class="table-filters pt-4">
               <div
                 class="d-flex flex-mob justify-content-between align-items-center"
               >
@@ -775,8 +795,14 @@
                     class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
                     <img src="../../img/reload.svg" class="img-fluid" alt="" />
-                    <span class="text-dark">Sync</span>
-                    <span class="text-muted fa fa-caret-down"></span>
+                    <select
+                      name=""
+                      class="form-select border-0 p-0 fs-14"
+                      style="width: 100px; outline: unset; box-shadow: unset"
+                      id=""
+                    >
+                      <option value="" class="text-dark">Sync</option>
+                    </select>
                   </button>
                   <button
                     class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
@@ -786,26 +812,44 @@
                       class="img-fluid"
                       alt=""
                     />
-                    <span class="text-dark">Action</span>
-                    <span class="text-muted fa fa-caret-down"></span>
+                    <select
+                      name=""
+                      class="form-select border-0 p-0 fs-14"
+                      style="width: 100px; outline: unset; box-shadow: unset"
+                      id=""
+                    >
+                      <option value="" class="text-dark">Action</option>
+                    </select>
                   </button>
                 </div>
                 <div
                   class="d-flex flex-mob justify-content-end align-items-center gap-3"
                 >
                   <button
-                    class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
+                    class="btn pe-0 filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
                     <img src="../../img/order.svg" class="img-fluid" alt="" />
-                    <span class="text-dark">All Order</span>
-                    <span class="text-muted fa fa-caret-down"></span>
+                    <select
+                      name=""
+                      class="form-select border-0 p-0 fs-14"
+                      style="width: 100px; outline: unset; box-shadow: unset"
+                      id=""
+                    >
+                      <option value="" class="text-dark">All Orders</option>
+                    </select>
                   </button>
                   <button
                     class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
                     <img src="../../img/store.svg" class="img-fluid" alt="" />
-                    <span class="text-dark">All Store</span>
-                    <span class="text-muted fa fa-caret-down"></span>
+                    <select
+                      name=""
+                      class="form-select border-0 p-0 fs-14"
+                      style="width: 100px; outline: unset; box-shadow: unset"
+                      id=""
+                    >
+                      <option value="" class="text-dark">All Store</option>
+                    </select>
                   </button>
                   <button
                     class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
@@ -1092,7 +1136,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1141,7 +1185,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1190,7 +1234,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1239,7 +1283,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1288,7 +1332,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1337,7 +1381,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1386,7 +1430,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1435,7 +1479,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1484,7 +1528,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1533,7 +1577,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1582,7 +1626,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1631,7 +1675,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1680,7 +1724,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1729,7 +1773,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"
@@ -1778,7 +1822,7 @@
                     <span class="text-dark fs-14 fw-semibold no-badge">No</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
-                    <span class="fa fa-search new-badge"></span>
+                    <span class="new-badge">Q</span>
                   </td>
                   <td class="bg-white py-20 border-top border text-center">
                     <span class="bg-white fs-14 fw-semibold black-badge"

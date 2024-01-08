@@ -65,3 +65,9 @@ reports.addEventListener("click", () => {
 $(".menu-btn").click(function () {
   $(".sidebar, #mobile-nav").toggleClass("active");
 });
+
+
+$('.tab-item').click(function(){
+  $('.tab-item').removeClass('active')
+  $(this).addClass('active')
+})

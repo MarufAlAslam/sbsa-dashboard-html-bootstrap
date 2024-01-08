@@ -47,8 +47,11 @@ svg {
   transition: 0.2s;
 }
 
-svg.rotate {
+svg.arrow {
   transform: rotate(180deg);
+}
+svg.rotate {
+  transform: rotate(0);
 }
 
 .child-menu a {
@@ -414,8 +417,8 @@ td {
 }
 
 .py-20 {
-  padding-top: 20px !important;
-  padding-bottom: 20px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
 }
 
 .new-badge {
@@ -466,6 +469,20 @@ td {
 
 .text-gray {
   color: #84818a;
+}
+
+.tab-item {
+  cursor: pointer;
+  transition: 0.4s;
+}
+.tab-item:hover, .tab-item.active {
+  background: #e1eefe;
+  border: 2px solid #3c8ef9;
+}
+
+.tab-item .icon-img {
+  width: 25px;
+  margin-top: 3px;
 }
 
 @media screen and (max-width: 1200px) {
