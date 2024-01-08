@@ -50,6 +50,7 @@ svg {
 svg.arrow {
   transform: rotate(180deg);
 }
+
 svg.rotate {
   transform: rotate(0);
 }
@@ -257,9 +258,11 @@ svg.rotate {
   position: relative;
   cursor: pointer;
 }
+
 .fs-13 {
   font-size: 13px !important;
 }
+
 .drops {
   bottom: -90px;
   min-width: 200px;
@@ -277,26 +280,32 @@ img.vertical {
   position: relative;
   top: -20px;
 }
+
 .icon-holder.history-node.text-center {
   position: relative;
   top: -25px;
 }
+
 .node3 .connectors svg {
   position: relative;
   top: -10px;
 }
+
 .top-nodes .connectors svg {
   position: relative;
   top: -10px;
 }
+
 .node5 .connectors svg {
   position: relative;
   top: -15px;
 }
+
 .node-top .connectors svg {
   position: relative;
   top: -10px;
 }
+
 .top6-node .connectors svg {
   position: relative;
   top: -20px;
@@ -347,6 +356,7 @@ td {
   vertical-align: middle;
   text-align: center;
 }
+
 table input.form-check.mb-0 {
   display: block;
   margin: auto !important;
@@ -417,8 +427,8 @@ td {
 }
 
 .py-20 {
-  padding-top: 10px !important;
-  padding-bottom: 10px !important;
+  padding-top: 5px !important;
+  padding-bottom: 5px !important;
 }
 
 .new-badge {
@@ -431,6 +441,13 @@ td {
   align-items: center;
   margin: auto;
 }
+
+span.new-badge.text-white.fw-bold {
+  background: white !important;
+  border: 2px solid #34c759;
+  padding: 2px 15px;
+}
+
 .no-badge {
   background-color: #ff3b3026;
   color: #ff3b30 !important;
@@ -475,9 +492,39 @@ td {
   cursor: pointer;
   transition: 0.4s;
 }
-.tab-item:hover, .tab-item.active {
+
+.tab-item:hover,
+.tab-item.active {
   background: #e1eefe;
   border: 2px solid #3c8ef9;
+}
+
+.tab-item.tab-2:hover,
+.tab-item.tab-2.active {
+  background: rgba(255, 159, 56, 0.1);
+  border: 2px solid #ff9f38;
+}
+
+.tab-item.tab-3:hover,
+.tab-item.tab-3.active {
+  background: rgba(157, 85, 229, 0.1);
+  border: 2px solid #9d55e5;
+}
+
+.tab-item.tab-4:hover,
+.tab-item.tab-4.active {
+  background: rgba(255, 78, 78, 0.1);
+  border: 2px solid #ff4e4e;
+}
+
+.tab-item.tab-5:hover,
+.tab-item.tab-5.active {
+  background: rgba(49, 87, 44, 0.1);
+  border: 2px solid #31572c;
+}
+
+table.table-stripped tbody tr:nth-child(2n) td {
+  background: rgba(240, 240, 240, .5) !important;
 }
 
 .tab-item .icon-img {
@@ -490,9 +537,11 @@ td {
     font-size: 12px;
     line-height: 2.4;
   }
+
   .nodes-1 {
     transform: scale(0.8);
   }
+
   .mt-xl {
     margin-top: 20px;
   }
@@ -502,12 +551,14 @@ td {
   .hid {
     display: none;
   }
+
   .pagg {
     padding: 10px;
     width: 80%;
     margin: auto;
     transform: scale(0.8);
   }
+
   .sidebar {
     position: fixed;
     z-index: 1000;
@@ -517,11 +568,13 @@ td {
     background: black;
     padding-top: 50px;
   }
+
   div#mobile-nav img {
     position: relative;
     z-index: 100000;
     width: 160px;
   }
+
   .sidebar.active {
     transform: translateX(0);
   }
@@ -573,14 +626,17 @@ td {
   .mobile-nodes svg {
     width: 100%;
   }
+
   .mobile-nodes {
     display: block !important;
     width: 50%;
     margin: auto;
   }
+
   .sidebar-logo {
     display: none;
   }
+
   .to-right {
     position: relative;
     right: -13px;
@@ -609,58 +665,73 @@ td {
   .fs-36 {
     font-size: 25px !important;
   }
+
   .mobile-nodes {
     display: block !important;
     width: 100%;
     margin: auto;
   }
+
   .to-top {
     position: relative;
     top: -20px;
   }
+
   .to-top-min {
     position: relative;
     top: -10px;
   }
+
   .to-bottom {
     position: relative;
     top: 2px;
   }
+
   .to-bottom-max {
     position: relative;
     top: 11px;
   }
+
   svg.edi-arrow {
     position: relative;
     top: 25px;
   }
+
   .to-right-edi {
     position: relative;
     right: -20px;
   }
+
   .to-left-bulk {
     position: relative;
     left: -8px;
   }
+
   .to-left-history {
     position: relative;
     left: -10px;
   }
+
   .p-30 {
     padding: 15px;
   }
+
   .tab-item {
     padding: 10px;
   }
+
   .data-holder {
     padding: 15px;
   }
+
   .tab-item .items .fs-14 {
     font-size: 11px !important;
   }
+
   h2.fs-30.fw-bold.text-dark-custom {
     font-size: 20px;
   }
+
   .flex-mob {
     flex-wrap: wrap;
     justify-content: flex-start !important;
