@@ -63,6 +63,7 @@ reports.addEventListener("click", () => {
 });
 
 $(".menu-btn").click(function () {
+  $(this).toggleClass("active")
   $(".sidebar, #mobile-nav").toggleClass("active");
 });
 

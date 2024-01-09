@@ -2,6 +2,12 @@
   font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+body,
+html,
+.main-body {
+  overflow-x: hidden !important;
+}
+
 .sidebar {
   width: 270px;
   padding: 20px;
@@ -532,6 +538,16 @@ table.table-stripped tbody tr:nth-child(2n) td {
   margin-top: 3px;
 }
 
+svg.cross {
+  display: none;
+}
+
+.btn.menu-btn {
+  outline: unset !important;
+  box-shadow: unset !important;
+  border: unset !important;
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
@@ -549,6 +565,14 @@ table.table-stripped tbody tr:nth-child(2n) td {
 
 @media screen and (max-width: 992px) {
   .hid {
+    display: none;
+  }
+
+  .menu-btn.active svg.cross {
+    display: block;
+  }
+
+  .menu-btn.active svg.bar {
     display: none;
   }
 
@@ -737,5 +761,24 @@ table.table-stripped tbody tr:nth-child(2n) td {
     justify-content: flex-start !important;
     align-items: center !important;
     gap: 10px !important;
+  }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    background-color: #0d1317;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  button.menu-btn.btn {
+    position: relative;
+    z-index: 1000000000;
+    color: white !important;
+    opacity: 1 !important;
+  }
+
+  .menu {
+    padding-top: 20px;
   }
 }
