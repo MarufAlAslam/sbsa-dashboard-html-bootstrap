@@ -476,6 +476,110 @@ span.new-badge.text-white.fw-bold {
   align-items: center;
   margin: auto;
   gap: 3px;
+  cursor: pointer;
+}
+
+.btn-golden {
+  background-color: #AB8650 !important;
+  color: white !important;
+}
+
+.gap-6px {
+  gap: 6px;
+}
+
+.acc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  background-color: white;
+  padding: 15px;
+}
+
+.acc-grid .card {
+  border: 1px solid #E5E5E5 !important;
+}
+
+.rounded-8 {
+  border-radius: 8px;
+}
+
+.modal-body {
+  background-color: #fafafa !important;
+}
+
+.acc-icon {
+  width: 42px;
+  height: 42px;
+  background-color: white;
+  display: flex;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.fs-10 {
+  font-size: 10px !important;
+}
+
+.fs-6 {
+  font-size: 6px !important;
+}
+
+.accordion-button::after {
+  flex-shrink: 0;
+  width: var(--bs-accordion-btn-icon-width);
+  height: var(--bs-accordion-btn-icon-width);
+  margin-left: auto;
+  content: "";
+  background-image: url("../img/icons/right.png");
+  background-repeat: no-repeat;
+  background-size: var(--bs-accordion-btn-icon-width);
+  transition: var(--bs-accordion-btn-icon-transition);
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../img/icons/right.png");
+  transform: rotate(90deg);
+}
+
+.accordion-button {
+  background: white;
+  padding: 10px;
+}
+
+.accordion * {
+  background: white;
+  border: unset;
+  box-shadow: unset;
+}
+
+.accordion-button {
+  background: white !important;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12) !important;
+  border-radius: 32px !important;
+  margin: 6px 0;
+  padding: 5px 10px !important;
+}
+
+.accordion-body {
+  padding: 5px 20px;
+  font-size: 13px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #ebe5dd !important;
+  border: 1px solid #AB8650;
+}
+
+.accordion-button:not(.collapsed) .d-flex,
+.accordion-button:not(.collapsed) i,
+.accordion-button:not(.collapsed) span {
+  background: #ebe5dd !important;
+}
+
+.approved .card-header {
+  background-color: rgba(52, 199, 89, .1);
 }
 
 .back-btn {
@@ -492,6 +596,18 @@ span.new-badge.text-white.fw-bold {
 
 .text-gray {
   color: #84818a;
+}
+
+.card.paused .card-header {
+  background-color: #ebebeb;
+}
+
+.gap-24 {
+  gap: 24px;
+}
+
+.bg-f6 {
+  background-color: #f6f6f6;
 }
 
 .tab-item {
