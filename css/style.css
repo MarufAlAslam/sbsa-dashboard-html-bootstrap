@@ -664,6 +664,50 @@ svg.cross {
   border: unset !important;
 }
 
+.fs-20 {
+  font-size: 20px !important;
+}
+
+.th-gray th {
+  background: #F8F8F8;
+}
+
+.text-73 {
+  color: #737373 !important;
+}
+
+.color {
+  min-width: 12px;
+  min-height: 12px;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+.red {
+  background-color: #FF3B30;
+}
+
+.blue {
+  background-color: #3C8EF9;
+}
+
+.green {
+  background-color: #1dbf73;
+}
+
+.w-40p {
+  width: 40%;
+}
+
+.text-84 {
+  color: #84818A !important;
+}
+
+.modal-header {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
@@ -799,6 +843,10 @@ svg.cross {
   .mobile-data {
     display: block;
   }
+
+  .modal {
+    z-index: 1000000000;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -896,5 +944,21 @@ svg.cross {
 
   .menu {
     padding-top: 20px;
+  }
+
+  .modal-header {
+    display: flex;
+  }
+
+  .mobile-hide {
+    display: none !important;
+  }
+
+  .acc-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .modal-body .d-flex.justify-content-between.align-items-center.gap-24 {
+    flex-direction: column;
   }
 }
