@@ -708,6 +708,9 @@ svg.cross {
   display: none;
 }
 
+.header1{
+  cursor: pointer;
+}
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;

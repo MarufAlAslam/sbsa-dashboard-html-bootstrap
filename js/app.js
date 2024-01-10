@@ -63,12 +63,28 @@ reports.addEventListener("click", () => {
 });
 
 $(".menu-btn").click(function () {
-  $(this).toggleClass("active")
+  $(this).toggleClass("active");
   $(".sidebar, #mobile-nav").toggleClass("active");
 });
 
+$(".tab-item").click(function () {
+  $(".tab-item").removeClass("active");
+  $(this).addClass("active");
+});
 
-$('.tab-item').click(function(){
-  $('.tab-item').removeClass('active')
-  $(this).addClass('active')
-})
+$(".header1").click(function () {
+  $(".btn1").toggleClass("collapsed");
+  $(".collapse1").toggleClass("show");
+});
+$(".header2").click(function () {
+  $(".btn2").toggleClass("collapsed");
+  $(".collapse2").toggleClass("show");
+});
+$(".header3").click(function () {
+  $(".btn3").toggleClass("collapsed");
+  $(".collapse3").toggleClass("show");
+});
+$(".header4").click(function () {
+  $(".btn4").toggleClass("collapsed");
+  $(".collapse4").toggleClass("show");
+});
