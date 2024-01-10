@@ -708,9 +708,14 @@ svg.cross {
   display: none;
 }
 
-.header1{
+.header1 {
   cursor: pointer;
 }
+
+.text-muted.text-black {
+  color: black !important;
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;

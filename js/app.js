@@ -88,3 +88,10 @@ $(".header4").click(function () {
   $(".btn4").toggleClass("collapsed");
   $(".collapse4").toggleClass("show");
 });
+
+$(".edit1").click(function () {
+  $(".inp1").attr("disabled", false).addClass("text-black");
+});
+$(".edit2").click(function () {
+  $(".inp2").attr("disabled", false).addClass("text-black");
+});
