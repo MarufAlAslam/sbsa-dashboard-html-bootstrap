@@ -708,6 +708,12 @@ svg.cross {
   display: none;
 }
 
+.modal-dialog {
+  width: 100% !important;
+  min-width: 95%;
+  min-height: 95vh;
+}
+
 .header1 {
   cursor: pointer;
 }
@@ -881,6 +887,25 @@ svg.cross {
   .modal {
     z-index: 1000000000;
   }
+
+  .sidebar {
+    width: 100%;
+    padding: 20px;
+    background-color: #0d1317;
+    height: 100vh;
+    overflow-y: scroll;
+  }
+
+  button.menu-btn.btn {
+    position: relative;
+    z-index: 1000000000;
+    color: white !important;
+    opacity: 1 !important;
+  }
+
+  .menu {
+    padding-top: 20px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -959,25 +984,6 @@ svg.cross {
     justify-content: flex-start !important;
     align-items: center !important;
     gap: 10px !important;
-  }
-
-  .sidebar {
-    width: 100%;
-    padding: 20px;
-    background-color: #0d1317;
-    height: 100vh;
-    overflow-y: scroll;
-  }
-
-  button.menu-btn.btn {
-    position: relative;
-    z-index: 1000000000;
-    color: white !important;
-    opacity: 1 !important;
-  }
-
-  .menu {
-    padding-top: 20px;
   }
 
   .modal-header {
