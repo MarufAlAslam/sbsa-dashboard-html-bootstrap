@@ -716,6 +716,32 @@ svg.cross {
   color: black !important;
 }
 
+.body1,
+.body2,
+.body3,
+.body4 {
+  display: none;
+}
+
+.body1.active,
+.body2.active,
+.body3.active,
+.body4.active {
+  display: block;
+}
+
+.edit-on,
+.edit-off.active,
+.edit-on-2,
+.edit-off-2.active {
+  display: none;
+}
+
+.edit-on.active,
+.edit-on-2.active {
+  display: block;
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;

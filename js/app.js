@@ -73,25 +73,21 @@ $(".tab-item").click(function () {
 });
 
 $(".header1").click(function () {
-  $(".btn1").toggleClass("collapsed");
-  $(".collapse1").toggleClass("show");
+  $(".body1").toggleClass("active");
 });
 $(".header2").click(function () {
-  $(".btn2").toggleClass("collapsed");
-  $(".collapse2").toggleClass("show");
+  $(".body2").toggleClass("active");
 });
 $(".header3").click(function () {
-  $(".btn3").toggleClass("collapsed");
-  $(".collapse3").toggleClass("show");
+  $(".body3").toggleClass("active");
 });
 $(".header4").click(function () {
-  $(".btn4").toggleClass("collapsed");
-  $(".collapse4").toggleClass("show");
+  $(".body4").toggleClass("active");
 });
 
-$(".edit1").click(function () {
-  $(".inp1").attr("disabled", false).addClass("text-black");
+$(".edit1, .save1").click(function () {
+  $(".edit-on, .edit-off").toggleClass("active");
 });
-$(".edit2").click(function () {
-  $(".inp2").attr("disabled", false).addClass("text-black");
+$(".edit2, .save2").click(function () {
+  $(".edit-on-2, .edit-off-2").toggleClass("active");
 });
