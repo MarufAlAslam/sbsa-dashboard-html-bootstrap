@@ -93,6 +93,19 @@ svg.rotate {
   background: #fff;
 }
 
+.bg-order{
+  background: url("../img/order.svg") !important;
+  background-size: 20px !important;
+  background-repeat: no-repeat !important;
+  background-position: 10% !important;
+}
+.store-bg{
+  background: url("../img/store.svg") !important;
+  background-size: 20px !important;
+  background-repeat: no-repeat !important;
+  background-position: 10% !important;
+}
+
 .fs-24 {
   font-size: 24px !important;
 }
@@ -986,6 +999,31 @@ svg.cross {
   .menu {
     padding-top: 20px;
   }
+
+  .mship {
+    position: relative;
+    right: 5px;
+  }
+
+  .to-right-edi {
+    position: relative;
+    left: 15px;
+  }
+
+  svg.edi-arrow {
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
+}
+
+@media screen and (min-width: 645px) and (max-width: 750px) {
+  svg.edi-arrow {
+    width: 90px;
+    position: relative;
+    top: 25px;
+    left: 10px;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -1113,5 +1151,10 @@ svg.cross {
   .node3 .connectors svg {
     position: relative;
     top: -20px;
+  }
+
+  .to-right-edi {
+    position: relative;
+    left: 20px;
   }
 }
