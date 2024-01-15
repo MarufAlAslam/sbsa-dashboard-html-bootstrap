@@ -127,12 +127,13 @@ svg.rotate {
   right: 9px;
   left: unset;
 }
+
 .daterangepicker.opensright:after {
   right: 10px;
   left: unset;
 }
 
-.daterangepicker{
+.daterangepicker {
   right: 50px !important;
 }
 
@@ -281,7 +282,7 @@ svg.rotate {
   position: absolute;
   content: "";
   top: 50%;
-  right: 0px;
+  right: 10px;
   width: 0;
   height: 0;
   border: 6px solid transparent;
@@ -292,7 +293,11 @@ svg.rotate {
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #000 transparent;
-  top: 2px;
+  top: 10px;
+}
+
+.select-items {
+  box-shadow: var(--bs-box-shadow) !important;
 }
 
 /*style the items (options), including the selected item:*/
@@ -318,7 +323,8 @@ svg.rotate {
   left: 0;
   right: 0;
   z-index: 99;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  overflow: hidden;
 }
 
 .select-items div {
