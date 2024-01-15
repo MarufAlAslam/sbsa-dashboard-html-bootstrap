@@ -100,6 +100,33 @@ svg.rotate {
   background-position: 5% !important;
 }
 
+.child-submenu {
+  display: none;
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 95%;
+  background: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+}
+
+.has-child {
+  cursor: pointer;
+}
+
+.has-child:hover .child-submenu {
+  display: block;
+}
+
+.has-child .fa-caret-down {
+  transition: 0.2s;
+}
+
+.has-child:hover .fa-caret-down {
+  transform: rotate(-90deg);
+}
+
 .store-bg {
   background: url("../img/store.svg") !important;
   background-size: 20px !important;
@@ -588,7 +615,7 @@ span.new-badge.text-white.fw-bold {
   right: -5px;
 }
 
-.acc-header{
+.acc-header {
   cursor: pointer;
 }
 

@@ -821,28 +821,57 @@
                 <div
                   class="d-flex flex-mob justify-content-start align-items-center gap-3"
                 >
-                  <button
+                  <div class="dropdown">
+                    <button
+                      class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        src="../../img/reload.svg"
+                        class="img-fluid"
+                        alt=""
+                      />
+                      <span class="text-dark">Sync</span>
+                    </button>
+                    <ul class="dropdown-menu shadow border-0">
+                      <li class="has-child fs-14 position-relative">
+                        <a class="d-block py-1 dropdown-item"
+                          >Downloaded From <i class="fa fa-caret-down ms-2"></i
+                        ></a>
+                        <ul class="child-submenu list-unstyled m-0 p-0">
+                          <li>
+                            <a class="dropdown-item" href="#">Shopify</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Quickbooks</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="has-child py-1 fs-14 position-relative">
+                        <a class="d-block py-1 dropdown-item"
+                          >Uploaded To <i class="fa fa-caret-down ms-2"></i
+                        ></a>
+                        <ul class="child-submenu list-unstyled m-0 p-0">
+                          <li>
+                            <a class="dropdown-item" href="#">Shopify</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">Quickbooks</a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- <button
                     class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
                     <img src="../../img/reload.svg" class="img-fluid" alt="" />
                     <span class="text-dark">Sync</span>
-                    <!-- <select
-                      name=""
-                      class="form-select border-0 p-0 fs-14"
-                      style="width: 100px; outline: unset; box-shadow: unset"
-                      id=""
-                    >
-                      <option value="" class="text-dark">Sync</option>
-                    </select> -->
-                    <!-- <div class="custom-select" style="width: 100px">
-                      <select>
-                        <option value="0">Select</option>
-                        <option value="1">Sync</option>
-                        <option value="1">Sync</option>
-                        <option value="1">Sync</option>
-                      </select>
-                    </div> -->
-                  </button>
+                    <i class="fa fa-caret-down"></i>
+                   
+                  </button> -->
                   <button
                     class="btn filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
@@ -878,7 +907,9 @@
                         <option value="Warehouse 1">Warehouse 1</option>
                         <option value="Warehouse 2">Warehouse 2</option>
                         <option value="Warehouse 3">Warehouse 3</option>
-                        <option value="DefineMe Fragrance">DefineMe Fragrance</option>
+                        <option value="DefineMe Fragrance">
+                          DefineMe Fragrance
+                        </option>
                         <option value="Dropship Orders">Dropship Orders</option>
                       </select>
                     </div>
