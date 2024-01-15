@@ -573,8 +573,12 @@ span.new-badge.text-white.fw-bold {
 }
 
 .btn-golden {
-  background-color: #AB8650 !important;
+  background-color: #119d16 !important;
   color: white !important;
+}
+
+.btn-outline-dark:hover svg{
+  fill: white;
 }
 
 .gap-6px {
