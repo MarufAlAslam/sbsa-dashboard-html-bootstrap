@@ -319,12 +319,16 @@ svg.rotate {
   position: absolute;
   background-color: white;
   color: black;
-  top: 100%;
+  top: 105%;
   left: 0;
   right: 0;
   z-index: 99;
   border-radius: 5px;
   overflow: hidden;
+}
+
+.select-items div {
+  border-bottom: 1px solid rgba(0,0,0,0.07);
 }
 
 .select-items div {
