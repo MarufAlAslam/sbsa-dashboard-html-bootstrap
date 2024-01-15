@@ -72,18 +72,21 @@ $(".tab-item").click(function () {
   $(this).addClass("active");
 });
 
-$(".header1").click(function () {
-  $(".body1").toggleClass("active");
+$(".acc-header").click(function () {
+  $(".body1, .body2, .body3, .body4").toggleClass("active");
 });
-$(".header2").click(function () {
-  $(".body2").toggleClass("active");
-});
-$(".header3").click(function () {
-  $(".body3").toggleClass("active");
-});
-$(".header4").click(function () {
-  $(".body4").toggleClass("active");
-});
+// $(".header1").click(function () {
+//   $(".body1").toggleClass("active");
+// });
+// $(".header2").click(function () {
+//   $(".body2").toggleClass("active");
+// });
+// $(".header3").click(function () {
+//   $(".body3").toggleClass("active");
+// });
+// $(".header4").click(function () {
+//   $(".body4").toggleClass("active");
+// });
 
 $(".edit1, .save1").click(function () {
   $(".edit-on, .edit-off").toggleClass("active");

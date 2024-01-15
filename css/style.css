@@ -93,13 +93,14 @@ svg.rotate {
   background: #fff;
 }
 
-.bg-order{
+.bg-order {
   background: url("../img/order.svg") !important;
   background-size: 20px !important;
   background-repeat: no-repeat !important;
   background-position: 10% !important;
 }
-.store-bg{
+
+.store-bg {
   background: url("../img/store.svg") !important;
   background-size: 20px !important;
   background-repeat: no-repeat !important;
@@ -577,8 +578,18 @@ span.new-badge.text-white.fw-bold {
   color: white !important;
 }
 
-.btn-outline-dark:hover svg{
+.btn-outline-dark:hover svg {
   fill: white;
+}
+
+.modal .btn-close {
+  position: relative;
+  top: -30px;
+  right: -5px;
+}
+
+.acc-header{
+  cursor: pointer;
 }
 
 .gap-6px {
