@@ -105,7 +105,7 @@ svg.rotate {
   position: absolute;
   z-index: 100;
   top: 0;
-  left: 95%;
+  left: 100%;
   background: white;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -121,6 +121,19 @@ svg.rotate {
 
 .has-child .fa-caret-down {
   transition: 0.2s;
+}
+
+.daterangepicker.opensright:before {
+  right: 9px;
+  left: unset;
+}
+.daterangepicker.opensright:after {
+  right: 10px;
+  left: unset;
+}
+
+.daterangepicker{
+  right: 50px !important;
 }
 
 .has-child:hover .fa-caret-down {
