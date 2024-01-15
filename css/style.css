@@ -185,6 +185,11 @@ svg.rotate {
   padding: 24px 16px !important;
 }
 
+.icon-holder.down-to-bottom {
+  position: relative;
+  top: 10px;
+}
+
 .icon {
   height: 80px;
   width: 80px;
@@ -394,6 +399,7 @@ img.vertical {
 .reconciliations {
   position: relative;
   left: 20px;
+  top: -15px;
 }
 
 .node-loan {
@@ -1091,5 +1097,21 @@ svg.cross {
   .mship {
     position: relative;
     right: 10px;
+  }
+
+  svg.edi-arrow {
+    position: relative;
+    top: 25px;
+    width: 35%;
+  }
+
+  .to-left-history {
+    position: relative;
+    left: -22px;
+  }
+
+  .node3 .connectors svg {
+    position: relative;
+    top: -20px;
   }
 }
