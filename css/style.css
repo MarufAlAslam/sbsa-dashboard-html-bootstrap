@@ -1226,6 +1226,25 @@ svg.cross {
     width: 95% !important;
     border-radius: 0 !important;
   }
+
+  .daterangepicker.ltr.show-ranges.show-calendar.opensright {
+    top: 5px !important;
+    z-index: 100000000000;
+    left: 10px !important;
+    width: 95%;
+    height: 97vh;
+    position: fixed;
+  }
+
+  .daterangepicker.opensright::before,
+  .daterangepicker.opensright::after {
+    display: none;
+  }
+
+  .drp-calendar {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
 }
 
 @media screen and (min-width: 645px) and (max-width: 750px) {
