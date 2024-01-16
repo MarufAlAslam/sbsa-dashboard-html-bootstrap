@@ -123,6 +123,69 @@ svg.rotate {
   transition: 0.2s;
 }
 
+.daterangepicker .ranges li.active,
+.daterangepicker .ranges li:hover {
+  background-color: #AB865026;
+  color: #AB8650;
+}
+
+.daterangepicker td.active,
+.daterangepicker td.active:hover,
+td.active.end-date.in-range.available,
+td.active.end-date.in-range.available:hover {
+  background-color: #AB8650;
+  border-color: transparent;
+  color: #fff;
+  /* border-radius: 50% !important; */
+}
+
+td.active.end-date.in-range.available {
+  border-radius: 0 4px 4px 0 !important;
+}
+
+.ranges {
+  background: #eaecf040;
+  border: unset !important;
+}
+
+.daterangepicker.show-ranges.ltr .drp-calendar.left {
+  border-left: unset;
+}
+
+button.cancelBtn.btn.btn-sm.btn-default {
+  display: block;
+  margin-left: auto;
+  border: 1px solid #D0D5DD;
+}
+
+span.drp-selected {
+  border: 1px solid #D0D5DD;
+  padding: 6px;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.daterangepicker.show-calendar .drp-buttons {
+  display: flex !important;
+}
+
+.daterangepicker.ltr.show-ranges.show-calendar.opensright {
+  top: 135px !important;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+button.applyBtn.btn.btn-sm.btn-primary {
+  background: #AB8650;
+  border-color: #AB8650;
+}
+
+.daterangepicker td.in-range {
+  background-color: #AB865026;
+  border-color: transparent;
+  color: #000;
+  border-radius: 0;
+}
+
 .daterangepicker.opensright:before {
   right: 9px;
   left: unset;
