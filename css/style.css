@@ -127,6 +127,7 @@ svg.rotate {
 .daterangepicker .ranges li:hover {
   background-color: #AB865026;
   color: #AB8650;
+  border-color: #AB865026;
 }
 
 .daterangepicker td.active,
@@ -172,6 +173,14 @@ span.drp-selected {
 .daterangepicker.ltr.show-ranges.show-calendar.opensright {
   top: 135px !important;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
+}
+
+.ranges * {
+  font-weight: bold;
+}
+
+.ranges li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 button.applyBtn.btn.btn-sm.btn-primary {
@@ -1344,5 +1353,53 @@ svg.cross {
 
   .mobile-nodes.my-5 {
     margin-bottom: 0 !important;
+  }
+
+  .d-flex.flex-mob.justify-content-start.align-items-center.gap-3 {
+    width: 100%;
+  }
+
+  .dropdown {
+    width: 48%;
+  }
+
+  .btn.filter-btn {
+    width: 100%;
+  }
+
+  .btn.text-center.filter-btn.d-flex.justify-content-center.align-items-center.gap-2.fs-14 {
+    width: 100% !important;
+  }
+
+  .custom-select.p-2 {
+    width: 100% !important;
+  }
+
+  .store-bg {
+    background: url("../img/store.svg") !important;
+    background-size: 20px !important;
+    background-repeat: no-repeat !important;
+    background-position: 5% !important;
+  }
+
+
+
+  .d-flex.flex-mob.justify-content-end.align-items-center.gap-3 button,
+  .d-flex.flex-mob.justify-content-end.align-items-center.gap-3 input {
+    width: 100% !important;
+  }
+
+  img.calendar-icon {
+    position: relative;
+    left: 7px;
+    width: 18px;
+  }
+
+  .ranges {
+    display: none;
+  }
+
+  span.drp-selected {
+    display: none !important;
   }
 }
