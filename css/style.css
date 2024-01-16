@@ -1205,6 +1205,27 @@ svg.cross {
     width: 50%;
     margin: auto;
   }
+
+  .mobile-reverse-sub {
+    left: 0 !important;
+    position: relative;
+    display: block;
+  }
+
+  .mob-colored {
+    background: #ededed;
+    font-weight: bold;
+  }
+
+  .flex-md-column {
+    flex-direction: column;
+  }
+
+  .modal.show .modal-dialog {
+    transform: none;
+    width: 95% !important;
+    border-radius: 0 !important;
+  }
 }
 
 @media screen and (min-width: 645px) and (max-width: 750px) {
