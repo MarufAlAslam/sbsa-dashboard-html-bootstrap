@@ -328,7 +328,7 @@ svg.rotate {
 }
 
 .select-items div {
-  border-bottom: 1px solid rgba(0,0,0,0.07);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
 }
 
 .select-items div {
@@ -1009,11 +1009,11 @@ svg.cross {
     width: 100%;
   }
 
-  .mobile-nodes {
+  /* .mobile-nodes {
     display: block !important;
     width: 50%;
     margin: auto;
-  }
+  } */
 
   .sidebar-logo {
     display: none;
@@ -1077,8 +1077,52 @@ svg.cross {
 
   svg.edi-arrow {
     position: relative;
-    top: 25px;
+    top: 15px;
     left: 10px;
+  }
+
+  .mobile-nodes {
+    display: block !important;
+    width: 35%;
+    margin: auto;
+  }
+
+  .icon {
+    height: 63.63px;
+    width: 63.63px;
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .to-top-min {
+    position: relative;
+    top: -17px;
+  }
+
+  .to-top {
+    position: relative;
+    top: -30px;
+  }
+
+  .to-left-history {
+    position: relative;
+    top: -10px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .mobile-nodes {
+    display: block !important;
+    width: 40%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .mobile-nodes {
+    display: block !important;
+    width: 50%;
+    margin: auto;
   }
 }
 
@@ -1221,5 +1265,21 @@ svg.cross {
   .to-right-edi {
     position: relative;
     left: 20px;
+  }
+
+  svg.edi-arrow {
+    position: relative;
+    top: 25px;
+    width: 35%;
+    left: 0px;
+  }
+
+  .to-left-history {
+    position: relative;
+    top: 5px;
+  }
+
+  .mobile-nodes.my-5 {
+    margin-bottom: 0 !important;
   }
 }
