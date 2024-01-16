@@ -122,8 +122,18 @@ svg.rotate {
 .dropdown-menu li:last-child {
   border-bottom: unset;
 }
+
 .dropdown-menu {
   padding-bottom: 0;
+}
+
+table.table-stripped tbody tr:nth-child(2n) td.bg-white {
+  background: white !important;
+  border: unset;
+}
+td.bg-white {
+  border: unset;
+  padding: 5px !important;
 }
 
 .has-child:hover .child-submenu {
