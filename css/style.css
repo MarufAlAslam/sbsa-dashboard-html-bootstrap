@@ -180,7 +180,7 @@ span.drp-selected {
 }
 
 .daterangepicker.ltr.show-ranges.show-calendar.opensright {
-  top: 135px !important;
+  /* top: 135px !important; */
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2) !important;
 }
 
