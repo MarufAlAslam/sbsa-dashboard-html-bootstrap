@@ -40,6 +40,10 @@ html,
   font-size: 15px;
 }
 
+.card.node-card-1.border-0.shadow-sm.bg-white {
+  margin-bottom: 15px;
+}
+
 .menu a:hover,
 .menu .btn:hover,
 .menu a.active,
@@ -131,6 +135,7 @@ table.table-stripped tbody tr:nth-child(2n) td.bg-white {
   background: white !important;
   border: unset;
 }
+
 td.bg-white {
   border: unset;
   padding: 5px !important;
