@@ -1243,6 +1243,10 @@ svg.cross {
   .node-card-1 .icon-holder {
     text-align: center;
   }
+
+  .mobile-nodes.svg-nodes {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1320,6 +1324,14 @@ svg.cross {
     position: relative;
     left: 15px;
     top: -12px;
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width: 520px) {
+  .mobile-nodes {
+    display: block !important;
+    width: 60%;
+    margin: auto;
   }
 }
 
