@@ -1026,6 +1026,30 @@ svg.cross {
   .mt-xl {
     margin-top: 20px;
   }
+
+  .icon {
+    height: 60px;
+    width: 60px;
+    padding: 15px;
+    border-radius: 16px;
+  }
+
+  .node-card-1 .arrows svg {
+    width: 80px;
+  }
+
+  .node-card-1 .arrows {
+    height: 265px;
+  }
+
+  .node-card-1 {
+    margin-bottom: 15px;
+  }
+
+  .node-card-4 {
+    margin-bottom: 20px;
+  }
+
 }
 
 @media screen and (max-width: 992px) {
@@ -1215,6 +1239,10 @@ svg.cross {
     position: relative;
     top: -10px;
   }
+
+  .node-card-1 .icon-holder {
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -1272,6 +1300,27 @@ svg.cross {
     width: 100% !important;
     max-width: 100% !important;
   }
+
+  .icon {
+    height: 50px;
+    width: 50px;
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .mobile-nodes p {
+    font-size: 11px;
+  }
+
+  svg.edi-arrow {
+    width: 80px;
+  }
+
+  .to-right-edi {
+    position: relative;
+    left: 15px;
+    top: -12px;
+  }
 }
 
 @media screen and (min-width: 645px) and (max-width: 750px) {
@@ -1327,6 +1376,7 @@ svg.cross {
   .to-left-bulk {
     position: relative;
     left: -8px;
+    top: 4px;
   }
 
   .to-left-history {
@@ -1378,9 +1428,9 @@ svg.cross {
   }
 
   .icon {
-    height: 60px;
-    width: 60px;
-    padding: 15px;
+    height: 53px;
+    width: 53px;
+    padding: 13px;
     border-radius: 16px;
   }
 
@@ -1477,5 +1527,48 @@ svg.cross {
 
   span.drp-selected {
     display: none !important;
+  }
+
+  .mobile-nodes {
+    display: block !important;
+    width: 67%;
+    margin: auto;
+  }
+
+  .to-right {
+    position: relative;
+    right: -5px;
+  }
+
+  .to-right-edi {
+    position: relative;
+    left: 0;
+  }
+
+  .to-left-history {
+    position: relative;
+    top: -5px;
+    left: -7px;
+  }
+}
+
+
+@media screen and (max-width: 400px) {
+  .mobile-nodes {
+    display: block !important;
+    width: 90%;
+    margin: auto;
+  }
+
+  svg.edi-arrow {
+    position: relative;
+    top: 17px;
+    width: 35%;
+    left: 0px;
+  }
+
+  .to-top {
+    position: relative;
+    top: -33px;
   }
 }
