@@ -1013,6 +1013,16 @@ svg.cross {
   display: block;
 }
 
+.overflow-x-auto {
+  overflow-x: auto !important;
+}
+
+.overflow-x-auto table {
+  width: 130%;
+}
+
+
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
@@ -1499,6 +1509,10 @@ svg.cross {
 
   .dropdown {
     width: 48%;
+  }
+
+  .w-md-100 {
+    width: 100%;
   }
 
   .btn.filter-btn {

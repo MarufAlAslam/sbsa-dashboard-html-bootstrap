@@ -184,10 +184,7 @@ $('input[name="dates"]').daterangepicker({
   autoUpdateInput: true,
   ranges: {
     Today: [moment(), moment()],
-    Yesterday: [
-      moment().subtract(1, "days"),
-      moment().subtract(1, "days"),
-    ],
+    Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
     "Last 7 Days": [moment().subtract(6, "days"), moment()],
     "Last 30 Days": [moment().subtract(29, "days"), moment()],
     "This Month": [moment().startOf("month"), moment().endOf("month")],
@@ -197,4 +194,10 @@ $('input[name="dates"]').daterangepicker({
     ],
   },
   alwaysShowCalendars: true,
+});
+
+// make .overflow-x-auto scollable using mouse
+$(".overflow-x-auto").on("mousewheel", function (event) {
+  event.preventDefault();
+  this.scrollLeft -= event.originalEvent.wheelDelta;
 });
