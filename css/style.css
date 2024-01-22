@@ -1015,6 +1015,7 @@ svg.cross {
 
 .overflow-x-auto {
   overflow-x: auto !important;
+  cursor: pointer;
 }
 
 .overflow-x-auto table {
