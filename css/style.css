@@ -1022,6 +1022,10 @@ svg.cross {
   cursor: pointer;
 }
 
+.po-column {
+  width: 100px;
+}
+
 .deliverd-by {
   height: 30px;
 }
