@@ -1513,7 +1513,7 @@ svg.cross {
   }
 
   .w-md-100 {
-    width: 100%;
+    width: 100% !important;
   }
 
   .btn.filter-btn {
