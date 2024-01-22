@@ -1176,6 +1176,11 @@ svg.cross {
     gap: 20px;
   }
 
+
+  .cols-4.tab-items {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
   .col-s-2 {
     grid-column: span 2;
   }
@@ -1580,6 +1585,18 @@ svg.cross {
     position: relative;
     top: -5px;
     left: -7px;
+  }
+
+  .tab-items {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .cols-4.tab-items {
+    grid-template-columns: repeat(1, 1fr) !important;
+  }
+
+  .col-s-2 {
+    grid-column: span 1;
   }
 }
 
