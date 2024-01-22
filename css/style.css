@@ -1022,6 +1022,10 @@ svg.cross {
   cursor: pointer;
 }
 
+.deliverd-by {
+  height: 40px;
+}
+
 /* .overflow-x-auto table {
   width: 130%;
 } */
