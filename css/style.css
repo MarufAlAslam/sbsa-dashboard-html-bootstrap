@@ -585,6 +585,10 @@ img.vertical {
   gap: 20px;
 }
 
+.cols-4.tab-items {
+  grid-template-columns: repeat(4, 1fr) !important;
+}
+
 .tab-item {
   border: 1px solid #dcdcde;
   border-radius: 6px;
