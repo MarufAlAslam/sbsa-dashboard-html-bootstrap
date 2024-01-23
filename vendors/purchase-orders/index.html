@@ -6938,12 +6938,11 @@
                         <tbody>
                           <tr>
                             <td class="text-black border-0 fs-14 fw-semibold">
-                              <input
-                                type="text"
-                                class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black"
-                                name=""
-                                id="price1"
-                              />
+                              <select class="form-select p-0 text-center rounded-0 border-0 border-bottom border-black">
+                                <option value="0">UPS Ground</option>
+                                <option value="UPS">UPS Ground</option>
+                                <option value="FedEx">FedEx</option>
+                              </select>
                             </td>
                             <td class="text-black border-0 fs-14 fw-semibold">
                               <input
@@ -7592,12 +7591,22 @@
                         <p class="text-gray fs-14 fw-semibold mb-0">
                           Career Name
                         </p>
-                        <input
+                        <!-- <input
                           type="text"
                           class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black"
                           name=""
                           id=""
-                        />
+                        /> -->
+                        <div
+                          class="custom-select p-2 fs-14 border block mx-auto"
+                          style="width: 180px; border-radius: 6px"
+                        >
+                          <select>
+                            <option value="0">UPS Ground</option>
+                            <option value="UPS">UPS Ground</option>
+                            <option value="FedEx">FedEx</option>
+                          </select>
+                        </div>
                       </div>
                       <div
                         class="d-flex gap-3 mt-2 justify-content-between align-items-center"
