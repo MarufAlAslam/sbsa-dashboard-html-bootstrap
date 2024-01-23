@@ -1047,14 +1047,14 @@ svg.cross {
 }
 
 .lh-02 .form-control {
-  line-height: 0.2;
+  height: 32px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
 
 .lh-02 .select-full,
 .lh-02 select {
-  line-height: 1.2;
+  height: 32px;
   padding-top: 0 !important;
   padding-bottom: 0 !important;
 }
