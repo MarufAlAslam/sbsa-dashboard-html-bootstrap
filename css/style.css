@@ -1030,9 +1030,17 @@ svg.cross {
   height: 30px;
 }
 
-.text-3c{
+.text-3c {
   color: #3c8dbc;
 }
+
+.select-full .select-selected {
+  width: 100%;
+  text-align: left;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
 /* .overflow-x-auto table {
   width: 130%;
 } */
