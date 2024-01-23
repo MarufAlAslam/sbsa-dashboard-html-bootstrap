@@ -1046,6 +1046,10 @@ svg.cross {
   grid-template-columns: repeat(3, 1fr);
 }
 
+/* .lh-02 * {
+  line-height: 0.2;
+} */
+
 /* .overflow-x-auto table {
   width: 130%;
 } */
