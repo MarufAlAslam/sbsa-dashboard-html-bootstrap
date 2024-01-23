@@ -227,3 +227,48 @@ $('input[name="dates"]').daterangepicker({
 //   slider.scrollLeft = scrollLeft - walk;
 //   console.log(walk);
 // });
+
+const addLineBtn = document.getElementById("add-line-btn");
+const adaptiveRow = document.getElementById("adaptive-row");
+let line = 1;
+addLineBtn.addEventListener("click", () => {
+  const tr = document.createElement("tr");
+  line++;
+
+  tr.innerHTML = `
+  <td class="text-black border-0 fs-14 fw-semibold">
+                              <input type="text" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                            </td>
+                            <td class="text-black border-0 fs-14 fw-semibold">
+                              <input type="text" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                            </td>
+                            <td class="text-black border-0 fs-14 fw-semibold">
+                              <input type="text" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                            </td>
+                            <td class=" text-black border-0 fs-14 fw-semibold">
+                              <input onChange="${getTotalForLine(
+                                line
+                              )}" type="text" id="quantity${line}" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                            </td>
+                            <td class=" text-black border-0 fs-14 fw-semibold">
+                              <input onChange="${getTotalForLine(
+                                line
+                              )}" type="text" id="price${line}" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                            </td>
+                            <td class="text-black border-0 fs-14 fw-semibold">
+                              <input type="text" readonly id="total${line}" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-dark" name="" id="">
+                            </td>
+  `;
+
+  adaptiveRow.appendChild(tr);
+
+  const getTotalForLine = (line) => {
+    const quantity = document.getElementById(`quantity${line}`);
+    const price = document.getElementById(`price${line}`);
+    const total = document.getElementById(`total${line}`);
+
+    total.value = quantity.value * price.value;
+
+    console.log(quantity.value);
+  };
+});
