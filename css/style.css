@@ -1041,7 +1041,7 @@ svg.cross {
   cursor: pointer;
 }
 
-.purchase-edit-card{
+.purchase-edit-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
@@ -1306,6 +1306,12 @@ svg.cross {
     display: block !important;
     width: 50%;
     margin: auto;
+  }
+
+  .purchase-edit-card {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
   }
 
   .mobile-reverse-sub {
