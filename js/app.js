@@ -246,22 +246,52 @@ addLineBtn.addEventListener("click", () => {
 
   tr.innerHTML = `
   <td class="text-black border-0 fs-14 fw-semibold">
-                              <input type="text" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id=""
+                              />
                             </td>
                             <td class="text-black border-0 fs-14 fw-semibold">
-                              <input type="text" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id=""
+                              />
                             </td>
                             <td class="text-black border-0 fs-14 fw-semibold">
-                              <input type="text" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
-                            </td>
-                            <td class=" text-black border-0 fs-14 fw-semibold">
-                              <input type="text" id="quantity${line}" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
-                            </td>
-                            <td class=" text-black border-0 fs-14 fw-semibold">
-                              <input type="text" id="price${line}" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-black" name="" id="">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id=""
+                              />
                             </td>
                             <td class="text-black border-0 fs-14 fw-semibold">
-                              <input type="text" readonly id="total${line}" class="form-control p-0 text-center rounded-0 border-0 border-bottom border-dark" name="" id="">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="quantity1"
+                              />
+                            </td>
+                            <td class="text-black border-0 fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="price1"
+                              />
+                            </td>
+                            <td class="text-black border-0 fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="total1"
+                              />
                             </td>
   `;
 
