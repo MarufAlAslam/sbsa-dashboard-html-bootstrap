@@ -245,7 +245,7 @@ addLineBtn.addEventListener("click", () => {
   line++;
 
   tr.innerHTML = `
-  <td class="text-black border-0 fs-14 fw-semibold">
+  <td class="text-black border fs-14 fw-semibold">
                               <input
                                 type="text"
                                 class="form-control p-0 text-center"
@@ -253,7 +253,7 @@ addLineBtn.addEventListener("click", () => {
                                 id=""
                               />
                             </td>
-                            <td class="text-black border-0 fs-14 fw-semibold">
+                            <td class="text-black border fs-14 fw-semibold">
                               <input
                                 type="text"
                                 class="form-control p-0 text-center"
@@ -261,7 +261,7 @@ addLineBtn.addEventListener("click", () => {
                                 id=""
                               />
                             </td>
-                            <td class="text-black border-0 fs-14 fw-semibold">
+                            <td class="text-black border fs-14 fw-semibold">
                               <input
                                 type="text"
                                 class="form-control p-0 text-center"
@@ -269,7 +269,7 @@ addLineBtn.addEventListener("click", () => {
                                 id=""
                               />
                             </td>
-                            <td class="text-black border-0 fs-14 fw-semibold">
+                            <td class="text-black border fs-14 fw-semibold">
                               <input
                                 type="text"
                                 class="form-control p-0 text-center"
@@ -277,7 +277,7 @@ addLineBtn.addEventListener("click", () => {
                                 id="quantity1"
                               />
                             </td>
-                            <td class="text-black border-0 fs-14 fw-semibold">
+                            <td class="text-black border fs-14 fw-semibold">
                               <input
                                 type="text"
                                 class="form-control p-0 text-center"
@@ -285,7 +285,7 @@ addLineBtn.addEventListener("click", () => {
                                 id="price1"
                               />
                             </td>
-                            <td class="text-black border-0 fs-14 fw-semibold">
+                            <td class="text-black border fs-14 fw-semibold">
                               <input
                                 type="text"
                                 class="form-control p-0 text-center"
