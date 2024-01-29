@@ -52,12 +52,9 @@ const radarChartData = {
   datasets: [
     {
       label: "Shipped",
-      data: [1150, 1190, 1390, 1320],
+      data: [150, 320, 390, 420],
       borderColor: "#2B7F75",
       backgroundColor: "#c0d9d6",
-      borderWidth: 2,
-      borderRadius: 10,
-      borderSkipped: false,
       //   dots
       pointBackgroundColor: "#2B7F75",
     },
@@ -68,6 +65,13 @@ const myRadarChart = new Chart("radarChart", {
   type: "radar",
   data: radarChartData,
   options: {
+    responsive: true,
+    // hide indicator
+    scale: {
+      ticks: {
+        display: false,
+      },
+    },
     plugins: {
       filler: {
         propagate: false,
