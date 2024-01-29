@@ -1067,6 +1067,16 @@ svg.cross {
 
 
 
+/* overview */
+.text-pink{
+  color: #F54576;
+}
+
+.text-link{
+  color: #08657E;
+}
+
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
