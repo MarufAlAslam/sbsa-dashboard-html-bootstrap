@@ -1,3 +1,4 @@
+// bar chart
 const barChartData = {
   labels: [
     "Saturday",
@@ -41,6 +42,42 @@ const myChart = new Chart("barChart", {
         display: false,
         text: "Chart.js Bar Chart",
       },
+    },
+  },
+});
+
+// radar chart
+const radarChartData = {
+  labels: ["Dropship Sale", "DC Sale", "Dropship Qty", "DC Qty"],
+  datasets: [
+    {
+      label: "Shipped",
+      data: [1150, 1190, 1390, 1320],
+      borderColor: "#2B7F75",
+      backgroundColor: "#c0d9d6",
+      borderWidth: 2,
+      borderRadius: 10,
+      borderSkipped: false,
+      //   dots
+      pointBackgroundColor: "#2B7F75",
+    },
+  ],
+};
+
+const myRadarChart = new Chart("radarChart", {
+  type: "radar",
+  data: radarChartData,
+  options: {
+    plugins: {
+      filler: {
+        propagate: false,
+      },
+      "samples-filler-analyser": {
+        target: "chart-analyser",
+      },
+    },
+    interaction: {
+      intersect: false,
     },
   },
 });
