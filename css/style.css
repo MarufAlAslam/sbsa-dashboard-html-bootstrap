@@ -1068,12 +1068,22 @@ svg.cross {
 
 
 /* overview */
-.text-pink{
+.text-pink {
   color: #F54576;
 }
 
-.text-link{
+.text-link {
   color: #08657E;
+}
+
+.fs-18 {
+  font-size: 18px !important;
+}
+
+.calendar-icon {
+  background: url("../img/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: 5%;
 }
 
 
