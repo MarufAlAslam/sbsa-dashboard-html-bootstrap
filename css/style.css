@@ -1086,6 +1086,132 @@ svg.cross {
   background-position: 5%;
 }
 
+.grid-5 {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+}
+
+.bars .bar {
+  background-color: #2B7F75;
+  border-radius: 4px;
+}
+
+.ind {
+  width: 12px;
+  height: 12px;
+}
+
+.walmart .ind {
+  background-color: #2B7F75;
+}
+
+.chewy .ind {
+  background-color: #FFC000;
+}
+
+.grainger .ind {
+  background-color: #ED7D31;
+}
+
+.home-depot .ind {
+  background-color: #9E480E;
+}
+
+.fat-chart {
+  background-color: white;
+  height: calc(100% - 80px);
+}
+
+.walmart-chart {
+  background-color: #2B7F75;
+  /* height: calc(100% - 80px); */
+  border-radius: 4px;
+}
+
+.walmart-chart .baddge {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 6px 12px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+}
+
+.chewy-chart .baddge {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 6px 12px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+}
+
+.grainger-chart .baddge {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 6px 12px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+}
+
+.home-depot-chart .baddge {
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.10);
+  padding: 6px 12px;
+  display: inline-block;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 10px;
+}
+
+.w-60 {
+  width: 60%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.h-60 {
+  height: 60%;
+  border-radius: 4px;
+}
+
+.h-40 {
+  height: 40%;
+  border-radius: 4px;
+}
+
+.chewy-chart {
+  background-color: #FFC000;
+  /* height: calc(100% - 80px); */
+  border-radius: 4px;
+}
+
+.grainger-chart {
+  background-color: #ED7D31;
+  /* height: calc(100% - 80px); */
+  border-radius: 4px;
+}
+
+.home-depot-chart {
+  background-color: #9E480E;
+  /* height: calc(100% - 80px); */
+  border-radius: 4px;
+}
 
 @media screen and (max-width: 1200px) {
   .text-badge {

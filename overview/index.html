@@ -866,7 +866,177 @@
                 <div class="card-body">
                   <h3 class="fs-18 fw-semibold">Insides</h3>
                   <div class="pt-4">
-                    <canvas id="radarChart" style="height: 400px;"></canvas>
+                    <canvas id="radarChart" style="height: 400px"></canvas>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-lg-6">
+              <div class="card border-0 shadow">
+                <div class="card-body">
+                  <h3 class="fw-semibold fs-18">Audit Analyses</h3>
+                  <p class="fs-12 text-muted">
+                    Your estimated timeline based on your progress
+                  </p>
+
+                  <div class="grid-5">
+                    <div
+                      class="item text-center d-flex justify-content-start align-items-center flex-column"
+                      style="
+                        background-color: #ffeceb;
+                        padding: 20px;
+                        border-radius: 6px;
+                      "
+                    >
+                      <h2 class="fw-semibold fs-24">00</h2>
+                      <h2 class="fw-semibold fs-10 text-muted">Error Rate</h2>
+                    </div>
+                    <div
+                      class="item text-center d-flex justify-content-start align-items-center flex-column"
+                      style="
+                        background-color: #ebebeb;
+                        padding: 20px;
+                        border-radius: 6px;
+                      "
+                    >
+                      <h2 class="fw-semibold fs-24">10</h2>
+                      <h2 class="fw-semibold fs-10 text-muted">
+                        In Preparation Stage
+                      </h2>
+                    </div>
+                    <div
+                      class="item text-center d-flex justify-content-start align-items-center flex-column"
+                      style="
+                        background-color: #f1e6fb;
+                        padding: 20px;
+                        border-radius: 6px;
+                      "
+                    >
+                      <h2 class="fw-semibold fs-24">03</h2>
+                      <h2 class="fw-semibold fs-10 text-muted">
+                        Missing Tracking Info
+                      </h2>
+                    </div>
+                    <div
+                      class="item text-center d-flex justify-content-start align-items-center flex-column"
+                      style="
+                        background-color: #e3effe;
+                        padding: 20px;
+                        border-radius: 6px;
+                      "
+                    >
+                      <h2 class="fw-semibold fs-24">03</h2>
+                      <h2 class="fw-semibold fs-10 text-muted">
+                        Pending ASN Submission
+                      </h2>
+                    </div>
+                    <div
+                      class="item text-center d-flex justify-content-start align-items-center flex-column"
+                      style="
+                        background-color: #e5f3e4;
+                        padding: 20px;
+                        border-radius: 6px;
+                      "
+                    >
+                      <h2 class="fw-semibold fs-24">02</h2>
+                      <h2 class="fw-semibold fs-10 text-muted">
+                        Pending Invoice Submission
+                      </h2>
+                    </div>
+                  </div>
+
+                  <div class="bars my-3">
+                    <label for="">Pending Invoice Submission</label>
+                    <div
+                      class="bar mt-1"
+                      style="height: 30px; width: 13%"
+                    ></div>
+                  </div>
+                  <div class="bars mb-3">
+                    <label for="">Pending ASN Submission</label>
+                    <div
+                      class="bar mt-1"
+                      style="height: 30px; width: 20%"
+                    ></div>
+                  </div>
+                  <div class="bars mb-3">
+                    <label for="">Missing Tracking Information</label>
+                    <div
+                      class="bar mt-1"
+                      style="height: 30px; width: 20%"
+                    ></div>
+                  </div>
+                  <div class="bars mb-3">
+                    <label for="">In Preparation Stage Packages</label>
+                    <div
+                      class="bar mt-1"
+                      style="height: 30px; width: 90%"
+                    ></div>
+                  </div>
+                  <div class="bars mb-3">
+                    <label for="">Error Rate</label>
+                    <div class="bar mt-1" style="height: 30px; width: 5%"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="card h-100 border-0 shadow">
+                <div class="card-body">
+                  <h3 class="fs-18 fw-semibold">
+                    Sales Propertions by Marketplace
+                  </h3>
+                  <div
+                    class="d-flex mb-3 mt-3 justify-content-start align-items-center gap-3"
+                  >
+                    <div
+                      class="walmart d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <div class="ind"></div>
+                      <span class="fs-14 text-muted">Walmart</span>
+                    </div>
+                    <div
+                      class="chewy d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <div class="ind"></div>
+                      <span class="fs-14 text-muted">Chewy</span>
+                    </div>
+                    <div
+                      class="grainger d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <div class="ind"></div>
+                      <span class="fs-14 text-muted">Grainger</span>
+                    </div>
+                    <div
+                      class="home-depot d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <div class="ind"></div>
+                      <span class="fs-14 text-muted">Home Depot</span>
+                    </div>
+                  </div>
+
+                  <div class="fat-chart">
+                    <div class="row h-100 g-2">
+                        <div class="w-60 h-100">
+                            <div class="walmart-chart h-100 w-100 position-relative">
+                                <div class="baddge">Walmart 65%</div>
+                            </div>
+                        </div>
+                        <div class="w-40 h-100">
+                            <div class="d-flex h-100 w-100 gap-2 flex-column justify-content-between align-items-center">
+                                <div class="top h-60 chewy-chart w-100 position-relative">
+                                    <div class="baddge">Chewy 15%</div>
+                                </div>
+                                <div class="bottom h-40 w-100 d-flex justify-content-between align-items-center gap-2">
+                                    <div class="w-50 h-100 grainger-chart position-relative"><div class="baddge">Ginger 10%</div></div>
+                                    <div class="w-50 h-100 home-depot-chart position-relative"><div class="baddge">Home Deport 9%</div></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                   </div>
                 </div>
               </div>
