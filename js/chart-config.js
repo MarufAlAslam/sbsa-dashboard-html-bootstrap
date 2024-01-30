@@ -25,24 +25,18 @@ const barChartData = {
       data: [154, 675, 764, 123, 187, 93, 198],
       borderColor: "#FFD66B",
       backgroundColor: "#FFD66B",
+      borderWidth: 2,
+      borderRadius: 10,
+      borderSkipped: false,
     },
   ],
 };
+// var ctx = document.getElementById("barChart").getContext("2d");
 const myChart = new Chart("barChart", {
   type: "bar",
   data: barChartData,
   options: {
     responsive: true,
-    plugins: {
-      legend: {
-        position: "top",
-        width: 10,
-      },
-      title: {
-        display: false,
-        text: "Chart.js Bar Chart",
-      },
-    },
   },
 });
 
