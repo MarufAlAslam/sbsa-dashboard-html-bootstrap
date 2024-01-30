@@ -17,8 +17,11 @@ const barChartData = {
       borderColor: "#2B7F75",
       backgroundColor: "#2B7F75",
       borderWidth: 2,
-      borderRadius: 10,
-      borderSkipped: false,
+      borderRadius: {
+        topLeft: 5,
+        topRight: 5,
+      },
+      borderSkipped: true,
     },
     {
       label: "Unshipped",
@@ -26,8 +29,11 @@ const barChartData = {
       borderColor: "#FFD66B",
       backgroundColor: "#FFD66B",
       borderWidth: 2,
-      borderRadius: 10,
-      borderSkipped: false,
+      borderRadius: {
+        topLeft: 5,
+        topRight: 5,
+    },
+      borderSkipped: true,
     },
   ],
 };
@@ -37,6 +43,15 @@ const myChart = new Chart("barChart", {
   data: barChartData,
   options: {
     responsive: true,
+    plugins: {
+      datalabels: {
+        anchor: "end",
+        align: "end",
+        font: {
+          size: 12,
+        },
+      },
+    },
   },
 });
 
