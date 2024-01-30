@@ -1041,6 +1041,10 @@ svg.cross {
   cursor: pointer;
 }
 
+.h-90 {
+  height: 90%;
+}
+
 .purchase-edit-card {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1238,6 +1242,32 @@ svg.cross {
   background-position: center;
   transform: translateX(15px);
 }
+
+
+
+
+
+@media screen and (min-width: 1400px) {
+  #radarChart .apexcharts-canvas {
+    transform-origin: center;
+    transform: scale(1.4);
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #radarChart .apexcharts-canvas {
+    transform-origin: center;
+    transform: scale(1.6);
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  #radarChart .apexcharts-canvas {
+    transform-origin: center;
+    transform: scale(2);
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   .text-badge {
