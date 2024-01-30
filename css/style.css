@@ -1213,6 +1213,24 @@ svg.cross {
   border-radius: 4px;
 }
 
+.tab-item.after {
+  position: relative;
+}
+
+.tab-item.after::after {
+  content: '';
+  height: 100%;
+  width: 1px;
+  background: url("../img/line-v.svg");
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+  transform: translateX(15px);
+}
+
 @media screen and (max-width: 1200px) {
   .text-badge {
     font-size: 12px;
