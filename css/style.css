@@ -1132,7 +1132,7 @@ svg.cross {
 .walmart-chart .baddge {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.10);
-  padding: 6px 12px;
+  padding: 6px 8px;
   display: inline-block;
   color: white;
   position: absolute;
@@ -1144,7 +1144,7 @@ svg.cross {
 .chewy-chart .baddge {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.10);
-  padding: 6px 12px;
+  padding: 6px 8px;
   display: inline-block;
   color: white;
   position: absolute;
@@ -1156,33 +1156,41 @@ svg.cross {
 .grainger-chart .baddge {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.10);
-  padding: 6px 12px;
+  padding: 6px 8px;
   display: inline-block;
   color: white;
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .home-depot-chart .baddge {
   border-radius: 4px;
   background: rgba(255, 255, 255, 0.10);
-  padding: 6px 12px;
+  padding: 6px 8px;
   display: inline-block;
   color: white;
   position: absolute;
   bottom: 10px;
   left: 10px;
-  font-size: 10px;
+  font-size: 8px;
 }
 
 .w-60 {
   width: 60%;
 }
 
+.w-55 {
+  width: 55%;
+}
+
 .w-40 {
   width: 40%;
+}
+
+.w-45 {
+  width: 45%;
 }
 
 .h-60 {
