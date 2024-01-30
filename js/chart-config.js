@@ -55,45 +55,42 @@ const myChart = new Chart("barChart", {
   },
 });
 
-// radar chart
-const radarChartData = {
-  labels: ["Dropship Sale", "DC Sale", "Dropship Qty", "DC Qty"],
-  datasets: [
+
+const radarOptions = {
+  series: [
     {
-      label: "Shipped",
-      data: [150, 320, 390, 420],
-      borderColor: "#2B7F75",
-      backgroundColor: "#c0d9d6",
-      //   dots
-      pointBackgroundColor: "#2B7F75",
+      name: "Series 1",
+      data: [250, 370, 490, 440],
     },
   ],
+  chart: {
+    height: 400,
+    type: "radar",
+  },
+  title: {
+    text: "Basic Radar Chart",
+  },
+  xaxis: {
+    categories: ["Dropship Sale", "DC Sale", "Dropship Qty", "DC Qty"],
+  },
+  fill: {
+    opacity: 0.4,
+    colors: ["#2B7F75"],
+  },
+  stroke: {
+    show: true,
+    width: 2,
+    colors: ["#2B7F75"],
+  },
+  markers: {
+    size: 5,
+    colors: ["#2B7F75"],
+  },
 };
 
-const myRadarChart = new Chart("radarChart", {
-  type: "radar",
-  data: radarChartData,
-  options: {
-    responsive: true,
-    // hide indicator
-    scale: {
-      ticks: {
-        display: false,
-      },
-    },
-    plugins: {
-      filler: {
-        propagate: false,
-      },
-      "samples-filler-analyser": {
-        target: "chart-analyser",
-      },
-    },
-    interaction: {
-      intersect: false,
-    },
-  },
-});
+var radarChart = new ApexCharts(document.querySelector("#radarChart"), radarOptions);
+radarChart.render();
+
 
 // big chart
 var bigChartOptions = {
@@ -205,7 +202,6 @@ const customChartValues = [
     value: 5,
   },
 ];
-
 
 const customBars = document.getElementById("custom-bars");
 
