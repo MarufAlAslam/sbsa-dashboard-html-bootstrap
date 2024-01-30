@@ -132,7 +132,7 @@ var bigChartOptions = {
     curve: "smooth",
   },
   fill: {
-    type: "gradient",
+    type: "linear",
     gradient: {
       opacityFrom: 1,
       opacityTo: 1,
