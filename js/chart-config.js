@@ -55,7 +55,6 @@ const myChart = new Chart("barChart", {
   },
 });
 
-
 const radarOptions = {
   series: [
     {
@@ -64,11 +63,12 @@ const radarOptions = {
     },
   ],
   chart: {
-    height: 400,
+    height: 300,
+    width: "100%",
     type: "radar",
-  },
-  title: {
-    text: "Basic Radar Chart",
+    toolbar: {
+      show: false,
+    },
   },
   xaxis: {
     categories: ["Dropship Sale", "DC Sale", "Dropship Qty", "DC Qty"],
@@ -88,9 +88,11 @@ const radarOptions = {
   },
 };
 
-var radarChart = new ApexCharts(document.querySelector("#radarChart"), radarOptions);
+var radarChart = new ApexCharts(
+  document.querySelector("#radarChart"),
+  radarOptions
+);
 radarChart.render();
-
 
 // big chart
 var bigChartOptions = {
