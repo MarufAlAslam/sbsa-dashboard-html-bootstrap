@@ -47,6 +47,9 @@ const myChart = new Chart("barChart", {
           size: 12,
         },
       },
+      tooltip: {
+        enabled: true,
+      },
     },
   },
 });
