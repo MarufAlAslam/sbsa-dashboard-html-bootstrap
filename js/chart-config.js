@@ -32,7 +32,7 @@ const barChartData = {
       borderRadius: {
         topLeft: 5,
         topRight: 5,
-    },
+      },
       borderSkipped: true,
     },
   ],
@@ -182,3 +182,49 @@ var bigChart = new ApexCharts(
   bigChartOptions
 );
 bigChart.render();
+
+const customChartValues = [
+  {
+    label: "Pending Invoice Submission",
+    value: 13,
+  },
+  {
+    label: "Pending ASN Submission",
+    value: 20,
+  },
+  {
+    label: "Missing Tracking Information",
+    value: 20,
+  },
+  {
+    label: "In Preparation Stage Packages",
+    value: 90,
+  },
+  {
+    label: "Error Rate",
+    value: 5,
+  },
+];
+
+
+const customBars = document.getElementById("custom-bars");
+
+customChartValues.forEach((item) => {
+  const bar = document.createElement("div");
+  bar.classList.add("custom-bar");
+  bar.innerHTML = `
+  <div class="bars mb-3">
+  <label for="">${item.label}</label>
+  <div
+    class="d-flex justify-content-start align-items-center gap-2"
+  >
+    <div
+      class="bar mt-1"
+      style="height: 30px; width: ${item.value}%"
+    ></div>
+    <span class="fs-12 text-muted">${item.value}</span>
+  </div>
+</div>
+  `;
+  customBars.appendChild(bar);
+});
