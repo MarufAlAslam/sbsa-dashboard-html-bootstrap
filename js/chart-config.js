@@ -16,24 +16,20 @@ const barChartData = {
       data: [476, 950, 126, 670, 265, 842, 23],
       borderColor: "#2B7F75",
       backgroundColor: "#2B7F75",
-      borderWidth: 2,
       borderRadius: {
-        topLeft: 5,
-        topRight: 5,
+        topLeft: 10,
+        topRight: 10,
       },
-      borderSkipped: true,
     },
     {
       label: "Unshipped",
       data: [154, 675, 764, 123, 187, 93, 198],
       borderColor: "#FFD66B",
       backgroundColor: "#FFD66B",
-      borderWidth: 2,
       borderRadius: {
-        topLeft: 5,
-        topRight: 5,
+        topLeft: 10,
+        topRight: 10,
       },
-      borderSkipped: true,
     },
   ],
 };
