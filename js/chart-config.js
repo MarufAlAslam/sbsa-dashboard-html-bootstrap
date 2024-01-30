@@ -144,6 +144,27 @@ var bigChartOptions = {
   },
   xaxis: {
     type: "string",
+    // titles
+    categories: [
+      "16 Apr",
+      "4 May",
+      "22 May",
+      "10 Jun",
+      "20 Jun",
+      "28 Jun",
+      "16 Jul",
+      "24 Jul",
+      "3 Aug",
+      "10 Aug",
+      "20 Aug",
+      "25 Aug",
+      "31 Aug",
+      "5 Sep",
+      "10 Sep",
+      "15 Sep",
+      "20 Sep",
+      "25 Sep",
+    ],
   },
 };
 
