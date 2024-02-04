@@ -1249,6 +1249,15 @@ svg.cross {
   grid-template-columns: repeat(2, 1fr);
 }
 
+.border-gray{
+  border: 1px solid #dee2e6;
+}
+
+.border-y-0 {
+  border-top: 0;
+  border-bottom: 0;
+}
+
 
 
 
