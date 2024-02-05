@@ -1219,6 +1219,12 @@ svg.cross {
   border-radius: 4px;
 }
 
+ .dropdown a.btn:focus{
+    outline: unset !important;
+    box-shadow: unset !important;
+    border: unset !important;
+  }
+
 .home-depot-chart {
   background-color: #9E480E;
   /* height: calc(100% - 80px); */
@@ -1559,6 +1565,8 @@ svg.cross {
   .flex-md-column {
     flex-direction: column;
   }
+
+ 
 
   .modal.show .modal-dialog {
     transform: none;

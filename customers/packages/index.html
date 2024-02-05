@@ -517,15 +517,21 @@
                   alt=""
                 />
                 <div class="details">
-                  <p
-                    class="fw-semibold gap-2 mb-0 fs-14 d-flex justify-content-start align-items-center"
-                  >
-                    <span>Daisy Floyd</span>
-                    <i
-                      class="fa fa-caret-down fs-16 ms-2"
-                      style="color: #8f92a166"
-                    ></i>
-                  </p>
+                  <div class="d-flex fw-semibold gap-2 mb-0 fs-14 d-flex justify-content-start align-items-center">
+  
+                    <div class="dropdown">
+                      <a class="btn p-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <span>Daisy Floyd</span>
+                        <i class="fa fa-caret-down fs-16 ms-2" style="color: #8f92a166"></i>
+                      </a>
+  
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="../../user/profile/">Profile</a></li>
+                        <li><a class="dropdown-item" href="../../user/userlist/">User List</a></li>
+                      </ul>
+                    </div>
+  
+                  </div>
                   <p class="fw-semibold mb-0 fs-12 text-golden">Pro Member</p>
                 </div>
               </div>
