@@ -1281,9 +1281,9 @@ svg.cross {
 }
 
 button.nav-link.active {
-  background: #119d16 !important;
-  border-bottom: 1px solid #119d16 !important;
-  color: white !important;
+  background: #ab87501a !important;
+  border-bottom: 1px solid #ab8650 !important;
+  color: #ab8650 !important;
 }
 
 button.nav-link{
@@ -1291,7 +1291,7 @@ button.nav-link{
 }
 
 .nav.nav-tabs {
-  border-bottom: 1px solid #119d16;
+  border-bottom: 1px solid #ab8650;
 }
 
 .bulk-table select {
