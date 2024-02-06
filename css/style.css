@@ -1281,17 +1281,17 @@ svg.cross {
 }
 
 button.nav-link.active {
-  background: #ab8650 !important;
-  border-bottom: 1px solid #ab8650 !important;
-  color: black !important;
+  background: #119d16 !important;
+  border-bottom: 1px solid #119d16 !important;
+  color: white !important;
 }
 
 button.nav-link{
-  color: #ab8650 !important;
+  color: #119d16 !important;
 }
 
 .nav.nav-tabs {
-  border-bottom: 1px solid #ab8650;
+  border-bottom: 1px solid #119d16;
 }
 
 .bulk-table select {
