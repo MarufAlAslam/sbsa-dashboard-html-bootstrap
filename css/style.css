@@ -1284,6 +1284,7 @@ button.nav-link.active {
   background: #ab87501a !important;
   border-bottom: 1px solid #ab8650 !important;
   color: #ab8650 !important;
+  font-weight: 600;
 }
 
 button.nav-link{
