@@ -204,13 +204,13 @@
                   <a href="../../customers/customer-management/" class="text-white text-decoration-none w-100 ps-5 d-block">Customer Management</a>
                 </li>
                 <li>
-                  <a href="../../customers/invsetup/" class="text-white text-decoration-none w-100 ps-5 d-block">Invoice Generation</a>
+                  <a href="../../settings/invsetup/" class="text-white text-decoration-none w-100 ps-5 d-block">Invoice Generation</a>
                 </li>
                 <li>
-                  <a href="../../customers/csettings/" class="text-white text-decoration-none w-100 ps-5 d-block">Ship Settings</a>
+                  <a href="../../settings/csettings/" class="text-white text-decoration-none w-100 ps-5 d-block">Ship Settings</a>
                 </li>
                 <li>
-                  <a href="../../customers/warehouses/" class="text-white text-decoration-none w-100 ps-5 d-block">Warehouses</a>
+                  <a href="../../settings/warehouses/" class="text-white text-decoration-none w-100 ps-5 d-block">Warehouses</a>
                 </li>
               </ul>
             </li>
@@ -422,9 +422,7 @@
         <div class="topbar">
           <div class="row">
             <div class="col-xl-3">
-              <h3 class="fs-24 fw-semibold mb-0">
-                Invoice Generation Settings
-              </h3>
+              <h3 class="fs-24 fw-semibold mb-0">Warehouses</h3>
             </div>
             <div class="col-xl-6">
               <form action="">
@@ -644,7 +642,7 @@
                           data-bs-toggle="modal"
                           data-bs-target="#poModal"
                           class="d-block py-1 mob-colored dropdown-item"
-                          >Create New Invoice
+                          >Create New Warehouse
                         </a>
                       </li>
                       <li class="has-child py-1 fs-14 position-relative">
@@ -695,9 +693,7 @@
                       <div
                         class="d-flex justify-content-center align-items-center gap-2"
                       >
-                        <span class="text-muted fs-14 fw-semibold"
-                          >Trading Partner</span
-                        >
+                        <span class="text-muted fs-14 fw-semibold">Name</span>
                         <button class="btn p-0">
                           <svg
                             width="13"
@@ -723,8 +719,133 @@
                         class="d-flex justify-content-center align-items-center gap-2"
                       >
                         <span class="text-muted fs-14 fw-semibold"
-                          >Indicator</span
+                          >Address</span
                         >
+                        <button class="btn p-0">
+                          <svg
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373"
+                            />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-grey border">
+                      <div
+                        class="d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <span class="text-muted fs-14 fw-semibold">City</span>
+                        <button class="btn p-0">
+                          <svg
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373"
+                            />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-grey border">
+                      <div
+                        class="d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <span class="text-muted fs-14 fw-semibold">State</span>
+                        <button class="btn p-0">
+                          <svg
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373"
+                            />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-grey border">
+                      <div
+                        class="d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <span class="text-muted fs-14 fw-semibold">Zip</span>
+                        <button class="btn p-0">
+                          <svg
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373"
+                            />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-grey border">
+                      <div
+                        class="d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <span class="text-muted fs-14 fw-semibold">Phone</span>
+                        <button class="btn p-0">
+                          <svg
+                            width="13"
+                            height="12"
+                            viewBox="0 0 13 12"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373"
+                            />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-grey border">
+                      <div
+                        class="d-flex justify-content-center align-items-center gap-2"
+                      >
+                        <span class="text-muted fs-14 fw-semibold">Email</span>
                         <button class="btn p-0">
                           <svg
                             width="13"
@@ -757,9 +878,28 @@
 
                 <tbody>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -793,9 +933,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -829,9 +988,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -865,9 +1043,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -901,9 +1098,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -937,9 +1153,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -973,9 +1208,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -1009,9 +1263,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -1045,9 +1318,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -1081,45 +1373,28 @@
                     </td>
                   </tr>
                   <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
+                    <td class="bg-white py-20 border">Warehouse 1</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold"
+                        >669 Prospect Street</span
+                      >
                     </td>
-
-                    <td class="bg-white py-20 border-top border text-center">
-                      <div class="dropdown w-md-100">
-                        <button
-                          class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
-                          type="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <span class="text-dark">
-                            <i class="fa fa-bars"></i>
-                          </span>
-                        </button>
-                        <ul class="dropdown-menu shadow border-0">
-                          <li class="has-child fs-14 position-relative">
-                            <a
-                              data-bs-toggle="modal"
-                              data-bs-target="#editCustomerModal"
-                              class="d-block py-1 mob-colored dropdown-item"
-                              >Edit</a
-                            >
-                          </li>
-                          <li class="has-child fs-14 position-relative">
-                            <a class="d-block py-1 mob-colored dropdown-item"
-                              >Delete</a
-                            >
-                          </li>
-                        </ul>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="bg-white py-20 border">Shopbop</td>
                     <td class="bg-white py-20 border-top border">
-                      <span class="text-3c fs-14 fw-semibold">SB1000</span>
+                      <span class="text-3c fs-14 fw-semibold">Ladoga</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">IN</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold">111111111</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold"
+                        >sbsademo@sbsatech.com</span
+                      >
                     </td>
 
                     <td class="bg-white py-20 border-top border text-center">
@@ -4947,7 +5222,7 @@
             <div class="text-end mb-3"></div>
             <div class="d-flex justify-content-between align-items-start">
               <div class="left">
-                <h4 class="fw-bold">Create New Invoice</h4>
+                <h4 class="fw-bold">Create New Warehouse</h4>
                 <!-- <p class="fs-14 text-muted mb-0">
                   Purchase Date : 9 Jan 2023 ; 9:32 PM
                 </p> -->
@@ -5000,9 +5275,15 @@
               <div class="card-body p-0 rounded-2 border-gray overflow-hidden">
                 <table class="table border-0 w-100 mb-0">
                   <thead>
-                    <th class="border-0 p-2 text-center">Trading Partner</th>
+                    <th class="border-0 p-2 text-center">Warehouse Name</th>
                     <th class="border-y-0 border-gray border-x p-2 text-center">
-                      Inv Identificator
+                      Company Name
+                    </th>
+                    <th class="border-y-0 border-gray border-x p-2 text-center">
+                      Primary Phone
+                    </th>
+                    <th class="border-y-0 border-0 p-2 text-center">
+                      Primary Email
                     </th>
                   </thead>
 
@@ -5019,6 +5300,108 @@
                       </td>
                       <td
                         class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                      >
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                      <td
+                        class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                      >
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                      <td
+                        class="border-y-0 border-0 border-top text-center p-1"
+                      >
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+            <div class="card border-0 shadow p-3 mt-5 bg-white mb-5">
+              <div class="card-header">
+                <h4 class="text-dark text-center">Shipping Address</h4>
+              </div>
+              <div class="card-body p-0 rounded-2 border-gray overflow-hidden">
+                <table class="table border-0 w-100 mb-0">
+                  <thead>
+                    <th class="border-0 p-2 text-center">Address</th>
+                    <th class="border-y-0 border-gray border-x p-2 text-center">
+                      City
+                    </th>
+                    <th class="border-y-0 border-gray border-x p-2 text-center">
+                      State
+                    </th>
+                    <th class="border-y-0 border-0 p-2 text-center">
+                      Postal code
+                    </th>
+                    <th class="border-y-0 border-0 p-2 text-center">Country</th>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <td class="border-0 border-top text-center p-1">
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                      <td
+                        class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                      >
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                      <td
+                        class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                      >
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                      <td
+                        class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                      >
+                        <input
+                          type="text"
+                          class="form-control text-center"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </td>
+                      <td
+                        class="border-y-0 border-0 border-top text-center p-1"
                       >
                         <input
                           type="text"
@@ -5051,7 +5434,7 @@
             <div class="text-end mb-3"></div>
             <div class="d-flex justify-content-between align-items-start">
               <div class="left">
-                <h4 class="fw-bold">Edit Invoice</h4>
+                <h4 class="fw-bold">Edit Warehouse</h4>
                 <!-- <p class="fs-14 text-muted mb-0">
                   Purchase Date : 9 Jan 2023 ; 9:32 PM
                 </p> -->
@@ -5100,42 +5483,150 @@
               </div>
             </div>
             <div class="card border-0 shadow p-3 mt-5 bg-white mb-5">
-              <div class="card-body p-0 rounded-2 border-gray overflow-hidden">
-                <table class="table border-0 w-100 mb-0">
-                  <thead>
-                    <th class="border-0 p-2 text-center">Trading Partner</th>
-                    <th class="border-y-0 border-gray border-x p-2 text-center">
-                      Inv Identificator
-                    </th>
-                  </thead>
-
-                  <tbody>
-                    <tr>
-                      <td class="border-0 border-top text-center p-1">
-                        <input
-                          type="text"
-                          class="form-control text-center"
-                          placeholder=""
-                          name=""
-                          id=""
-                        />
-                      </td>
-                      <td
-                        class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
-                      >
-                        <input
-                          type="text"
-                          class="form-control text-center"
-                          placeholder=""
-                          name=""
-                          id=""
-                        />
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
+                <div class="card-body p-0 rounded-2 border-gray overflow-hidden">
+                  <table class="table border-0 w-100 mb-0">
+                    <thead>
+                      <th class="border-0 p-2 text-center">Warehouse Name</th>
+                      <th class="border-y-0 border-gray border-x p-2 text-center">
+                        Company Name
+                      </th>
+                      <th class="border-y-0 border-gray border-x p-2 text-center">
+                        Primary Phone
+                      </th>
+                      <th class="border-y-0 border-0 p-2 text-center">
+                        Primary Email
+                      </th>
+                    </thead>
+  
+                    <tbody>
+                      <tr>
+                        <td class="border-0 border-top text-center p-1">
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-0 border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
               </div>
-            </div>
+              <div class="card border-0 shadow p-3 mt-5 bg-white mb-5">
+                <div class="card-header">
+                  <h4 class="text-dark text-center">Shipping Address</h4>
+                </div>
+                <div class="card-body p-0 rounded-2 border-gray overflow-hidden">
+                  <table class="table border-0 w-100 mb-0">
+                    <thead>
+                      <th class="border-0 p-2 text-center">Address</th>
+                      <th class="border-y-0 border-gray border-x p-2 text-center">
+                        City
+                      </th>
+                      <th class="border-y-0 border-gray border-x p-2 text-center">
+                        State
+                      </th>
+                      <th class="border-y-0 border-0 p-2 text-center">
+                        Postal code
+                      </th>
+                      <th class="border-y-0 border-0 p-2 text-center">Country</th>
+                    </thead>
+  
+                    <tbody>
+                      <tr>
+                        <td class="border-0 border-top text-center p-1">
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                        <td
+                          class="border-y-0 border-0 border-top text-center p-1"
+                        >
+                          <input
+                            type="text"
+                            class="form-control text-center"
+                            placeholder=""
+                            name=""
+                            id=""
+                          />
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
           </div>
         </div>
       </div>

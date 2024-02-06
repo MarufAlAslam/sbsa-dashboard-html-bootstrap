@@ -1264,6 +1264,40 @@ svg.cross {
   border-bottom: 0;
 }
 
+.text-golden .select-selected {
+  color: #ab8650;
+  font-weight: bold;
+}
+
+.custom-select.text-golden {
+  background: #ab87501a;
+  border-color: #ab8650;
+}
+
+.golden-btn {
+  background: #ab8650;
+  color: white;
+  border: 1px solid #ab8650;
+}
+
+button.nav-link.active {
+  background: #ab8650 !important;
+  border-bottom: 1px solid #ab8650 !important;
+  color: black !important;
+}
+
+button.nav-link{
+  color: #ab8650 !important;
+}
+
+.nav.nav-tabs {
+  border-bottom: 1px solid #ab8650;
+}
+
+.bulk-table select {
+  background-color: #ab8650;
+  font-weight: 600;
+}
 
 
 
