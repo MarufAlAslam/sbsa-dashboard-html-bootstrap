@@ -1296,8 +1296,8 @@ button.nav-link{
 }
 
 .bulk-table select {
-  background-color: rgba(52, 199, 89, .1);
-  color: #119d16;
+  background-color: #ab87501a;
+  color: #ab8650;
   font-weight: 600;
 }
 
