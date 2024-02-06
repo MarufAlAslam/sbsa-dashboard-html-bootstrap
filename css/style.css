@@ -1265,12 +1265,12 @@ svg.cross {
 }
 
 .text-golden .select-selected {
-  color: #ab8650;
+  color: #119d16;
   font-weight: bold;
 }
 
 .custom-select.text-golden {
-  background: #ab87501a;
+  background: rgba(52, 199, 89, .1);
   border-color: #ab8650;
 }
 
