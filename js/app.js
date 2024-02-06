@@ -62,6 +62,18 @@ reports.addEventListener("click", () => {
   reportsItems.classList.add("active");
 });
 
+// reports
+const settings = document.getElementById("settings");
+const settingsArrow = document.getElementById("settings-arrow");
+const settingsItems = document.getElementById("settings-items");
+
+settings.addEventListener("click", () => {
+  reset();
+  settings.classList.add("active");
+  settingsArrow.classList.add("rotate");
+  settingsItems.classList.add("active");
+});
+
 $(".menu-btn").click(function () {
   $(this).toggleClass("active");
   $(".sidebar, #mobile-nav").toggleClass("active");
