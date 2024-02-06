@@ -1265,12 +1265,12 @@ svg.cross {
 }
 
 .text-golden .select-selected {
-  color: #119d16;
+  color: #ab8650;
   font-weight: bold;
 }
 
 .custom-select.text-golden {
-  background: rgba(52, 199, 89, .1);
+  background: #ab87501a;
   border-color: #ab8650;
 }
 
@@ -1287,7 +1287,7 @@ button.nav-link.active {
 }
 
 button.nav-link{
-  color: #119d16 !important;
+  color: #ab8650 !important;
 }
 
 .nav.nav-tabs {
