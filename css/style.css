@@ -666,11 +666,20 @@ table input.form-check.mb-0 {
 
 .btn.filter-btn {
   border: 1px solid #dcdcde !important;
-  background: #fff;
+  background-color: #ab87501a !important;
   box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
   display: flex;
   padding: 8px 10px;
+  color: #ab8750 !important;
+  font-weight: 500;
 }
+
+.btn.filter-btn *{
+  background-color: transparent !important;
+  color: #ab8750 !important;
+}
+
+
 
 .bg-grey {
   background-color: #f8f8f8 !important;
@@ -1219,11 +1228,11 @@ svg.cross {
   border-radius: 4px;
 }
 
- .dropdown a.btn:focus{
-    outline: unset !important;
-    box-shadow: unset !important;
-    border: unset !important;
-  }
+.dropdown a.btn:focus {
+  outline: unset !important;
+  box-shadow: unset !important;
+  border: unset !important;
+}
 
 .home-depot-chart {
   background-color: #9E480E;
@@ -1255,7 +1264,7 @@ svg.cross {
   grid-template-columns: repeat(2, 1fr);
 }
 
-.border-gray{
+.border-gray {
   border: 1px solid #dee2e6;
 }
 
@@ -1287,7 +1296,7 @@ button.nav-link.active {
   font-weight: 600;
 }
 
-button.nav-link{
+button.nav-link {
   color: #119d16 !important;
 }
 
@@ -1602,7 +1611,7 @@ button.nav-link{
     flex-direction: column;
   }
 
- 
+
 
   .modal.show .modal-dialog {
     transform: none;
@@ -1618,6 +1627,10 @@ button.nav-link{
     max-height: 97vh;
     position: fixed;
     overflow-y: auto;
+  }
+
+  input[type="date"]{
+    appearance: none !important;
   }
 
   .daterangepicker.opensright::before,
