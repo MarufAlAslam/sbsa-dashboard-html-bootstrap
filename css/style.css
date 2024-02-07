@@ -674,7 +674,7 @@ table input.form-check.mb-0 {
   font-weight: 500;
 }
 
-.btn.filter-btn *{
+.btn.filter-btn * {
   background-color: transparent !important;
   color: #ab8750 !important;
 }
@@ -1310,6 +1310,10 @@ button.nav-link {
   font-weight: 600;
 }
 
+.filter-btn * {
+  font-weight: 600 !important;
+}
+
 
 
 @media screen and (min-width: 1400px) {
@@ -1629,7 +1633,7 @@ button.nav-link {
     overflow-y: auto;
   }
 
-  input[type="date"]{
+  input[type="date"] {
     appearance: none !important;
   }
 
@@ -1850,6 +1854,8 @@ button.nav-link {
   .btn.text-center.filter-btn.d-flex.justify-content-center.align-items-center.gap-2.fs-14 {
     width: 100% !important;
   }
+
+
 
   .custom-select.p-2 {
     width: 100% !important;
