@@ -683,6 +683,14 @@ table input.form-check.mb-0 {
   background-color: white !important;
 }
 
+.select-items div:hover {
+    background: red !important;
+}
+
+.select-items div:hover {
+  background: #ab87501a !important;
+}
+
 
 
 .bg-grey {
