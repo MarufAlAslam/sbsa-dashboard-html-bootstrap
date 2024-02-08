@@ -679,6 +679,10 @@ table input.form-check.mb-0 {
   color: #ab8750 !important;
 }
 
+.btn.filter-btn .select-items{
+  background-color: white !important;
+}
+
 
 
 .bg-grey {
