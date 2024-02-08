@@ -708,6 +708,34 @@ td {
   text-align: center;
 }
 
+.step-number{
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ab87501a;
+  color: #ab8750;
+}
+
+.active .step-number{
+  background-color: #ab8650;
+  color: white;
+}
+
+.step.active span{
+  color: #ab8650;
+  font-weight: 600;
+}
+
+
+.step-line{
+  width: 100px;
+  height: 2px;
+  background-color: rgb(227, 225, 225);
+}
+
 .py-20 {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
