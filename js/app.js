@@ -241,7 +241,9 @@ $('input[name="dates"]').daterangepicker({
 // });
 
 const addLineBtn = document.getElementById("add-line-btn");
+const addLineBtn1 = document.getElementById("add-line-btn-1");
 const adaptiveRow = document.getElementById("adaptive-row");
+const adaptiveRow1 = document.getElementById("adaptive-row-1");
 // const getTotalForLine = (line) => {
 //   const quantity = document.getElementById(`quantity${line}`);
 //   const price = document.getElementById(`price${line}`);
@@ -308,4 +310,75 @@ addLineBtn.addEventListener("click", () => {
   `;
 
   adaptiveRow.appendChild(tr);
+});
+
+let line1 = 1;
+addLineBtn1.addEventListener("click", () => {
+  const tr = document.createElement("tr");
+  line1++;
+
+  tr.innerHTML = `
+  <td class="text-black border fs-14 fw-semibold">
+  <select class="w-100 form-select">
+  <option value="Box 1">Box 1</option>
+  <option value="Box 2">Box 2</option>
+  <option value="Box 3">Box 3</option>
+</select>
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id=""
+                              />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id=""
+                              />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="quantity1"
+                              />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="price1"
+                              />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="total1"
+                              />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <input
+                                type="text"
+                                class="form-control p-0 text-center"
+                                name=""
+                                id="total1"
+                              />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <button class="btn" type="button text-danger">
+                                <i class="fa fa-trash text-danger"></i>
+                              </button>
+                            </td>
+  `;
+
+  adaptiveRow1.appendChild(tr);
 });
