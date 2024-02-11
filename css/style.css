@@ -679,12 +679,12 @@ table input.form-check.mb-0 {
   color: #ab8750 !important;
 }
 
-.btn.filter-btn .select-items{
+.btn.filter-btn .select-items {
   background-color: white !important;
 }
 
 .select-items div:hover {
-    background: red !important;
+  background: red !important;
 }
 
 .select-items div:hover {
@@ -708,7 +708,7 @@ td {
   text-align: center;
 }
 
-.step-number{
+.step-number {
   width: 35px;
   height: 35px;
   border-radius: 50%;
@@ -719,18 +719,18 @@ td {
   color: #ab8750;
 }
 
-.active .step-number{
+.active .step-number {
   background-color: #ab8650;
   color: white;
 }
 
-.step.active span{
+.step.active span {
   color: #ab8650;
   font-weight: 600;
 }
 
 
-.step-line{
+.step-line {
   width: 100px;
   height: 2px;
   background-color: rgb(227, 225, 225);
@@ -1354,6 +1354,13 @@ button.nav-link {
   font-weight: 600 !important;
 }
 
+.order-table {
+  display: none;
+}
+
+.order-table.active {
+  display: block;
+}
 
 
 @media screen and (min-width: 1400px) {
