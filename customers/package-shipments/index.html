@@ -8752,12 +8752,22 @@
       const awaitingTab = document.getElementById("awaiting-tab");
       const completedTab = document.getElementById("completed-tab");
 
+      // tab-panes
+      const awaitingTabPane = document.getElementById("awaiting-tab-pane");
+      const completedTabPane = document.getElementById("completed-tab-pane");
+
       if (id === "#shipped") {
         completedTab.classList.add("active");
         awaitingTab.classList.remove("active");
+        completedTabPane.classList.add("active");
+        completedTabPane.classList.add("show");
+        awaitingTabPane.classList.remove("active");
       } else {
         awaitingTab.classList.add("active");
         completedTab.classList.remove("active");
+        completedTabPane.classList.remove("active");
+        awaitingTabPane.classList.add("active");
+        awaitingTabPane.classList.add("show");
       }
     </script>
   </body>

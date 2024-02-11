@@ -639,7 +639,7 @@
           <div class="row">
             <div class="col-xl-3">
               <h3 class="fs-24 fw-semibold mb-0">
-                Drop-Shipments Processed in Bulk
+                Order Management
               </h3>
             </div>
             <div class="col-xl-6">
@@ -856,38 +856,80 @@
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link active"
-                  id="awaiting-tab"
+                  id="new-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#awaiting-tab-pane"
+                  data-bs-target="#new-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="awaiting-tab-pane"
+                  aria-controls="new-tab-pane"
                   aria-selected="true"
                 >
-                  Awaiting Shipment
+                  New Orders
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button
                   class="nav-link"
-                  id="completed-tab"
+                  id="pending-tab"
                   data-bs-toggle="tab"
-                  data-bs-target="#completed-tab-pane"
+                  data-bs-target="#pending-tab-pane"
                   type="button"
                   role="tab"
-                  aria-controls="completed-tab-pane"
+                  aria-controls="pending-tab-pane"
                   aria-selected="false"
                 >
-                  Completed Shipment
+                  Pending
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="backordered-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#backordered-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="backordered-tab-pane"
+                  aria-selected="false"
+                >
+                  Backordered
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="cancelled-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#cancelled-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="cancelled-tab-pane"
+                  aria-selected="false"
+                >
+                  Cancelled
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button
+                  class="nav-link"
+                  id="history-tab"
+                  data-bs-toggle="tab"
+                  data-bs-target="#history-tab-pane"
+                  type="button"
+                  role="tab"
+                  aria-controls="history-tab-pane"
+                  aria-selected="false"
+                >
+                  History
                 </button>
               </li>
             </ul>
             <div class="tab-content" id="myTabContent">
               <div
                 class="tab-pane fade show active"
-                id="awaiting-tab-pane"
+                id="new-tab-pane"
                 role="tabpanel"
-                aria-labelledby="awaiting-tab"
+                aria-labelledby="new-tab"
                 tabindex="0"
               >
                 <!-- table -->
@@ -1597,9 +1639,2019 @@
               </div>
               <div
                 class="tab-pane fade"
-                id="completed-tab-pane"
+                id="pending-tab-pane"
                 role="tabpanel"
-                aria-labelledby="completed-tab"
+                aria-labelledby="pending-tab"
+                tabindex="0"
+              >
+                <!-- table -->
+                <div class="overflow-x-auto">
+                  <table class="table table-stripped d-table mb-0 mt-4">
+                    <thead>
+                      <tr>
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Batch #</span
+                            >
+                            <button class="btn p-0">
+                              <svg
+                                width="13"
+                                height="12"
+                                viewBox="0 0 13 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                  fill="#737373"
+                                />
+                                <path
+                                  d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                  fill="#737373"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </th>
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Ship Date</span
+                            >
+                            <button class="btn p-0">
+                              <svg
+                                width="13"
+                                height="12"
+                                viewBox="0 0 13 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                  fill="#737373"
+                                />
+                                <path
+                                  d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                  fill="#737373"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </th>
+
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Action</span
+                            >
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table -->
+              </div>
+              <div
+                class="tab-pane fade"
+                id="backordered-tab-pane"
+                role="tabpanel"
+                aria-labelledby="backordered-tab"
+                tabindex="0"
+              >
+                <!-- table -->
+                <div class="overflow-x-auto">
+                  <table class="table table-stripped d-table mb-0 mt-4">
+                    <thead>
+                      <tr>
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Batch #</span
+                            >
+                            <button class="btn p-0">
+                              <svg
+                                width="13"
+                                height="12"
+                                viewBox="0 0 13 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                  fill="#737373"
+                                />
+                                <path
+                                  d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                  fill="#737373"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </th>
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Ship Date</span
+                            >
+                            <button class="btn p-0">
+                              <svg
+                                width="13"
+                                height="12"
+                                viewBox="0 0 13 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                  fill="#737373"
+                                />
+                                <path
+                                  d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                  fill="#737373"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </th>
+
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Action</span
+                            >
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table -->
+              </div>
+              <div
+                class="tab-pane fade"
+                id="cancelled-tab-pane"
+                role="tabpanel"
+                aria-labelledby="cancelled-tab"
+                tabindex="0"
+              >
+                <!-- table -->
+                <div class="overflow-x-auto">
+                  <table class="table table-stripped d-table mb-0 mt-4">
+                    <thead>
+                      <tr>
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Batch #</span
+                            >
+                            <button class="btn p-0">
+                              <svg
+                                width="13"
+                                height="12"
+                                viewBox="0 0 13 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                  fill="#737373"
+                                />
+                                <path
+                                  d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                  fill="#737373"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </th>
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Ship Date</span
+                            >
+                            <button class="btn p-0">
+                              <svg
+                                width="13"
+                                height="12"
+                                viewBox="0 0 13 12"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                  fill="#737373"
+                                />
+                                <path
+                                  d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                  fill="#737373"
+                                />
+                              </svg>
+                            </button>
+                          </div>
+                        </th>
+
+                        <th class="bg-grey border">
+                          <div
+                            class="d-flex justify-content-center align-items-center gap-2"
+                          >
+                            <span class="text-muted fs-14 fw-semibold"
+                              >Action</span
+                            >
+                          </div>
+                        </th>
+                      </tr>
+                    </thead>
+
+                    <tbody>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td class="bg-white py-20 border">S1202</td>
+                        <td class="bg-white py-20 border-top border">
+                          <span class="text-3c fs-14 fw-semibold"
+                            >2023-12-04</span
+                          >
+                        </td>
+
+                        <td
+                          class="bg-white py-20 border-top border text-center"
+                        >
+                          <div class="dropdown w-md-100">
+                            <button
+                              class="btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                              type="button"
+                              data-bs-toggle="dropdown"
+                              aria-expanded="false"
+                            >
+                              <span class="text-dark">
+                                <i class="fa fa-bars"></i>
+                              </span>
+                            </button>
+                            <ul class="dropdown-menu shadow border-0">
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Shipping Labels</a
+                                >
+                              </li>
+                              <li class="has-child fs-14 position-relative">
+                                <a
+                                  class="d-block py-1 mob-colored dropdown-item"
+                                  >Print Packing Slip</a
+                                >
+                              </li>
+                            </ul>
+                          </div>
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+                <!-- table -->
+              </div>
+              <div
+                class="tab-pane fade"
+                id="history-tab-pane"
+                role="tabpanel"
+                aria-labelledby="history-tab"
                 tabindex="0"
               >
                 <!-- table -->
@@ -8656,24 +10708,32 @@
       const urlArray = url.split("/");
       const id = urlArray[urlArray.length - 1];
 
-      const awaitingTab = document.getElementById("awaiting-tab");
-      const completedTab = document.getElementById("completed-tab");
-      // tab-panes
-      const awaitingTabPane = document.getElementById("awaiting-tab-pane");
-      const completedTabPane = document.getElementById("completed-tab-pane");
+      const newOrderTab = document.getElementById("new-tab");
+      const pendingTab = document.getElementById("pending-tab");
+      const backOrderedTab = document.getElementById("backordered-tab");
+      const cancelledTab = document.getElementById("cancelled-tab");
+      const historyTab = document.getElementById("history-tab");
 
-      if (id === "#completed") {
-        completedTab.classList.add("active");
-        awaitingTab.classList.remove("active");
-        completedTabPane.classList.add("active");
-        completedTabPane.classList.add("show");
-        awaitingTabPane.classList.remove("active");
-      } else {
-        awaitingTab.classList.add("active");
-        completedTab.classList.remove("active");
-        completedTabPane.classList.remove("active");
-        awaitingTabPane.classList.add("active");
-        awaitingTabPane.classList.add("show");
+    //   tab-panes
+        const newTabPane = document.getElementById("new-tab-pane");
+        const pendingTabPane = document.getElementById("pending-tab-pane");
+        const backOrderedTabPane = document.getElementById("backordered-tab-pane");
+        const cancelledTabPane = document.getElementById("cancelled-tab-pane");
+        const historyTabPane = document.getElementById("history-tab-pane");
+
+      if (id === "#history") {
+        historyTab.classList.add("active");
+        newOrderTab.classList.remove("active");
+        pendingTab.classList.remove("active");
+        backOrderedTab.classList.remove("active");
+        cancelledTab.classList.remove("active");
+
+        historyTabPane.classList.add("active");
+        historyTabPane.classList.add("show");
+        newTabPane.classList.remove("active");
+        pendingTabPane.classList.remove("active");
+        backOrderedTabPane.classList.remove("active");
+        cancelledTabPane.classList.remove("active");
       }
     </script>
   </body>
