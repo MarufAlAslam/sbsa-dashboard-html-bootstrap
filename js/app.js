@@ -87,18 +87,7 @@ $(".tab-item").click(function () {
 $(".acc-header").click(function () {
   $(".body1, .body2, .body3, .body4").toggleClass("active");
 });
-// $(".header1").click(function () {
-//   $(".body1").toggleClass("active");
-// });
-// $(".header2").click(function () {
-//   $(".body2").toggleClass("active");
-// });
-// $(".header3").click(function () {
-//   $(".body3").toggleClass("active");
-// });
-// $(".header4").click(function () {
-//   $(".body4").toggleClass("active");
-// });
+
 
 $(".edit1, .save1").click(function () {
   $(".edit-on, .edit-off").toggleClass("active");
@@ -162,8 +151,6 @@ for (i = 0; i < l; i++) {
   });
 }
 function closeAllSelect(elmnt) {
-  /*a function that will close all select boxes in the document,
-  except the current select box:*/
   var x,
     y,
     i,
@@ -187,8 +174,7 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-/*if the user clicks anywhere outside the select box,
-then close all select boxes:*/
+
 document.addEventListener("click", closeAllSelect);
 
 $('input[name="dates"]').daterangepicker({
@@ -208,51 +194,13 @@ $('input[name="dates"]').daterangepicker({
   alwaysShowCalendars: true,
 });
 
-// make overflow-x-auto draggable to scroll
-// const slider = document.querySelector(".overflow-x-auto");
-// let isDown = false;
-// let startX;
-// let scrollLeft;
 
-// slider.addEventListener("mousedown", (e) => {
-//   isDown = true;
-//   slider.classList.add("active");
-//   slider.style.cursor = "grabbing";
-//   startX = e.pageX - slider.offsetLeft;
-//   scrollLeft = slider.scrollLeft;
-// });
-// slider.addEventListener("mouseleave", () => {
-//   isDown = false;
-//   slider.style.cursor = "pointer";
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mouseup", () => {
-//   isDown = false;
-//   slider.style.cursor = "pointer";
-//   slider.classList.remove("active");
-// });
-// slider.addEventListener("mousemove", (e) => {
-//   if (!isDown) return;
-//   e.preventDefault();
-//   const x = e.pageX - slider.offsetLeft;
-//   const walk = (x - startX) * 3; //scroll-fast
-//   slider.scrollLeft = scrollLeft - walk;
-//   console.log(walk);
-// });
 
 const addLineBtn = document.getElementById("add-line-btn");
 const addLineBtn1 = document.getElementById("add-line-btn-1");
 const adaptiveRow = document.getElementById("adaptive-row");
 const adaptiveRow1 = document.getElementById("adaptive-row-1");
-// const getTotalForLine = (line) => {
-//   const quantity = document.getElementById(`quantity${line}`);
-//   const price = document.getElementById(`price${line}`);
-//   const total = document.getElementById(`total${line}`);
 
-//   total.value = quantity.value * price.value;
-
-//   console.log(quantity.value);
-// };
 let line = 1;
 addLineBtn.addEventListener("click", () => {
   const tr = document.createElement("tr");
