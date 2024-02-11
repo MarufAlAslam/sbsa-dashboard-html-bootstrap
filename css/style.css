@@ -1362,6 +1362,10 @@ button.nav-link {
   display: block;
 }
 
+.store-selector .select-items div {
+  color: black !important;
+}
+
 
 @media screen and (min-width: 1400px) {
   #radarChart .apexcharts-canvas {
