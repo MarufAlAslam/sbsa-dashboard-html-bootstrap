@@ -1054,7 +1054,10 @@
                     class="btn p-0 store-bg filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
                     <!-- <img src="../../img/store.svg" class="img-fluid" alt="" /> -->
-                    <div class="custom-select p-2 store-selector" style="width: 140px">
+                    <div
+                      class="custom-select p-2 store-selector"
+                      style="width: 140px"
+                    >
                       <select>
                         <option value="0">All Stores</option>
                         <option value="All Stores">All Stores</option>
@@ -1086,6 +1089,28 @@
               </div>
             </div>
             <!-- table filters -->
+
+            <!-- secondary tabs -->
+            <div class="secondary-tabs mt-4">
+              <div class="d-flex justify-content-start align-items-center">
+                <button class="btn secondary-tab-btn active" id="new-order-btn">
+                  New Order
+                </button>
+                <button class="btn secondary-tab-btn" id="pending-btn">
+                  3PL Fulfillments
+                </button>
+                <button class="btn secondary-tab-btn" id="back-btn">
+                  Back Orders
+                </button>
+                <button class="btn secondary-tab-btn" id="cancelled-btn">
+                  Cancelled Orders
+                </button>
+                <button class="btn secondary-tab-btn" id="history-btn">
+                  History
+                </button>
+              </div>
+            </div>
+            <!-- secondary tabs -->
 
             <!-- new orders -->
             <div class="order-table new-orders active" id="new-orders">
@@ -17579,91 +17604,6 @@
     <!-- app js -->
     <script src="../../js/app.js"></script>
 
-    <script>
-      // get the id(#) from url
-      const url = window.location.href;
-      const urlArray = url.split("/");
-      const id = urlArray[urlArray.length - 1];
-      const orderTable = document.getElementsByClassName("order-table");
-
-      const removeActiveClassesFromTabs = () => {
-        orderTable.forEach((table) => {
-          table.classList.remove("active");
-        });
-      };
-
-      const newOrders = document.getElementById("new-orders");
-      const pendingOrders = document.getElementById("pending-orders");
-      const backOrders = document.getElementById("back-orders");
-      const cancelledOrders = document.getElementById("cancelled-orders");
-      const histories = document.getElementById("histories");
-
-      const newTab = document.getElementById("new-tab");
-      const pendingTab = document.getElementById("pending-tab");
-      const backorderedTab = document.getElementById("backordered-tab");
-      const cancelledTab = document.getElementById("cancelled-tab");
-      const historyTab = document.getElementById("history-tab");
-
-      console.log(historyTab);
-
-      const tabItems = document.getElementsByClassName("tab-item");
-
-      if (id === "#history") {
-        // removeActiveTabClass();
-        histories.classList.add("active");
-        newOrders.classList.remove("active");
-        pendingOrders.classList.remove("active");
-        backOrders.classList.remove("active");
-        cancelledOrders.classList.remove("active");
-
-        newTab.classList.remove("active");
-        pendingTab.classList.remove("active");
-        backorderedTab.classList.remove("active");
-        cancelledTab.classList.remove("active");
-        historyTab.classList.add("active");
-      }
-
-      // display different tabs by clicking on different btns
-      newTab.addEventListener("click", () => {
-        histories.classList.remove("active");
-        newOrders.classList.add("active");
-        pendingOrders.classList.remove("active");
-        backOrders.classList.remove("active");
-        cancelledOrders.classList.remove("active");
-      });
-
-      // display different tabs by clicking on different btns
-      pendingTab.addEventListener("click", () => {
-        histories.classList.remove("active");
-        newOrders.classList.remove("active");
-        pendingOrders.classList.add("active");
-        backOrders.classList.remove("active");
-        cancelledOrders.classList.remove("active");
-      });
-      // display different tabs by clicking on different btns
-      backorderedTab.addEventListener("click", () => {
-        histories.classList.remove("active");
-        newOrders.classList.remove("active");
-        pendingOrders.classList.remove("active");
-        backOrders.classList.add("active");
-        cancelledOrders.classList.remove("active");
-      });
-      // display different tabs by clicking on different btns
-      cancelledTab.addEventListener("click", () => {
-        histories.classList.remove("active");
-        newOrders.classList.remove("active");
-        pendingOrders.classList.remove("active");
-        backOrders.classList.remove("active");
-        cancelledOrders.classList.add("active");
-      });
-      // display different tabs by clicking on different btns
-      historyTab.addEventListener("click", () => {
-        histories.classList.add("active");
-        newOrders.classList.remove("active");
-        pendingOrders.classList.remove("active");
-        backOrders.classList.remove("active");
-        cancelledOrders.classList.remove("active");
-      });
-    </script>
+    <script src="../../js/sales-orders.js"></script>
   </body>
 </html>

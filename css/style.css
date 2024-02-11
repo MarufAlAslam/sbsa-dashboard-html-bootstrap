@@ -1365,6 +1365,22 @@ button.nav-link {
 .store-selector .select-items div {
   color: black !important;
 }
+.secondary-tabs{
+  border-bottom: 1px solid #119d16 !important;
+}
+.secondary-tab-btn{
+  background-color: transparent;
+  border: unset;
+  border-radius: 10px 10px 0 0;
+  color: #119d16 !important;
+}
+
+.secondary-tab-btn.active {
+  background: rgba(52, 199, 89, .1) !important;
+  border-bottom: 1px solid #119d16 !important;
+  color: #119d16 !important;
+  font-weight: 600;
+}
 
 
 @media screen and (min-width: 1400px) {
