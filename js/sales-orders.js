@@ -3,7 +3,6 @@ const url = window.location.href;
 const urlArray = url.split("/");
 const id = urlArray[urlArray.length - 1];
 const orderTable = document.getElementsByClassName("order-table");
-
 const removeActiveClassesFromTabs = () => {
   orderTable.forEach((table) => {
     table.classList.remove("active");
@@ -30,7 +29,83 @@ const historyBtn = document.getElementById("history-btn");
 
 const tabItems = document.getElementsByClassName("tab-item");
 
-if (id === "#history") {
+if (id === "#new") {
+  // removeActiveTabClass();
+  histories.classList.remove("active");
+  newOrders.classList.add("active");
+  pendingOrders.classList.remove("active");
+  backOrders.classList.remove("active");
+  cancelledOrders.classList.remove("active");
+
+  newTab.classList.add("active");
+  pendingTab.classList.remove("active");
+  backorderedTab.classList.remove("active");
+  cancelledTab.classList.remove("active");
+  historyTab.classList.remove("active");
+
+  newBtn.classList.add("active");
+  pendingBtn.classList.remove("active");
+  backBtn.classList.remove("active");
+  canelledBtn.classList.remove("active");
+  historyBtn.classList.newBtn("active");
+} else if (id === "#pending") {
+  // removeActiveTabClass();
+  histories.classList.remove("active");
+  newOrders.classList.remove("active");
+  pendingOrders.classList.add("active");
+  backOrders.classList.remove("active");
+  cancelledOrders.classList.remove("active");
+
+  newTab.classList.remove("active");
+  pendingTab.classList.add("active");
+  backorderedTab.classList.remove("active");
+  cancelledTab.classList.remove("active");
+  historyTab.classList.remove("active");
+
+  newBtn.classList.remove("active");
+  pendingBtn.classList.add("active");
+  backBtn.classList.remove("active");
+  canelledBtn.classList.remove("active");
+  historyBtn.classList.newBtn("active");
+} else if (id === "#back") {
+  // removeActiveTabClass();
+  histories.classList.remove("active");
+  newOrders.classList.remove("active");
+  pendingOrders.classList.remove("active");
+  backOrders.classList.add("active");
+  cancelledOrders.classList.remove("active");
+
+  newTab.classList.remove("active");
+  pendingTab.classList.remove("active");
+  backorderedTab.classList.add("active");
+  cancelledTab.classList.remove("active");
+  historyTab.classList.remove("active");
+
+  newBtn.classList.remove("active");
+  pendingBtn.classList.remove("active");
+  backBtn.classList.add("active");
+  canelledBtn.classList.remove("active");
+  historyBtn.classList.newBtn("active");
+} else if (id === "#cancelled") {
+  // removeActiveTabClass();
+  histories.classList.remove("active");
+  newOrders.classList.remove("active");
+  pendingOrders.classList.remove("active");
+  backOrders.classList.remove("active");
+  cancelledOrders.classList.add("active");
+
+  newTab.classList.remove("active");
+  pendingTab.classList.remove("active");
+  backorderedTab.classList.remove("active");
+  cancelledTab.classList.add("active");
+  historyTab.classList.remove("active");
+
+  newBtn.classList.remove("active");
+  pendingBtn.classList.remove("active");
+  backBtn.classList.remove("active");
+  canelledBtn.classList.add("active");
+  historyBtn.classList.newBtn("active");
+} else if (id === "#history") {
   // removeActiveTabClass();
   histories.classList.add("active");
   newOrders.classList.remove("active");
