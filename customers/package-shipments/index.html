@@ -4157,39 +4157,6 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-steps px-5 py-4">
-            <div
-              class="steps d-flex justify-content-center align-items-center gap-3"
-            >
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">1</div>
-                <span>Prepare</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">2</div>
-                <span>Verify</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">3</div>
-                <span>Process</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">4</div>
-                <span>Complete</span>
-              </div>
-            </div>
-          </div>
           <div class="modal-body lh-02">
             <div class="text-end mb-3"></div>
             <div class="d-flex justify-content-between align-items-start">
@@ -4269,6 +4236,40 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
+              </div>
+            </div>
+
+            <div class="modal-steps px-5 py-4">
+              <div
+                class="steps d-flex justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">1</div>
+                  <span>Prepare</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">2</div>
+                  <span>Verify</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">3</div>
+                  <span>Process</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">4</div>
+                  <span>Complete</span>
+                </div>
               </div>
             </div>
 
@@ -5133,43 +5134,45 @@
                           </tbody>
                         </table>
 
-                        <div class="text-end my-4 d-flex justify-content-end align-items-center">
-                          <button
-                          class="btn mobile-hide btn-golden text-sm d-flex gap-6px justify-content-center align-items-center"
-                          data-bs-toggle="modal"
-                          data-bs-target="#consolidateModal"
-                          data-bs-dismiss="modal"
-                          id="consolidatebtn"
+                        <div
+                          class="text-end my-4 d-flex justify-content-end align-items-center"
                         >
-                          <svg
-                            width="21"
-                            height="20"
-                            viewBox="0 0 21 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
+                          <button
+                            class="btn mobile-hide btn-golden text-sm d-flex gap-6px justify-content-center align-items-center"
+                            data-bs-toggle="modal"
+                            data-bs-target="#consolidateModal"
+                            data-bs-dismiss="modal"
+                            id="consolidatebtn"
                           >
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M9.66602 2.63266C9.10792 2.63266 8.56993 2.86689 7.03473 3.59418L4.66125 4.71858C3.98567 5.03863 3.56243 5.24139 3.29714 5.41675C3.56243 5.59211 3.98567 5.79487 4.66125 6.11491L5.55653 6.53904L11.9283 3.41997C10.6709 2.82893 10.1769 2.63266 9.66602 2.63266ZM13.7755 4.29446L7.40369 7.41353C8.66114 8.00457 9.15516 8.20084 9.66602 8.20084C10.2241 8.20084 10.7621 7.9666 12.2973 7.23932L14.6708 6.11491C15.3464 5.79487 15.7696 5.59211 16.0349 5.41675C15.7696 5.24139 15.3464 5.03863 14.6708 4.71858L13.7755 4.29446ZM6.49175 2.08397C7.79561 1.4655 8.68896 1.04175 9.66602 1.04175C10.6431 1.04175 11.5364 1.4655 12.8403 2.08397C12.8945 2.10969 12.9494 2.13574 13.0051 2.16212L15.4337 3.31262C16.0377 3.59868 16.5702 3.8509 16.9448 4.09866C17.32 4.34672 17.791 4.75358 17.791 5.41675C17.791 6.07992 17.32 6.48678 16.9448 6.73484C16.5702 6.9826 16.0377 7.23482 15.4337 7.52088L13.0051 8.67138C12.9494 8.69776 12.8945 8.72381 12.8403 8.74953C11.5364 9.368 10.6431 9.79175 9.66602 9.79175C8.68897 9.79175 7.79561 9.368 6.49176 8.74953C6.43753 8.72381 6.3826 8.69776 6.32692 8.67138L3.95344 7.54697C3.93501 7.53824 3.91664 7.52954 3.89833 7.52087C3.29437 7.23481 2.76185 6.98259 2.38719 6.73484C2.01208 6.48678 1.54102 6.07992 1.54102 5.41675C1.54102 4.75358 2.01208 4.34672 2.38719 4.09866C2.76185 3.8509 3.29437 3.59868 3.89833 3.31262C3.91664 3.30395 3.93501 3.29525 3.95344 3.28652L6.32692 2.16212C6.3826 2.13574 6.43753 2.10969 6.49175 2.08397Z"
-                              fill="white"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M10.291 15.0018C10.291 12.1254 12.6229 9.79351 15.4993 9.79351C16.038 9.79351 16.5576 9.87528 17.0463 10.0271C17.4071 10.1392 17.5875 10.1952 17.6893 10.1203C17.791 10.0453 17.791 9.87059 17.791 9.52111V5.41854C17.791 5.39413 17.7896 5.37005 17.7869 5.34637C17.7738 5.23205 17.7672 5.17489 17.6539 5.11269C17.5406 5.05049 17.4581 5.09058 17.2929 5.17076L14.8899 6.33748L12.4555 7.51543C10.899 8.26862 10.2973 8.54354 9.66602 8.54354C9.03469 8.54354 8.43305 8.26862 6.87651 7.51543L4.44218 6.33748L2.03911 5.17076C1.87397 5.09058 1.7914 5.05049 1.67812 5.11269C1.56485 5.17489 1.55828 5.23205 1.54514 5.34637C1.54241 5.37005 1.54102 5.39413 1.54102 5.41854L1.54102 14.3029C1.54102 15.2366 2.22214 15.8576 3.06046 16.3606C3.90911 16.8699 5.33354 17.4716 6.91112 18.138C8.09366 18.6379 8.85598 18.9602 9.66602 18.9602C10.0847 18.9602 10.4906 18.8741 10.9483 18.7219C11.2417 18.6244 11.3884 18.5756 11.4284 18.4581C11.4684 18.3406 11.3718 18.1974 11.1786 17.911C10.6182 17.0803 10.291 16.0793 10.291 15.0018ZM4.94566 9.44217C4.63692 9.2878 4.2615 9.41294 4.10714 9.72168C3.95277 10.0304 4.07791 10.4058 4.38664 10.5602L6.05331 11.3935C6.36205 11.5479 6.73747 11.4228 6.89184 11.114C7.0462 10.8053 6.92106 10.4299 6.61233 10.2755L4.94566 9.44217Z"
-                              fill="white"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M15.4993 11.0416C13.3132 11.0416 11.541 12.8138 11.541 14.9999C11.541 17.186 13.3132 18.9583 15.4993 18.9583C17.6855 18.9583 19.4577 17.186 19.4577 14.9999C19.4577 12.8138 17.6855 11.0416 15.4993 11.0416ZM16.8433 14.8341C17.1687 14.5087 17.1687 13.981 16.8433 13.6556C16.5179 13.3302 15.9902 13.3302 15.6648 13.6556L14.9101 14.4103C14.5847 14.7357 14.5847 15.2634 14.9101 15.5888C15.2355 15.9143 15.7632 15.9143 16.0886 15.5888L16.8433 14.8341Z"
-                              fill="white"
-                            />
-                          </svg>
-        
-                          <span>Consolidate Package</span>
-                        </button>
+                            <svg
+                              width="21"
+                              height="20"
+                              viewBox="0 0 21 20"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M9.66602 2.63266C9.10792 2.63266 8.56993 2.86689 7.03473 3.59418L4.66125 4.71858C3.98567 5.03863 3.56243 5.24139 3.29714 5.41675C3.56243 5.59211 3.98567 5.79487 4.66125 6.11491L5.55653 6.53904L11.9283 3.41997C10.6709 2.82893 10.1769 2.63266 9.66602 2.63266ZM13.7755 4.29446L7.40369 7.41353C8.66114 8.00457 9.15516 8.20084 9.66602 8.20084C10.2241 8.20084 10.7621 7.9666 12.2973 7.23932L14.6708 6.11491C15.3464 5.79487 15.7696 5.59211 16.0349 5.41675C15.7696 5.24139 15.3464 5.03863 14.6708 4.71858L13.7755 4.29446ZM6.49175 2.08397C7.79561 1.4655 8.68896 1.04175 9.66602 1.04175C10.6431 1.04175 11.5364 1.4655 12.8403 2.08397C12.8945 2.10969 12.9494 2.13574 13.0051 2.16212L15.4337 3.31262C16.0377 3.59868 16.5702 3.8509 16.9448 4.09866C17.32 4.34672 17.791 4.75358 17.791 5.41675C17.791 6.07992 17.32 6.48678 16.9448 6.73484C16.5702 6.9826 16.0377 7.23482 15.4337 7.52088L13.0051 8.67138C12.9494 8.69776 12.8945 8.72381 12.8403 8.74953C11.5364 9.368 10.6431 9.79175 9.66602 9.79175C8.68897 9.79175 7.79561 9.368 6.49176 8.74953C6.43753 8.72381 6.3826 8.69776 6.32692 8.67138L3.95344 7.54697C3.93501 7.53824 3.91664 7.52954 3.89833 7.52087C3.29437 7.23481 2.76185 6.98259 2.38719 6.73484C2.01208 6.48678 1.54102 6.07992 1.54102 5.41675C1.54102 4.75358 2.01208 4.34672 2.38719 4.09866C2.76185 3.8509 3.29437 3.59868 3.89833 3.31262C3.91664 3.30395 3.93501 3.29525 3.95344 3.28652L6.32692 2.16212C6.3826 2.13574 6.43753 2.10969 6.49175 2.08397Z"
+                                fill="white"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M10.291 15.0018C10.291 12.1254 12.6229 9.79351 15.4993 9.79351C16.038 9.79351 16.5576 9.87528 17.0463 10.0271C17.4071 10.1392 17.5875 10.1952 17.6893 10.1203C17.791 10.0453 17.791 9.87059 17.791 9.52111V5.41854C17.791 5.39413 17.7896 5.37005 17.7869 5.34637C17.7738 5.23205 17.7672 5.17489 17.6539 5.11269C17.5406 5.05049 17.4581 5.09058 17.2929 5.17076L14.8899 6.33748L12.4555 7.51543C10.899 8.26862 10.2973 8.54354 9.66602 8.54354C9.03469 8.54354 8.43305 8.26862 6.87651 7.51543L4.44218 6.33748L2.03911 5.17076C1.87397 5.09058 1.7914 5.05049 1.67812 5.11269C1.56485 5.17489 1.55828 5.23205 1.54514 5.34637C1.54241 5.37005 1.54102 5.39413 1.54102 5.41854L1.54102 14.3029C1.54102 15.2366 2.22214 15.8576 3.06046 16.3606C3.90911 16.8699 5.33354 17.4716 6.91112 18.138C8.09366 18.6379 8.85598 18.9602 9.66602 18.9602C10.0847 18.9602 10.4906 18.8741 10.9483 18.7219C11.2417 18.6244 11.3884 18.5756 11.4284 18.4581C11.4684 18.3406 11.3718 18.1974 11.1786 17.911C10.6182 17.0803 10.291 16.0793 10.291 15.0018ZM4.94566 9.44217C4.63692 9.2878 4.2615 9.41294 4.10714 9.72168C3.95277 10.0304 4.07791 10.4058 4.38664 10.5602L6.05331 11.3935C6.36205 11.5479 6.73747 11.4228 6.89184 11.114C7.0462 10.8053 6.92106 10.4299 6.61233 10.2755L4.94566 9.44217Z"
+                                fill="white"
+                              />
+                              <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M15.4993 11.0416C13.3132 11.0416 11.541 12.8138 11.541 14.9999C11.541 17.186 13.3132 18.9583 15.4993 18.9583C17.6855 18.9583 19.4577 17.186 19.4577 14.9999C19.4577 12.8138 17.6855 11.0416 15.4993 11.0416ZM16.8433 14.8341C17.1687 14.5087 17.1687 13.981 16.8433 13.6556C16.5179 13.3302 15.9902 13.3302 15.6648 13.6556L14.9101 14.4103C14.5847 14.7357 14.5847 15.2634 14.9101 15.5888C15.2355 15.9143 15.7632 15.9143 16.0886 15.5888L16.8433 14.8341Z"
+                                fill="white"
+                              />
+                            </svg>
+
+                            <span>Consolidate Package</span>
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -5852,39 +5855,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-steps px-5 py-4">
-            <div
-              class="steps d-flex justify-content-center align-items-center gap-3"
-            >
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">1</div>
-                <span>Prepare</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">2</div>
-                <span>Verify</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">3</div>
-                <span>Process</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">4</div>
-                <span>Complete</span>
-              </div>
-            </div>
-          </div>
+          
           <div class="modal-body lh-02">
             <div class="text-end mb-3"></div>
             <div class="d-flex justify-content-between align-items-start">
@@ -5963,6 +5934,40 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
+              </div>
+            </div>
+
+            <div class="modal-steps px-5 py-4">
+              <div
+                class="steps d-flex justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">1</div>
+                  <span>Prepare</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">2</div>
+                  <span>Verify</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">3</div>
+                  <span>Process</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">4</div>
+                  <span>Complete</span>
+                </div>
               </div>
             </div>
 
@@ -7501,39 +7506,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-steps px-5 py-4">
-            <div
-              class="steps d-flex justify-content-center align-items-center gap-3"
-            >
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">1</div>
-                <span>Prepare</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">2</div>
-                <span>Verify</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">3</div>
-                <span>Process</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">4</div>
-                <span>Complete</span>
-              </div>
-            </div>
-          </div>
+          
           <div class="modal-body lh-02">
             <div class="text-end mb-3"></div>
             <div class="d-flex justify-content-between align-items-start">
@@ -7620,6 +7593,40 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
+              </div>
+            </div>
+
+            <div class="modal-steps px-5 py-4">
+              <div
+                class="steps d-flex justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">1</div>
+                  <span>Prepare</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">2</div>
+                  <span>Verify</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">3</div>
+                  <span>Process</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">4</div>
+                  <span>Complete</span>
+                </div>
               </div>
             </div>
 
@@ -8203,39 +8210,7 @@
     >
       <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
         <div class="modal-content">
-          <div class="modal-steps px-5 py-4">
-            <div
-              class="steps d-flex justify-content-center align-items-center gap-3"
-            >
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">1</div>
-                <span>Prepare</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">2</div>
-                <span>Verify</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step active d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">3</div>
-                <span>Process</span>
-              </div>
-              <div class="step-line"></div>
-              <div
-                class="step d-flex gap-2 justify-content-center align-items-center"
-              >
-                <div class="step-number">4</div>
-                <span>Complete</span>
-              </div>
-            </div>
-          </div>
+          
           <div class="modal-body lh-02">
             <div class="text-end mb-3"></div>
             <div class="d-flex justify-content-between align-items-start">
@@ -8284,6 +8259,40 @@
                   data-bs-dismiss="modal"
                   aria-label="Close"
                 ></button>
+              </div>
+            </div>
+
+            <div class="modal-steps px-5 py-4">
+              <div
+                class="steps d-flex justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">1</div>
+                  <span>Prepare</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">2</div>
+                  <span>Verify</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">3</div>
+                  <span>Process</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">4</div>
+                  <span>Complete</span>
+                </div>
               </div>
             </div>
 
