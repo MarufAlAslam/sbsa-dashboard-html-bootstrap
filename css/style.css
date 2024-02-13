@@ -521,9 +521,10 @@ button.applyBtn.btn.btn-sm.btn-primary {
 
 .drops {
   bottom: -90px;
-  min-width: 200px;
+  min-width: 280px;
   display: none;
   z-index: 1000;
+  min-height: 150px;
 }
 
 .icon-holder:hover .drops {
