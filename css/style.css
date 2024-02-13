@@ -1384,13 +1384,13 @@ button.nav-link {
   font-weight: 600;
 }
 
-#consolidatebtn {
+/* #consolidatebtn {
   display: none !important;
 }
 
 #consolidatebtn.active {
   display: block !important;
-}
+} */
 
 
 .switch input {
