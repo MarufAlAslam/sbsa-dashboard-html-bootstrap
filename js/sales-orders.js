@@ -331,3 +331,18 @@ historyBtn.addEventListener("click", () => {
   canelledBtn.classList.remove("active");
   historyBtn.classList.add("active");
 });
+
+const modeSwitch = document.getElementById("mode");
+const wareHouseSelector = document.getElementById("warehouse-selector");
+const vendorSelector = document.getElementById("vendor-selector");
+
+modeSwitch.addEventListener("change", () => {
+  // check if the switch is on
+  if (modeSwitch.checked) {
+    wareHouseSelector.classList.remove("active");
+    vendorSelector.classList.add("active");
+  } else {
+    wareHouseSelector.classList.add("active");
+    vendorSelector.classList.remove("active");
+  }
+});
