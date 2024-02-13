@@ -47,7 +47,7 @@ if (id === "#new") {
   pendingBtn.classList.remove("active");
   backBtn.classList.remove("active");
   canelledBtn.classList.remove("active");
-  historyBtn.classList.newBtn("active");
+  historyBtn.classList.remove("active");
 } else if (id === "#pending") {
   // removeActiveTabClass();
   histories.classList.remove("active");
@@ -66,7 +66,7 @@ if (id === "#new") {
   pendingBtn.classList.add("active");
   backBtn.classList.remove("active");
   canelledBtn.classList.remove("active");
-  historyBtn.classList.newBtn("active");
+  historyBtn.classList.remove("active");
 } else if (id === "#back") {
   // removeActiveTabClass();
   histories.classList.remove("active");
@@ -85,7 +85,7 @@ if (id === "#new") {
   pendingBtn.classList.remove("active");
   backBtn.classList.add("active");
   canelledBtn.classList.remove("active");
-  historyBtn.classList.newBtn("active");
+  historyBtn.classList.remove("active");
 } else if (id === "#cancelled") {
   // removeActiveTabClass();
   histories.classList.remove("active");
@@ -104,7 +104,7 @@ if (id === "#new") {
   pendingBtn.classList.remove("active");
   backBtn.classList.remove("active");
   canelledBtn.classList.add("active");
-  historyBtn.classList.newBtn("active");
+  historyBtn.classList.remove("active");
 } else if (id === "#history") {
   // removeActiveTabClass();
   histories.classList.add("active");
@@ -128,6 +128,7 @@ if (id === "#new") {
 
 // display different tabs by clicking on different btns
 newTab.addEventListener("click", () => {
+  console.log("clicked");
   histories.classList.remove("active");
   newOrders.classList.add("active");
   pendingOrders.classList.remove("active");
