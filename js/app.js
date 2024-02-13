@@ -88,7 +88,6 @@ $(".acc-header").click(function () {
   $(".body1, .body2, .body3, .body4").toggleClass("active");
 });
 
-
 $(".edit1, .save1").click(function () {
   $(".edit-on, .edit-off").toggleClass("active");
 });
@@ -194,7 +193,17 @@ $('input[name="dates"]').daterangepicker({
   alwaysShowCalendars: true,
 });
 
+const termsBtns = document.querySelectorAll(".terms-btn");
 
+termsBtns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    // remove all active classes
+    termsBtns.forEach((btn) => {
+      btn.classList.remove("active");
+    });
+    btn.classList.toggle("active");
+  });
+});
 
 const addLineBtn = document.getElementById("add-line-btn");
 const addLineBtn1 = document.getElementById("add-line-btn-1");

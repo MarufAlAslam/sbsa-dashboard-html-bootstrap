@@ -1463,6 +1463,21 @@ input:checked+.slider:before {
   display: flex !important;
 }
 
+.btn-green-50 {
+  background: rgba(52, 199, 89, .1) !important;
+  border-bottom: 1px solid transparent !important;
+  border-radius: 0;
+  color: #119d16 !important;
+  font-weight: 600;
+}
+
+.btn-green-50.active{
+  background: #119d16  !important;
+  border-bottom: 1px solid #119d16 !important;
+  color: white !important;
+}
+
+
 
 @media screen and (min-width: 1400px) {
   #radarChart .apexcharts-canvas {
