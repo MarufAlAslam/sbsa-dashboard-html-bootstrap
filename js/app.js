@@ -255,6 +255,11 @@ addLineBtn.addEventListener("click", () => {
                                 id="total1"
                               />
                             </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <button class="btn text-danger">
+                                <i class="fa fa-trash"></i>
+                              </button>
+                            </td>
   `;
 
   adaptiveRow.appendChild(tr);

@@ -1034,7 +1034,10 @@
                     class="btn p-0 bg-order filter-btn justify-content-center align-items-center gap-2 fs-14"
                   >
                     <!-- <img src="../../img/order.svg" class="img-fluid" alt="" /> -->
-                    <div class="custom-select p-2 store-selector" style="width: 220px">
+                    <div
+                      class="custom-select p-2 store-selector"
+                      style="width: 220px"
+                    >
                       <select>
                         <option value="0">All Orders</option>
                         <option value="All Orders">All Orders</option>
@@ -16413,13 +16416,30 @@
                               name=""
                               id=""
                             /> -->
-                            <div class="d-flex justify-content-start align-items-center gap-3 mb-4">
-                              <label style="cursor: pointer;" for="mode" class="fw-bold fs-14">Own Warehouse</label>
-                              <label style="cursor: pointer;" class="switch">
-                                <input name="mode" id="mode" type="checkbox" checked>
+                            <div
+                              class="d-flex justify-content-start align-items-center gap-3 mb-4"
+                            >
+                              <label
+                                style="cursor: pointer"
+                                for="mode"
+                                class="fw-bold fs-14"
+                                >Own Warehouse</label
+                              >
+                              <label style="cursor: pointer" class="switch">
+                                <input
+                                  name="mode"
+                                  id="mode"
+                                  type="checkbox"
+                                  checked
+                                />
                                 <span class="slider round"></span>
                               </label>
-                              <label style="cursor: pointer;" for="mode" class="fw-bold fs-14">Dropship</label>
+                              <label
+                                style="cursor: pointer"
+                                for="mode"
+                                class="fw-bold fs-14"
+                                >Dropship</label
+                              >
                             </div>
                             <div
                               class="custom-select select-full p-2 d-flex justify-content-between border block mx-auto w-100"
@@ -16675,6 +16695,7 @@
                             </svg>
                           </th>
                           <th class="fs-14 border text-73">Sub Total</th>
+                          <th class="fs-14 border text-73">Action</th>
                         </thead>
 
                         <tbody id="adaptive-row">
@@ -16726,6 +16747,11 @@
                                 name=""
                                 id="total1"
                               />
+                            </td>
+                            <td class="text-black border fs-14 fw-semibold">
+                              <button class="btn text-danger">
+                                <i class="fa fa-trash"></i>
+                              </button>
                             </td>
                           </tr>
                         </tbody>
