@@ -1503,6 +1503,10 @@ input:checked+.slider:before {
   color: white !important;
 }
 
+.bg-gold-transparent {
+  background: rgba(171, 134, 80, 0.1);
+}
+
 
 
 @media screen and (min-width: 1400px) {
