@@ -520,7 +520,7 @@ button.applyBtn.btn.btn-sm.btn-primary {
 }
 
 .drops {
-  bottom: -90px;
+  bottom: -120px;
   min-width: 280px;
   display: none;
   z-index: 1000;
@@ -533,6 +533,20 @@ button.applyBtn.btn.btn-sm.btn-primary {
 
 .icon-holder:hover .drops {
   display: block;
+}
+
+.btn-golden.save-btn {
+  background: rgba(52, 199, 89, .3) !important;
+  border-bottom: unset !important;
+  color: #119d16 !important;
+  font-weight: 600;
+}
+
+.btn-danger.delete-btn {
+  background: rgba(255, 59, 48, .3) !important;
+  border: unset !important;
+  color: #ff3b30 !important;
+  font-weight: 600;
 }
 
 /* fixes */
@@ -801,10 +815,17 @@ span.new-badge.text-white.fw-bold {
   position: relative;
   top: -30px;
   right: -5px;
+  background-color: white;
+  z-index: 100;
 }
 
 .acc-header {
   cursor: pointer;
+}
+
+.btn-close.shipment-close {
+  top: -140px;
+  background-color: white;
 }
 
 .gap-6px {
