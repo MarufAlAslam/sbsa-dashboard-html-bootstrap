@@ -823,6 +823,11 @@ span.new-badge.text-white.fw-bold {
   cursor: pointer;
 }
 
+.btn-close.shipment-close {
+  top: -140px;
+  background-color: white;
+}
+
 .gap-6px {
   gap: 6px;
 }
