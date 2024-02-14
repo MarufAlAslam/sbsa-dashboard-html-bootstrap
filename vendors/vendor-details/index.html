@@ -491,840 +491,810 @@
             <!-- content starts from here -->
             <div class="contents p-30 pt-0">
                 <div class="data-holder shadow">
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+
+
+                    <ul class="nav nav-tabs mb-4" id="firstTab" role="tablist">
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="business-tab" data-bs-toggle="tab"
-                                data-bs-target="#business-tab-pane" type="button" role="tab"
-                                aria-controls="business-tab-pane" aria-selected="true">
-                                Business Information
-                            </button>
+                            <button class="nav-link active" id="home-tab" data-bs-toggle="tab"
+                                data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                                aria-selected="true">Customer Details</button>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="locations-tab" data-bs-toggle="tab"
-                                data-bs-target="#locations-tab-pane" type="button" role="tab"
-                                aria-controls="locations-tab-pane" aria-selected="false">
-                                Locations
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
-                                data-bs-target="#contact-tab-pane" type="button" role="tab"
-                                aria-controls="contact-tab-pane" aria-selected="false">
-                                Contact Info
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="terms-tab" data-bs-toggle="tab"
-                                data-bs-target="#terms-tab-pane" type="button" role="tab" aria-controls="terms-tab-pane"
-                                aria-selected="false">
-                                Terms & Documents
-                            </button>
-                        </li>
-                        <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="hisotry-tab" data-bs-toggle="tab"
-                                data-bs-target="#history-tab-pane" type="button" role="tab" aria-controls="terms-tab-pane"
-                                aria-selected="false">
-                                Order History
-                            </button>
+                            <button class="nav-link" id="profile-tab" data-bs-toggle="tab"
+                                data-bs-target="#profile-tab-pane" type="button" role="tab"
+                                aria-controls="profile-tab-pane" aria-selected="false">Order History</button>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane fade show active" id="business-tab-pane" role="tabpanel"
-                            aria-labelledby="business-tab" tabindex="0">
-                            <form action="" class="py-3">
-                                <div class="row g-4">
-                                    <div class="col-md-8">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Legal Business Name</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">DBA</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Address</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">City</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">State</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Zip Code</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Country</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Federal Tax ID #</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Type of Business</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Years in Business</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">State of Incorporation</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <label for="" class="mb-2">Legal Form of the Business</label>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="row g-3">
-                                            <div class="col-3">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <label for="llc" class="">LLC</label>
-                                                    <input type="checkbox" class="chb" disabled
-                                                        style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                        name="legal" id="llc">
+                        <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel"
+                            aria-labelledby="home-tab" tabindex="0">
+                            <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="business-tab" data-bs-toggle="tab"
+                                        data-bs-target="#business-tab-pane" type="button" role="tab"
+                                        aria-controls="business-tab-pane" aria-selected="true">
+                                        Business Information
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="locations-tab" data-bs-toggle="tab"
+                                        data-bs-target="#locations-tab-pane" type="button" role="tab"
+                                        aria-controls="locations-tab-pane" aria-selected="false">
+                                        Locations
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="contact-tab" data-bs-toggle="tab"
+                                        data-bs-target="#contact-tab-pane" type="button" role="tab"
+                                        aria-controls="contact-tab-pane" aria-selected="false">
+                                        Contact Info
+                                    </button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="terms-tab" data-bs-toggle="tab"
+                                        data-bs-target="#terms-tab-pane" type="button" role="tab"
+                                        aria-controls="terms-tab-pane" aria-selected="false">
+                                        Terms & Documents
+                                    </button>
+                                </li>
+                                <!-- <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="hisotry-tab" data-bs-toggle="tab"
+                                        data-bs-target="#history-tab-pane" type="button" role="tab"
+                                        aria-controls="terms-tab-pane" aria-selected="false">
+                                        Order History
+                                    </button>
+                                </li> -->
+                            </ul>
+                            <div class="tab-content" id="myTabContent">
+                                <div class="tab-pane fade show active" id="business-tab-pane" role="tabpanel"
+                                    aria-labelledby="business-tab" tabindex="0">
+                                    <form action="" class="py-3">
+                                        <div class="row g-4">
+                                            <div class="col-md-8">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Legal Business Name</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
-                                            <div class="col-3">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <label for="corp" class="">Corporation</label>
-                                                    <input type="checkbox" class="chb" disabled
-                                                        style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                        name="legal" id="corp">
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">DBA</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
-                                            <div class="col-3">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <label for="prop" class="">Proprietorship</label>
-                                                    <input type="checkbox" class="chb" disabled
-                                                        style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                        name="legal" id="prop">
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Address</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
-                                            <div class="col-3">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <label for="part" class="">Partnership</label>
-                                                    <input type="checkbox" class="chb"
-                                                    checked disabled
-                                                        style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                        name="legal" id="part">
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">City</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
-                                            <div class="col-3">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <label for="indv" class="">Individual</label>
-                                                    <input type="checkbox" class="chb" disabled
-                                                        style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                        name="legal" id="indv">
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">State</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
-                                            <div class="col-3">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <label for="gov" class="">Govt. Agency</label>
-                                                    <input type="checkbox" class="chb" disabled
-                                                        style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                        name="legal" id="gov">
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Zip Code</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
-                                            <div class="col-6">
-                                                <div
-                                                    class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                    <input type="text"
-                                                    placeholder="Other"
-                                                    readonly
-                                                    class="form-control"
-                                                        name="legal" id="other">
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Country</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
                                             </div>
+                                            <div class="col-md-8">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Federal Tax ID #</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Type of Business</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Years in Business</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">State of Incorporation</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <label for="" class="mb-2">Legal Form of the Business</label>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="row g-3">
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <label for="llc" class="">LLC</label>
+                                                            <input type="checkbox" class="chb" disabled
+                                                                style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                name="legal" id="llc">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <label for="corp" class="">Corporation</label>
+                                                            <input type="checkbox" class="chb" disabled
+                                                                style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                name="legal" id="corp">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <label for="prop" class="">Proprietorship</label>
+                                                            <input type="checkbox" class="chb" disabled
+                                                                style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                name="legal" id="prop">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <label for="part" class="">Partnership</label>
+                                                            <input type="checkbox" class="chb" checked disabled
+                                                                style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                name="legal" id="part">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <label for="indv" class="">Individual</label>
+                                                            <input type="checkbox" class="chb" disabled
+                                                                style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                name="legal" id="indv">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <label for="gov" class="">Govt. Agency</label>
+                                                            <input type="checkbox" class="chb" disabled
+                                                                style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                name="legal" id="gov">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div
+                                                            class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                            <input type="text" placeholder="Other" readonly
+                                                                class="form-control" name="legal" id="other">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12">
+                                                        <div
+                                                            class="d-flex flex-row justify-content-start align-items-center gap-3">
+                                                            <input type="checkbox" checked disabled style="
+                                                          min-width: 30px;
+                                                          min-height: 30px;
+                                                          width: 30px;
+                                                          height: 30px;
+                                                        " class="form-check" name="inout" id="inout" />
+                                                            <label for="inout">Check if the business is located outside
+                                                                of the USA</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">If Division / Subsidiary, name of Parent
+                                                        Company</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Address</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">City</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">State</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Zip Code</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Country</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="locations-tab-pane" role="tabpanel"
+                                    aria-labelledby="locations-tab" tabindex="0">
+                                    <form action="" class="py-3">
+                                        <div class="row g-4">
                                             <div class="col-12">
-                                                <div
-                                                  class="d-flex flex-row justify-content-start align-items-center gap-3"
-                                                >
-                                                  <input
-                                                    type="checkbox"
-                                                    checked disabled
-                                                    style="
-                                                      min-width: 30px;
-                                                      min-height: 30px;
-                                                      width: 30px;
-                                                      height: 30px;
-                                                    "
-                                                    class="form-check"
-                                                    name="inout"
-                                                    id="inout"
-                                                  />
-                                                  <label for="inout">Check if the business is located outside of the USA</label>
+                                                <h5 class="mb-0 fw-bold">Ship to:</h5>
+                                                <hr class="mb-0">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Name</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
                                                 </div>
-                                              </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Address</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">City</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">State</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Zip Code</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Country</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="" class="mb-2">If Division / Subsidiary, name of Parent
-                                                Company</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
+                                        <div class="row g-4">
+                                            <div class="col-12">
+                                                <h5 class="mb-0 fw-bold mt-5">Ship From:</h5>
+                                                <hr class="mb-0">
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Name</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Address</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">City</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">State</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Zip Code</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Country</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-8">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Address</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel"
+                                    aria-labelledby="contact-tab" tabindex="0">
+                                    <form action="">
+                                        <div class="row g-4">
+
+
+                                            <!-- name of owners, partners , or officers and titles -->
+                                            <div class="col-md-12 mt-5">
+                                                <h5 class="mb-0 fw-bold">Name of Owners, Partners, or Officers and
+                                                    Titles</h5>
+                                                <hr class="mb-0">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Last:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">First:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Middle Initial:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Title:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Phone:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Email Address:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="">Social Security #</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pt-0">
+                                                <div class="group">
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pt-0">
+                                                <div class="group">
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pt-0">
+                                                <div class="group">
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Last:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">First:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Middle Initial:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Title:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Phone:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Email Address:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="">Social Security #</label>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pt-0">
+                                                <div class="group">
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pt-0">
+                                                <div class="group">
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 pt-0">
+                                                <div class="group">
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Accounts Payable contact info -->
+                                            <div class="col-md-12 mt-5">
+                                                <h5 class="mb-0 fw-bold">Account Manager / Salesman</h5>
+                                                <hr class="mb-0">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Last:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">First:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Middle Initial:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Title:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Phone:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Email Address:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+
+
+                                            <!-- Contact Information -->
+                                            <div class="col-md-12 mt-5">
+                                                <h5 class="mb-0 fw-bold"> Account Receivable Conatct Information</h5>
+                                                <hr class="mb-0">
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Last:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">First:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Middle Initial:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Title:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Phone:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Email Address:</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">City</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">State</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Zip Code</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Country</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="terms-tab-pane" role="tabpanel"
+                                    aria-labelledby="terms-tab" tabindex="0">
+                                    <div class="py-3">
+                                        <div class="row g-4">
+                                            <!-- Terms -->
+                                            <div class="col-md-12">
+                                                <h5 class="mb-0 fw-bold">Terms</h5>
+                                                <hr class="mb-0">
+                                            </div>
+                                            <div class="d-flex my-4 justify-content-start align-items-center gap-3">
+                                                <button class="btn btn-green-50">Due on Receipt</button>
+                                                <button class="btn btn-green-50 active">Net 15</button>
+                                                <button class="btn btn-green-50">Net 30</button>
+                                                <button class="btn btn-green-50">Net 60</button>
+                                                <button class="btn btn-green-50">Net 30 2%</button>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Terms</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <!-- Terms -->
+
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Preferred Payment Method</label>
+                                                    <div class="row mt-2">
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                                <label for="ach" class="">ACH</label>
+                                                                <input type="checkbox"
+                                                                    style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                    name="" id="ach">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div
+                                                                class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
+                                                                <label for="check" class="">Check</label>
+                                                                <input type="checkbox"
+                                                                    style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
+                                                                    name="" id="check">
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Remit Check Address</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">City</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">State</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="group">
+                                                    <label for="" class="mb-2">Zip Code</label>
+                                                    <input type="text" readonly class="form-control" name="" id="">
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="group">
+                                                    <label for="" class="mb-2 text-danger fs-14">Note: If you choose
+                                                        ACH,
+                                                        provide a
+                                                        separate form with ACH information</label>
+                                                </div>
+                                            </div>
+
+
+
+                                            <!-- Terms -->
+                                            <div class="col-md-12 mt-5">
+                                                <h5 class="mb-0 fw-bold">Requested Documents</h5>
+                                                <hr class="mb-0">
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <ol>
+                                                    <li>
+                                                        <label for="" class="mb-1">W-9 Form.</label>
+                                                        <input type="file" class="form-control" name="" id="">
+                                                    </li>
+                                                    <li class="mt-4">
+                                                        <label for="" class="mb-1">Certificate fo Insurance</label>
+                                                        <input type="file" class="form-control" name="" id="">
+                                                    </li>
+                                                </ol>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </form>
+
+                            </div>
                         </div>
-                        <div class="tab-pane fade" id="locations-tab-pane" role="tabpanel"
-                            aria-labelledby="locations-tab" tabindex="0">
-                            <form action="" class="py-3">
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <h5 class="mb-0 fw-bold">Ship to:</h5>
-                                        <hr class="mb-0">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Name</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Address</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">City</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">State</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Zip Code</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Country</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row g-4">
-                                    <div class="col-12">
-                                        <h5 class="mb-0 fw-bold mt-5">Ship From:</h5>
-                                        <hr class="mb-0">
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Name</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Address</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">City</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">State</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Zip Code</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Country</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab"
-                            tabindex="0">
-                            <form action="">
-                                <div class="row g-4">
-
-
-                                    <!-- name of owners, partners , or officers and titles -->
-                                    <div class="col-md-12 mt-5">
-                                        <h5 class="mb-0 fw-bold">Name of Owners, Partners, or Officers and Titles</h5>
-                                        <hr class="mb-0">
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Last:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">First:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Middle Initial:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Title:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Phone:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Email Address:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="">Social Security #</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pt-0">
-                                        <div class="group">
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pt-0">
-                                        <div class="group">
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pt-0">
-                                        <div class="group">
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Last:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">First:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Middle Initial:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Title:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Phone:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Email Address:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="">Social Security #</label>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pt-0">
-                                        <div class="group">
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pt-0">
-                                        <div class="group">
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4 pt-0">
-                                        <div class="group">
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Accounts Payable contact info -->
-                                    <div class="col-md-12 mt-5">
-                                        <h5 class="mb-0 fw-bold">Account Manager / Salesman</h5>
-                                        <hr class="mb-0">
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Last:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">First:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Middle Initial:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Title:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Phone:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Email Address:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-
-
-                                    <!-- Contact Information -->
-                                    <div class="col-md-12 mt-5">
-                                        <h5 class="mb-0 fw-bold"> Account Receivable Conatct Information</h5>
-                                        <hr class="mb-0">
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Last:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">First:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Middle Initial:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Title:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Phone:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Email Address:</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                        <div class="tab-pane fade" id="terms-tab-pane" role="tabpanel" aria-labelledby="terms-tab"
+                        <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab"
                             tabindex="0">
                             <div class="py-3">
                                 <div class="row g-4">
                                     <!-- Terms -->
                                     <div class="col-md-12">
-                                        <h5 class="mb-0 fw-bold">Terms</h5>
-                                        <hr class="mb-0">
-                                    </div>
-                                    <div class="d-flex my-4 justify-content-start align-items-center gap-3">
-                                        <button class="btn btn-green-50">Due on Receipt</button>
-                                        <button class="btn btn-green-50 active">Net 15</button>
-                                        <button class="btn btn-green-50">Net 30</button>
-                                        <button class="btn btn-green-50">Net 60</button>
-                                        <button class="btn btn-green-50">Net 30 2%</button>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Terms</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <!-- Terms -->
-
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Preferred Payment Method</label>
-                                            <div class="row mt-2">
-                                                <div class="col-4">
-                                                    <div
-                                                        class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                        <label for="ach" class="">ACH</label>
-                                                        <input type="checkbox"
-                                                            style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                            name="" id="ach">
-                                                    </div>
-                                                </div>
-                                                <div class="col-4">
-                                                    <div
-                                                        class="d-flex flex-row-reverse justify-content-end align-items-center gap-3">
-                                                        <label for="check" class="">Check</label>
-                                                        <input type="checkbox"
-                                                            style="min-width: 30px; min-height: 30px; width: 30px; height: 30px;"
-                                                            name="" id="check">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Remit Check Address</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">City</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">State</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="group">
-                                            <label for="" class="mb-2">Zip Code</label>
-                                            <input type="text" readonly class="form-control" name="" id="">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <div class="group">
-                                            <label for="" class="mb-2 text-danger fs-14">Note: If you choose ACH,
-                                                provide a
-                                                separate form with ACH information</label>
-                                        </div>
-                                    </div>
-
-
-
-                                    <!-- Terms -->
-                                    <div class="col-md-12 mt-5">
-                                        <h5 class="mb-0 fw-bold">Requested Documents</h5>
-                                        <hr class="mb-0">
-                                    </div>
-
-                                    <div class="col-md-12">
-                                        <ol>
-                                            <li>
-                                                <label for="" class="mb-1">W-9 Form.</label>
-                                                <input type="file" class="form-control" name="" id="">
-                                            </li>
-                                            <li class="mt-4">
-                                                <label for="" class="mb-1">Certificate fo Insurance</label>
-                                                <input type="file" class="form-control" name="" id="">
-                                            </li>
-                                        </ol>
+                                        <h5 class="mb-0 fw-bold">Orders History</h5>
+                                        <hr class="mb-0" />
                                     </div>
                                 </div>
+
+                                <table class="table table-stripped mb-0 mt-3">
+                                    <thead>
+                                        <th class="p-2 border text-center fs-14">Order Id</th>
+                                        <th class="p-2 border text-center fs-14">Order Date</th>
+                                        <th class="p-2 border text-center fs-14">Sku</th>
+                                        <th class="p-2 border text-center fs-14">Item</th>
+                                        <th class="p-2 border text-center fs-14">Quantity</th>
+                                        <th class="p-2 border text-center fs-14">Amount</th>
+                                        <th class="p-2 border text-center fs-14">Sales Channel</th>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="p-2 border text-center fs-14">1001</td>
+                                            <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                            <td class="p-2 border text-center fs-14">D1234567890</td>
+                                            <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                            <td class="p-2 border text-center fs-14">1</td>
+                                            <td class="p-2 border text-center fs-14">$25.44</td>
+                                            <td class="p-2 border text-center fs-14">
+                                                <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
-                        <div
-                class="tab-pane fade"
-                id="history-tab-pane"
-                role="tabpanel"
-                aria-labelledby="history-tab"
-                tabindex="0"
-              >
-                <div class="py-3">
-                  <div class="row g-4">
-                    <!-- Terms -->
-                    <div class="col-md-12">
-                      <h5 class="mb-0 fw-bold">Orders History</h5>
-                      <hr class="mb-0" />
                     </div>
-                  </div>
 
-                  <table class="table table-stripped mb-0 mt-3">
-                    <thead>
-                      <th class="p-2 border text-center fs-14">Order Id</th>
-                      <th class="p-2 border text-center fs-14">Order Date</th>
-                      <th class="p-2 border text-center fs-14">Sku</th>
-                      <th class="p-2 border text-center fs-14">Item</th>
-                      <th class="p-2 border text-center fs-14">Quantity</th>
-                      <th class="p-2 border text-center fs-14">Amount</th>
-                      <th class="p-2 border text-center fs-14">Sales Channel</th>
-                    </thead>
 
-                    <tbody>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                      <tr>
-                        <td class="p-2 border text-center fs-14">1001</td>
-                        <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
-                        <td class="p-2 border text-center fs-14">D1234567890</td>
-                        <td class="p-2 border text-center fs-14">Demo product 1</td>
-                        <td class="p-2 border text-center fs-14">1</td>
-                        <td class="p-2 border text-center fs-14">$25.44</td>
-                        <td class="p-2 border text-center fs-14">
-                          <img
-                            src="../../img/sbsa.svg"
-                            class="img-fluid"
-                            alt=""
-                          />
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-                    </div>
+
+
                     <!-- form holder -->
                     <form action="">
                         <div class="row g-4">
@@ -1493,24 +1463,24 @@
                                                         placeholder="4718 Helgesen Drive" name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Madison"
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Madison" name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control" placeholder="WI"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="WI" name=""
-                                                        id="" />
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="53178-6740" name="" id="" />
                                                 </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="53178-6740"
+                                                <div class="col-12">
+                                                    <input type="text" readonly class="form-control" placeholder="US"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="US" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="" name=""
-                                                        id="" />
+                                                    <input type="text" readonly class="form-control" placeholder=""
+                                                        name="" id="" />
                                                 </div>
                                                 <div class="col-12 text-end">
                                                     <button type="button" class="btn btn-golden fs-14 save1">
@@ -1599,24 +1569,24 @@
                                                         placeholder="4718 Helgesen Drive" name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Madison"
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Madison" name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control" placeholder="WI"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="WI" name=""
-                                                        id="" />
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="53178-6740" name="" id="" />
                                                 </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="53178-6740"
+                                                <div class="col-12">
+                                                    <input type="text" readonly class="form-control" placeholder="US"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="US" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="" name=""
-                                                        id="" />
+                                                    <input type="text" readonly class="form-control" placeholder=""
+                                                        name="" id="" />
                                                 </div>
                                                 <div class="col-12 text-end">
                                                     <button type="button" class="btn btn-golden fs-14 save2">
@@ -2721,18 +2691,18 @@
                                 <tbody>
                                     <tr>
                                         <td class="border-0 border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
@@ -2741,12 +2711,12 @@
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td class="border-0 border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                     </tr>
                                 </tbody>
@@ -2785,24 +2755,24 @@
                                         <form action="">
                                             <div class="row g-2">
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="Address"
-                                                        name="" id="" />
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Address" name="" id="" />
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="City" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="State" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Postal Code"
+                                                    <input type="text" readonly class="form-control" placeholder="City"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Country"
+                                                    <input type="text" readonly class="form-control" placeholder="State"
                                                         name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Postal Code" name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Country" name="" id="" />
                                                 </div>
                                             </div>
                                         </form>
@@ -2836,24 +2806,24 @@
                                         <form action="">
                                             <div class="row g-2">
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="Address"
-                                                        name="" id="" />
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Address" name="" id="" />
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="City" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="State" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Postal Code"
+                                                    <input type="text" readonly class="form-control" placeholder="City"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Country"
+                                                    <input type="text" readonly class="form-control" placeholder="State"
                                                         name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Postal Code" name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Country" name="" id="" />
                                                 </div>
                                             </div>
                                         </form>
@@ -2928,18 +2898,18 @@
                                 <tbody>
                                     <tr>
                                         <td class="border-0 border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
@@ -2948,12 +2918,12 @@
                                         </td>
                                         <td
                                             class="border-y-0 border-bottom-0 border-gray border-x border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                         <td class="border-0 border-top text-center p-1">
-                                            <input type="text" readonly class="form-control text-center" placeholder="" name=""
-                                                id="" />
+                                            <input type="text" readonly class="form-control text-center" placeholder=""
+                                                name="" id="" />
                                         </td>
                                     </tr>
                                 </tbody>
@@ -2992,24 +2962,24 @@
                                         <form action="">
                                             <div class="row g-2">
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="Address"
-                                                        name="" id="" />
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Address" name="" id="" />
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="City" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="State" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Postal Code"
+                                                    <input type="text" readonly class="form-control" placeholder="City"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Country"
+                                                    <input type="text" readonly class="form-control" placeholder="State"
                                                         name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Postal Code" name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Country" name="" id="" />
                                                 </div>
                                             </div>
                                         </form>
@@ -3043,24 +3013,24 @@
                                         <form action="">
                                             <div class="row g-2">
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="Address"
-                                                        name="" id="" />
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Address" name="" id="" />
                                                 </div>
                                                 <div class="col-12">
-                                                    <input type="text" readonly class="form-control" placeholder="City" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="State" name=""
-                                                        id="" />
-                                                </div>
-                                                <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Postal Code"
+                                                    <input type="text" readonly class="form-control" placeholder="City"
                                                         name="" id="" />
                                                 </div>
                                                 <div class="col-lg-4">
-                                                    <input type="text" readonly class="form-control" placeholder="Country"
+                                                    <input type="text" readonly class="form-control" placeholder="State"
                                                         name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Postal Code" name="" id="" />
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <input type="text" readonly class="form-control"
+                                                        placeholder="Country" name="" id="" />
                                                 </div>
                                             </div>
                                         </form>
