@@ -205,6 +205,11 @@ termsBtns.forEach((btn) => {
   });
 });
 
+$(".chb").change(function () {
+  $(".chb").prop("checked", false);
+  $(this).prop("checked", true);
+});
+
 const addLineBtn = document.getElementById("add-line-btn");
 const addLineBtn1 = document.getElementById("add-line-btn-1");
 const adaptiveRow = document.getElementById("adaptive-row");
