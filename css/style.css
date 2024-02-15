@@ -1555,6 +1555,11 @@ input:checked+.slider:before {
   width: 100%;
 }
 
+.connector-logo {
+  width: 200px;
+  object-fit: contain;
+}
+
 
 @media screen and (min-width: 1400px) {
   #radarChart .apexcharts-canvas {
@@ -1860,6 +1865,8 @@ input:checked+.slider:before {
     right: 10px;
     width: 100px;
   }
+
+  
 
 
   .modal.show .modal-dialog {
