@@ -1185,6 +1185,23 @@ svg.cross {
   background-color: #2B7F75;
 }
 
+td, td *{
+  font-weight: 600 !important;
+}
+
+td{
+  font-size: 14px;
+}
+
+.options-btn {
+  width: 40px;
+  height: 40px;
+  font-size: 20px !important;
+  padding: 0 !important;
+  border: unset !important;
+  box-shadow: unset !important;
+}
+
 .chewy .ind {
   background-color: #FFC000;
 }
