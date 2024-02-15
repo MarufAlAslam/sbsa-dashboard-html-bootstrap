@@ -1185,11 +1185,12 @@ svg.cross {
   background-color: #2B7F75;
 }
 
-td, td *{
+td,
+td * {
   font-weight: 600 !important;
 }
 
-td{
+td {
   font-size: 14px;
 }
 
@@ -1767,7 +1768,7 @@ input:checked+.slider:before {
 
   .mship {
     position: relative;
-    right: 5px;
+    right: 60px;
   }
 
   .to-right-edi {
@@ -1854,6 +1855,11 @@ input:checked+.slider:before {
     flex-direction: column;
   }
 
+  .mship {
+    position: relative;
+    right: 10px;
+    width: 100px;
+  }
 
 
   .modal.show .modal-dialog {
