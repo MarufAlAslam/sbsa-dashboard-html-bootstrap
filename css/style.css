@@ -1529,6 +1529,23 @@ input:checked+.slider:before {
   font-weight: 600;
 }
 
+.btn-golden-50 {
+  background: rgba(171, 134, 80, 0.1) !important;
+  border-bottom: 1px solid transparent !important;
+  color: #ab8650 !important;
+  font-weight: 600;
+}
+
+.btn-golden-50 {
+  border: 1px solid #dcdcde !important;
+  background-color: #ab87501a !important;
+  box-shadow: 0px 1.5px 4px -1px rgba(10, 9, 11, 0.07) !important;
+  display: flex;
+  padding: 8px 10px;
+  color: #ab8750 !important;
+  font-weight: 500;
+}
+
 .btn-green-50.active {
   background: #119d16 !important;
   border-bottom: 1px solid #119d16 !important;

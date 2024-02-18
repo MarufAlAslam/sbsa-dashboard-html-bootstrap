@@ -615,7 +615,7 @@
                 type="button"
                 data-bs-toggle="modal"
                 data-bs-target="#poModal"
-                class="py-2 px-3 fs-14 mob-colored dropdown-item border rounded"
+                class="py-2 px-3 fs-14 mob-colored dropdown-item border rounded btn filter-btn"
               >
               Add New User
               </button>
@@ -3317,13 +3317,23 @@
                             </div>
                             <div class="group mt-3">
                               <label for="" class="mb-2">Member of group:</label>
-                              <select class="form-select">
+                              <!-- <select class="form-select">
                                 <option value="0">Choose Group</option>
                                 <option value="Administrators">Administrators</option>
                                 <option value="Management">Management</option>
                                 <option value="Warehouse Associate">Warehouse Associate</option>
                                 <option value="4324324324">PO Management</option>
-                              </select>
+                              </select> -->
+                              <div class="custom-select text-golden fs-13 text-start p-2 d-flex justify-content-start align-items-center mx-auto w-full border rounded"
+                    style="min-width: 100%">
+                    <select class="text-golden">
+                      <option value="0">Choose Group</option>
+                                <option value="Administrators">Administrators</option>
+                                <option value="Management">Management</option>
+                                <option value="Warehouse Associate">Warehouse Associate</option>
+                                <option value="4324324324">PO Management</option>
+                    </select>
+                  </div>
                             </div>
                             <div class="group mt-3">
                               <button class="btn btn-golden px-5 d-block mx-auto">Save</button>
