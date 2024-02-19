@@ -397,6 +397,13 @@ button.applyBtn.btn.btn-sm.btn-primary {
   transform: translateY(-18%);
 }
 
+.menu-collapse-btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-radius: 0 !important;
+}
+
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
   border-color: transparent transparent #000 transparent;
