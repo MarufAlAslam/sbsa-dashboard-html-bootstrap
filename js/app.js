@@ -21,7 +21,7 @@ const customerItems = document.getElementById("customer-items");
 
 customer.addEventListener("click", () => {
   reset();
-  customer.classList.add("active");
+  customer.classList.toggle("active");
   customerArrow.classList.add("rotate");
   customerItems.classList.add("active");
 });
@@ -94,6 +94,7 @@ $(".edit1, .save1").click(function () {
 $(".edit2, .save2").click(function () {
   $(".edit-on-2, .edit-off-2").toggleClass("active");
 });
+
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
