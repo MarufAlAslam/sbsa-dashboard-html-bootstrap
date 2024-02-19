@@ -26,6 +26,10 @@ customer.addEventListener("click", () => {
   customerItems.classList.add("active");
 });
 
+$('.menu-collapse-btn').click(function () {
+  $('.sidebar').toggleClass('collapsed');
+});
+
 // vendors
 const vendors = document.getElementById("vendors");
 const vendorsArrow = document.getElementById("vendors-arrow");

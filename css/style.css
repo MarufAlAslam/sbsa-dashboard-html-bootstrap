@@ -397,11 +397,24 @@ button.applyBtn.btn.btn-sm.btn-primary {
   transform: translateY(-18%);
 }
 
-.menu-collapse-btn{
+.menu-collapse-btn {
   position: absolute;
   right: 0;
   top: 0;
   border-radius: 0 !important;
+}
+
+.sidebar {
+  transition: 0.3s;
+}
+
+.sidebar.collapsed {
+  width: 20px;
+  padding: 0;
+}
+
+.sidebar.collapsed .menu {
+  display: none;
 }
 
 /*point the arrow upwards when the select box is open (active):*/
@@ -1881,6 +1894,10 @@ input:checked+.slider:before {
     display: block !important;
     width: 50%;
     margin: auto;
+  }
+
+  .menu-collapse-btn {
+    display: none;
   }
 
   .purchase-edit-card {
