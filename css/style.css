@@ -393,7 +393,7 @@ button.applyBtn.btn.btn-sm.btn-primary {
   width: 0;
   height: 0;
   border: 6px solid transparent;
-  border-color: #000 transparent transparent transparent;
+  border-color: #8f92a166 transparent transparent transparent;
   transform: translateY(-18%);
 }
 
