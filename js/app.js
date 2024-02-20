@@ -27,6 +27,7 @@ customer.addEventListener("click", () => {
 });
 
 $('.menu-collapse-btn').click(function () {
+  $(this).toggleClass('menu-collapsed');
   $('.sidebar').toggleClass('collapsed');
 });
 
