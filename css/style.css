@@ -1919,6 +1919,10 @@ input:checked+.slider:before {
     margin: auto;
   }
 
+  .mob-mt-5 {
+    margin-top: 3rem;
+  }
+
   .menu-collapse-btn {
     display: none;
   }
