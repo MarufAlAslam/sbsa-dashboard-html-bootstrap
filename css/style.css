@@ -411,6 +411,10 @@ button.applyBtn.btn.btn-sm.btn-primary {
   border-radius: 5px 0 0 5px !important;
 }
 
+body{
+  padding-right: 0 !important;
+}
+
 .menu-collapsed i {
   transform: rotate(180deg);
 }
