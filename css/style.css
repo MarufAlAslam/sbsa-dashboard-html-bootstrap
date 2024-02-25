@@ -1964,6 +1964,11 @@ select.w-100.form-select {
     margin: auto;
   }
 
+  .visible-nodes {
+    display: flex !important;
+    transform: scale(0.8);
+}
+
   .mob-mt-5 {
     margin-top: 3rem;
   }
