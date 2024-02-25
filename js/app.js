@@ -292,7 +292,7 @@ addLineBtn1.addEventListener("click", () => {
 
   tr.innerHTML = `
   <td class="text-black border fs-14 fw-semibold">
-  <select class="w-100 form-select">
+  <select class="w-100 form-select white-select-box">
   <option value="Box 1">Box 1</option>
   <option value="Box 2">Box 2</option>
   <option value="Box 3">Box 3</option>
