@@ -1670,7 +1670,21 @@ select.w-100.form-select {
 .saveBtn.active, #consolidatebtn.active {
   display: block !important;
 }
+.has-after-icon{
+  padding-right: 30px !important;
+}
 
+.has-after-icon:after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #8f92a166 transparent transparent transparent;
+  transform: translateY(-18%);
+}
 
 @media screen and (min-width: 1400px) {
   #radarChart .apexcharts-canvas {
