@@ -516,7 +516,7 @@
       <div class="contents p-30">
         <div class="data-holder shadow">
           <!-- tabs -->
-          <div class="tab-items cols-4">
+          <!-- <div class="tab-items cols-4">
             <div class="mobile-hide"></div>
             <div class="tab-item active po">
               <div
@@ -548,8 +548,45 @@
                 </div>
               </div>
             </div>
-          </div>
+          </div> -->
           <!-- tabs -->
+
+
+          <!-- steps -->
+          <div class="modal-steps px-5 py-4">
+            <div
+              class="steps d-flex justify-content-center align-items-center gap-3"
+            >
+              <div
+                class="step active d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">1</div>
+                <span>Prepare</span>
+              </div>
+              <div class="step-line"></div>
+              <div
+                class="step d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">2</div>
+                <span>Verify</span>
+              </div>
+              <div class="step-line"></div>
+              <div
+                class="step d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">3</div>
+                <span>Process</span>
+              </div>
+              <div class="step-line"></div>
+              <div
+                class="step d-flex gap-2 justify-content-center align-items-center"
+              >
+                <div class="step-number">4</div>
+                <span>Complete</span>
+              </div>
+            </div>
+          </div>
+          <!-- steps -->
 
           <!-- table filters -->
           <div class="table-filters pt-4">
@@ -655,7 +692,10 @@
                 Purchase Orders
               </button>
               <button class="btn custom-tab-btn doBtn">
-                Dropship Orders
+                Receiving
+              </button>
+              <button class="btn custom-tab-btn inBtn">
+                Invoices
               </button>
             </div>
           </div>
@@ -833,7 +873,7 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
+                      <!-- <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
                         style="width: 180px; border-radius: 6px">
                         <select>
                           <option value="0">Choose Vendor</option>
@@ -841,7 +881,18 @@
                           <option value="Vendor 2">Vendor 2</option>
                           <option value="Vendor 3">Vendor 3</option>
                         </select>
-                      </div>
+                      </div> -->
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -895,6 +946,8 @@
                       </div>
                     </td>
                   </tr>
+
+
                   <tr>
                     <td class="bg-white py-20 border">
                       <input type="checkbox" class="form-check mb-0" name="" id="" />
@@ -904,15 +957,18 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                      
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -973,15 +1029,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1042,15 +1100,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1111,15 +1171,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1180,15 +1242,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1249,15 +1313,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1318,15 +1384,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1387,15 +1455,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1456,15 +1526,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1525,15 +1597,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1594,15 +1668,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1663,15 +1739,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1732,15 +1810,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -1801,15 +1881,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2037,15 +2119,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2108,15 +2192,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2177,15 +2263,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2246,15 +2334,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2315,15 +2405,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2384,15 +2476,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2453,15 +2547,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2522,15 +2618,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2591,15 +2689,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2660,15 +2760,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2729,15 +2831,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2798,15 +2902,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2867,15 +2973,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -2936,15 +3044,17 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
-                      </div>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -3005,15 +3115,1251 @@
                         data-bs-target="#viewModal">1573A</span>
                     </td>
                     <td class="bg-white py-20 border-top border">
-                      <div class="custom-select p-2 fs-14 border block mx-auto sbsa-dropdown"
-                        style="width: 180px; border-radius: 6px">
-                        <select>
-                          <option value="0">Choose Vendor</option>
-                          <option value="Vendor 1">Vendor 1</option>
-                          <option value="Vendor 2">Vendor 2</option>
-                          <option value="Vendor 3">Vendor 3</option>
-                        </select>
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/fedx.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
                       </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="tab-table invoice-table">
+            <div class="overflow-x-auto">
+              <table class="table table-stripped d-table mb-0 mt-4">
+                <thead>
+                  <tr>
+                    <th class="bg-gold-transparent border border-top">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Purchase Order</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Vendor</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Date</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Ship to Address</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Ship Via</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Ship Date</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Sync</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border po-column">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">PO Accepted</span>
+                        <button class="btn p-0">
+                          <svg width="13" height="12" viewBox="0 0 13 12" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                              d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                              fill="#737373" />
+                            <path
+                              d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                              fill="#737373" />
+                          </svg>
+                        </button>
+                      </div>
+                    </th>
+                    <th class="bg-gold-transparent border">
+                      <div class="d-flex justify-content-center align-items-center gap-2">
+                        <span class="text-muted fs-14 fw-semibold">Action</span>
+                        <!-- <button class="btn p-0">
+                            <svg
+                              width="13"
+                              height="12"
+                              viewBox="0 0 13 12"
+                              fill="none"
+                              xmlns="http://www.w3.org/2000/svg"
+                            >
+                              <path
+                                d="M9.12569 4.56691L6.72818 2.16942C6.65926 2.1005 6.54753 2.1005 6.47861 2.16942L4.08116 4.56691C3.96999 4.67808 4.04869 4.86816 4.20596 4.86816H9.00091C9.15813 4.86816 9.23686 4.67808 9.12569 4.56691Z"
+                                fill="#737373"
+                              />
+                              <path
+                                d="M4.08134 7.28685L6.47885 9.68434C6.54777 9.75325 6.6595 9.75325 6.72842 9.68434L9.12587 7.28685C9.23705 7.17568 9.15834 6.9856 9.00107 6.9856H4.20612C4.0489 6.9856 3.97017 7.17568 4.08134 7.28685Z"
+                                fill="#737373"
+                              />
+                            </svg>
+                          </button> -->
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-info fs-14 fw-bold">
+                        <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                      </span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/fedx.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/fedx.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/fedx.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/fedx.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/fedx.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="text-dark fs-14 fw-semibold">669 Prospect Street , Ladoga , IN , 47954</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <img src="../../img/ups.png" class="deliverd-by img-fluid" alt="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
+                      <span class="text-muted fs-12 fw-semibold d-block">6:08 PM</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <!-- <button class="btn btn-success px-3 py-1 fs-14 rounded-pill">Upload</button> -->
+                      <span class="new-badge text-white fw-bold">Q</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <span class="no-badge fs-14 text-white fw-bold">No</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border text-center">
+                      <div class="dropdown w-md-100">
+                        <button
+                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                          type="button"
+                          data-bs-toggle="dropdown"
+                          aria-expanded="false"
+                        >
+                          <span class="text-dark">
+                            <i class="fa fa-bars"></i>
+                          </span>
+                        </button>
+                        <ul class="dropdown-menu shadow border-0">
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Shipping Labels</a
+                            >
+                          </li>
+                          <li class="has-child fs-14 position-relative">
+                            <a
+                              class="d-block py-1 mob-colored dropdown-item"
+                              >Print Packing Slip</a
+                            >
+                          </li>
+                        </ul>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="bg-white py-20 border">
+                      <input type="checkbox" class="form-check mb-0" name="" id="" />
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <span class="text-3c fs-14 fw-semibold" data-bs-toggle="modal"
+                        data-bs-target="#viewModal">1573A</span>
+                    </td>
+                    <td class="bg-white py-20 border-top border">
+                      <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
+                      <option value="0">Choose Vendor</option>
+                      <option value="Vendor 1">Vendor 1</option>
+                      <option value="Vendor 2">Vendor 2</option>
+                      <option value="Vendor 3">Vendor 3</option>
+                    </select>
+                    </div>
                     </td>
                     <td class="bg-white py-20 border-top border">
                       <span class="text-dark fs-14 fw-semibold">9 Jan 2023</span>
@@ -3151,14 +4497,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3246,14 +4595,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3341,14 +4693,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3436,14 +4791,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3531,14 +4889,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3626,14 +4987,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
-                      <option value="0">Choose Vendor</option>
-                      <option value="Vendor 1">Vendor 1</option>
-                      <option value="Vendor 2">Vendor 2</option>
-                      <option value="Vendor 3">Vendor 3</option>
-                    </select>
-                  </div>
+                  <div
+                  class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                  style="min-width: 150px"
+                >
+                <select class="text-golden">
+                  <option value="0">Choose Vendor</option>
+                  <option value="Vendor 1">Vendor 1</option>
+                  <option value="Vendor 2">Vendor 2</option>
+                  <option value="Vendor 3">Vendor 3</option>
+                </select>
+                </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3721,14 +5085,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3816,14 +5183,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -3911,14 +5281,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -4006,14 +5379,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -4101,14 +5477,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -4196,14 +5575,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -4291,14 +5673,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -4386,14 +5771,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -4481,14 +5869,17 @@
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start gap-1">
                   <p class="text-gray fs-14 fw-semibold mb-0">Vendor</p>
-                  <div class="custom-select p-2 fs-14 block mx-auto w-full border sbsa-dropdown">
-                    <select>
+                  <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                    <select class="text-golden">
                       <option value="0">Choose Vendor</option>
                       <option value="Vendor 1">Vendor 1</option>
                       <option value="Vendor 2">Vendor 2</option>
                       <option value="Vendor 3">Vendor 3</option>
                     </select>
-                  </div>
+                    </div>
                 </div>
                 <div class="d-flex flex-column mt-2 justify-content-between align-items-start">
                   <p class="text-gray fs-14 fw-semibold mb-0">
@@ -6939,16 +8330,25 @@
     })
 
     $('.po, .poBtn').click(function () {
+      $('.in, .inBtn').removeClass('active');
       $('.do, .doBtn').removeClass('active');
       $('.po, .poBtn').addClass('active');
       $('.tab-table').hide()
       $('.purchase-table').show()
     })
     $('.do, .doBtn').click(function () {
+      $('.in, .inBtn').removeClass('active');
       $('.do, .doBtn').addClass('active');
       $('.po, .poBtn').removeClass('active');
       $('.tab-table').hide()
       $('.dropship-table').show()
+    })
+    $('.in, .inBtn').click(function () {
+      $('.in, .inBtn').addClass('active');
+      $('.po, .poBtn').removeClass('active');
+      $('.do, .doBtn').removeClass('active');
+      $('.tab-table').hide()
+      $('.invoice-table').show()
     })
   </script>
 </body>
