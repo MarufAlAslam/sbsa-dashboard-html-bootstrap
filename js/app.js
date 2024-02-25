@@ -355,3 +355,12 @@ addLineBtn1.addEventListener("click", () => {
 
   adaptiveRow1.appendChild(tr);
 });
+
+
+const consolidatebtn = document.getElementById("consolidatebtn");
+const saveBtn = document.getElementById("saveBtn");
+
+consolidatebtn.addEventListener("click", () => {
+  saveBtn.classList.add("active");
+  $(this).removeClass("active");
+});

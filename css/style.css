@@ -1656,6 +1656,14 @@ select.w-100.form-select {
   text-align: center;
 }
 
+.saveBtn, #consolidatebtn {
+  display: none !important;
+}
+
+.saveBtn.active, #consolidatebtn.active {
+  display: block !important;
+}
+
 
 @media screen and (min-width: 1400px) {
   #radarChart .apexcharts-canvas {
