@@ -26,9 +26,9 @@ customer.addEventListener("click", () => {
   customerItems.classList.add("active");
 });
 
-$('.menu-collapse-btn').click(function () {
-  $(this).toggleClass('menu-collapsed');
-  $('.sidebar').toggleClass('collapsed');
+$(".menu-collapse-btn").click(function () {
+  $(this).toggleClass("menu-collapsed");
+  $(".sidebar").toggleClass("collapsed");
 });
 
 // vendors
@@ -99,7 +99,6 @@ $(".edit1, .save1").click(function () {
 $(".edit2, .save2").click(function () {
   $(".edit-on-2, .edit-off-2").toggleClass("active");
 });
-
 
 var x, i, j, l, ll, selElmnt, a, b, c;
 /*look for any elements with the class "custom-select":*/
@@ -355,7 +354,6 @@ addLineBtn1.addEventListener("click", () => {
 
   adaptiveRow1.appendChild(tr);
 });
-
 
 const consolidatebtn = document.getElementById("consolidatebtn");
 const saveBtn = document.getElementById("saveBtn");
