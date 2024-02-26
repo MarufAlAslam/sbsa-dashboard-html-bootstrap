@@ -4300,7 +4300,7 @@
                                   </div>
                               </div>
 
-                              <table class="table table-stripped mb-0 mt-3">
+                              <!-- <table class="table table-stripped mb-0 mt-3">
                                   <thead>
                                       <th class="p-2 bg-gold-transparent border text-center fs-14">Order Id</th>
                                       <th class="p-2 bg-gold-transparent border text-center fs-14">Order Date</th>
@@ -4423,8 +4423,505 @@
                                           </td>
                                       </tr>
                                   </tbody>
+                              </table> -->
+                          
+                              <table class="table table-stripped mb-0 mt-3">
+                                <thead>
+                                  <th class="p-2 bg-gold-transparent border text-center fs-14">Order Id</th>
+                                  <!-- <th class="p-2 bg-gold-transparent border text-center fs-14">Order Date</th> -->
+                                  <th class="p-2 bg-gold-transparent border text-center fs-14">Vendor Name</th>
+                                  <th class="p-2 bg-gold-transparent border text-center fs-14">Order Count</th>
+                                  <!-- <th class="p-2 bg-gold-transparent border text-center fs-14">Sku</th> -->
+                                  <!-- <th class="p-2 bg-gold-transparent border text-center fs-14">Item</th> -->
+                                  <!-- <th class="p-2 bg-gold-transparent border text-center fs-14">Quantity</th> -->
+                                  <th class="p-2 bg-gold-transparent border text-center fs-14">Total Amount</th>
+                                  <!-- <th class="p-2 bg-gold-transparent border text-center fs-14">Sales Channel</th> -->
+                                  <th class="p-2 bg-gold-transparent border text-center fs-14">Action</th>
+                                </thead>
+              
+                                <tbody>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">Customer 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$100</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <div class="dropdown w-md-100">
+                                        <button
+                                          class="btn options-btn filter-btn justify-content-center align-items-center gap-2 fs-14 d-block mx-auto border-0"
+                                          type="button"
+                                          data-bs-toggle="dropdown"
+                                          aria-expanded="false"
+                                        >
+                                          <span class="text-dark">
+                                            <i class="fa fa-bars"></i>
+                                          </span>
+                                        </button>
+                                        <ul class="dropdown-menu shadow border-0">
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Order Labels</a
+                                            >
+                                          </li>
+                                          <li class="has-child fs-14 position-relative">
+                                            <a
+                                              class="d-block py-1 mob-colored dropdown-item"
+                                              >Print Packing Slip</a
+                                            >
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </td>
+                                    <!-- <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td> -->
+                                  </tr>
+                                  <!-- <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <td class="p-2 border text-center fs-14">1001</td>
+                                    <td class="p-2 border text-center fs-14">2022-08-12 07:43:06</td>
+                                    <td class="p-2 border text-center fs-14">D1234567890</td>
+                                    <td class="p-2 border text-center fs-14">Demo product 1</td>
+                                    <td class="p-2 border text-center fs-14">1</td>
+                                    <td class="p-2 border text-center fs-14">$25.44</td>
+                                    <td class="p-2 border text-center fs-14">
+                                      <img src="../../img/sbsa.svg" class="img-fluid" alt="" />
+                                    </td>
+                                  </tr> -->
+                                </tbody>
                               </table>
-                          </div>
+                            </div>
                       </div>
                   </div>
 
