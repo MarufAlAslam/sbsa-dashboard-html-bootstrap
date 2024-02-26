@@ -1984,6 +1984,10 @@ select.w-100.form-select {
     transform: scale(0.8);
   }
 
+  .visible-nodes .connectors svg {
+    width: 60px;
+}
+
   .mob-mt-5 {
     margin-top: 3rem;
   }
