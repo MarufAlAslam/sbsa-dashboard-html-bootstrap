@@ -1348,7 +1348,10 @@ ul#vendors-items li a::before {
   display: inline-block;
   width: 20px;
 }
-ul#inventory-items li a::before, ul#reports-items li a::before, ul#settings-items li a::before {
+
+ul#inventory-items li a::before,
+ul#reports-items li a::before,
+ul#settings-items li a::before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   padding-right: 10px;
@@ -1365,26 +1368,33 @@ ul#customer-items li:nth-child(2) a::before {
   content: "\f1b2";
 }
 
-ul#customer-items li:nth-child(3) a::before, ul#inventory-items li:nth-child(1) a::before {
+ul#customer-items li:nth-child(3) a::before,
+ul#inventory-items li:nth-child(1) a::before {
   content: "\f1b3";
 }
 
 ul#customer-items li:nth-child(4) a::before {
   content: "\f0c0";
 }
+
 ul#inventory-items li:nth-child(2) a::before {
   content: "\f5fd";
 }
+
 ul#inventory-items li:nth-child(3) a::before {
   content: "\f18d";
   padding-top: 2px;
 }
+
 ul#inventory-items li:nth-child(4) a::before {
   content: "\f546";
 }
 
 /* vendor items */
-ul#vendors-items li a, ul#inventory-items li a, ul#reports-items li a, ul#settings-items li a {
+ul#vendors-items li a,
+ul#inventory-items li a,
+ul#reports-items li a,
+ul#settings-items li a {
   justify-content: flex-start !important;
   align-items: flex-start !important;
   gap: 5px;
@@ -1395,36 +1405,51 @@ ul#vendors-items li:nth-child(4) a::before {
   content: "\f0c0";
 }
 
-ul#vendors-items li:nth-child(2) a::before ,
+ul#vendors-items li:nth-child(2) a::before,
 ul#settings-items li:nth-child(1) a::before {
   content: "\f1b3";
 }
+
 ul#reports-items li:nth-child(1) a::before {
   content: "\f54e";
 }
+
 ul#reports-items li:nth-child(2) a::before {
   content: "\f201";
 }
+
 ul#settings-items li:nth-child(2) a::before {
   content: "\f1ad";
 }
+
 ul#settings-items li:nth-child(3) a::before {
   content: "\f77d";
 }
+
 ul#settings-items li:nth-child(4) a::before {
   content: "\f494";
 }
+
 ul#settings-items li:nth-child(5) a::before {
   content: "\f543";
 }
+
 ul#settings-items li:nth-child(6) a::before {
   content: "\f1e6";
 }
+
 ul#settings-items li:nth-child(7) a::before {
   content: "\f509";
 }
+
 ul#settings-items li:nth-child(8) a::before {
   content: "\f023";
+}
+.menu li .child-menu {
+  display: none !important;
+}
+.menu li.active .child-menu {
+  display: block !important;
 }
 
 .w-60 {

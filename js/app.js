@@ -214,6 +214,10 @@ $(".chb").change(function () {
   $(this).prop("checked", true);
 });
 
+$('.menu li').click(function () {
+  $(this).toggleClass('active').siblings().removeClass('active');
+})
+
 const addLineBtn = document.getElementById("add-line-btn");
 const addLineBtn1 = document.getElementById("add-line-btn-1");
 const adaptiveRow = document.getElementById("adaptive-row");
