@@ -686,7 +686,7 @@ table input.form-check.mb-0 {
 }
 
 .text-blue {
-  color: #3c8ef9;
+  color: #3c8dbc;
 }
 
 .text-green {
@@ -1002,7 +1002,7 @@ span.new-badge.text-white.fw-bold {
 .tab-item:hover,
 .tab-item.active {
   background: #e1eefe;
-  border: 2px solid #3c8ef9;
+  border: 2px solid #3c8dbc;
 }
 
 .tab-item.tab-2:hover,
@@ -1073,7 +1073,7 @@ svg.cross {
 }
 
 .blue {
-  background-color: #3C8EF9;
+  background-color: #3c8dbc;
 }
 
 .green {
@@ -1235,12 +1235,16 @@ td {
 }
 
 .options-btn {
-  width: 35px;
-  height: 35px;
-  font-size: 20px !important;
+  width: 32px;
+  height: 32px;
+  font-size: 18px !important;
   padding: 0 !important;
   border: unset !important;
   box-shadow: unset !important;
+}
+
+.modal .modal-head .btn-close {
+  top: -15px;
 }
 
 .chewy .ind {
