@@ -178,7 +178,6 @@ function closeAllSelect(elmnt) {
     }
   }
 }
-
 document.addEventListener("click", closeAllSelect);
 
 $('input[name="dates"]').daterangepicker({
