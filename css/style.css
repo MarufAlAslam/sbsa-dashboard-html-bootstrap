@@ -10,7 +10,7 @@ html,
 
 .sidebar {
   width: 270px;
-  padding: 20px;
+  padding: 25px 10px;
   background-color: #0d1317;
   height: 100vh;
   overflow-y: scroll;
@@ -66,7 +66,7 @@ svg.rotate {
 }
 
 .child-menu a {
-  padding-left: 55px !important;
+  padding-left: 40px !important;
   font-size: 13px;
   padding-right: 0 !important;
 }
@@ -1247,6 +1247,18 @@ td {
   top: -15px;
 }
 
+li.active .child-menu {
+  display: none !important;
+}
+
+li.active .arrow.rotate {
+  transform: rotate(180deg) !important;
+}
+
+li.active .menu-item.active {
+  background: transparent !important;
+}
+
 .chewy .ind {
   background-color: #FFC000;
 }
@@ -1316,6 +1328,103 @@ td {
   bottom: 10px;
   left: 10px;
   font-size: 8px;
+}
+
+
+
+/* sidebar submenu icons */
+ul#customer-items li a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+  display: inline-block;
+  width: 20px;
+}
+
+ul#vendors-items li a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+  display: inline-block;
+  width: 20px;
+}
+ul#inventory-items li a::before, ul#reports-items li a::before, ul#settings-items li a::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  padding-right: 10px;
+  display: inline-block;
+  width: 20px;
+}
+
+ul#customer-items li:nth-child(1) a::before,
+ul#vendors-items li:nth-child(1) a::before {
+  content: "\f026";
+}
+
+ul#customer-items li:nth-child(2) a::before {
+  content: "\f1b2";
+}
+
+ul#customer-items li:nth-child(3) a::before, ul#inventory-items li:nth-child(1) a::before {
+  content: "\f1b3";
+}
+
+ul#customer-items li:nth-child(4) a::before {
+  content: "\f0c0";
+}
+ul#inventory-items li:nth-child(2) a::before {
+  content: "\f5fd";
+}
+ul#inventory-items li:nth-child(3) a::before {
+  content: "\f18d";
+  padding-top: 2px;
+}
+ul#inventory-items li:nth-child(4) a::before {
+  content: "\f546";
+}
+
+/* vendor items */
+ul#vendors-items li a, ul#inventory-items li a, ul#reports-items li a, ul#settings-items li a {
+  justify-content: flex-start !important;
+  align-items: flex-start !important;
+  gap: 5px;
+}
+
+ul#vendors-items li:nth-child(3) a::before,
+ul#vendors-items li:nth-child(4) a::before {
+  content: "\f0c0";
+}
+
+ul#vendors-items li:nth-child(2) a::before ,
+ul#settings-items li:nth-child(1) a::before {
+  content: "\f1b3";
+}
+ul#reports-items li:nth-child(1) a::before {
+  content: "\f54e";
+}
+ul#reports-items li:nth-child(2) a::before {
+  content: "\f201";
+}
+ul#settings-items li:nth-child(2) a::before {
+  content: "\f1ad";
+}
+ul#settings-items li:nth-child(3) a::before {
+  content: "\f77d";
+}
+ul#settings-items li:nth-child(4) a::before {
+  content: "\f494";
+}
+ul#settings-items li:nth-child(5) a::before {
+  content: "\f543";
+}
+ul#settings-items li:nth-child(6) a::before {
+  content: "\f1e6";
+}
+ul#settings-items li:nth-child(7) a::before {
+  content: "\f509";
+}
+ul#settings-items li:nth-child(8) a::before {
+  content: "\f023";
 }
 
 .w-60 {
@@ -1990,7 +2099,7 @@ select.w-100.form-select {
 
   .visible-nodes .connectors svg {
     width: 60px;
-}
+  }
 
   .mob-mt-5 {
     margin-top: 3rem;
