@@ -356,12 +356,16 @@ button.applyBtn.btn.btn-sm.btn-primary {
   min-height: 95vh;
 }
 
-#history-date-picker{
+#history-date-picker {
   display: none !important;
 }
 
-#history-date-picker.active{
+#history-date-picker.active {
   display: flex !important;
+}
+
+.gap-100 {
+  gap: 100px;
 }
 
 .icon {
@@ -1915,6 +1919,31 @@ select.w-100.form-select {
     display: none;
   }
 
+  .d-flex.mob-column.justify-content-center.align-items-center.gap-100 {
+    flex-direction: column;
+  }
+
+  .mob-flex-row {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .left.mob-flex-row .connectors svg {
+    height: 95px;
+    transform: rotate(90deg) scale(0.6);
+    overflow: hidden;
+    /* width: 150px; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .gap-100 {
+    gap: 20px;
+  }
+
   .menu-btn.active svg.cross {
     display: block;
   }
@@ -2055,7 +2084,10 @@ select.w-100.form-select {
 
   .visible-nodes {
     display: flex !important;
-    transform: scale(0.8);
+  }
+
+  .rev-col-nodes {
+    flex-direction: column;
   }
 
   button.menu-btn.btn {
@@ -2064,6 +2096,8 @@ select.w-100.form-select {
     color: white !important;
     opacity: 1 !important;
   }
+
+
 
   .menu {
     padding-top: 20px;
@@ -2137,9 +2171,30 @@ select.w-100.form-select {
     margin: auto;
   }
 
+  .mob-flex-row {
+    width: 100%;
+  }
+
+  .left.mob-flex-row .connectors svg {
+    transform: rotate(90deg) scale(1);
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    fill: black;
+    /* background: black; */
+    height: 50px;
+  }
+
+  .left.mob-flex-row p {
+    font-size: 11px;
+  }
+
+  .gap-100 p {
+    font-size: 11px;
+  }
+
   .visible-nodes {
     display: flex !important;
-    transform: scale(0.8);
   }
 
   .visible-nodes .connectors svg {
