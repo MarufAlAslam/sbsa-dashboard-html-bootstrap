@@ -8371,6 +8371,33 @@
               </div>
             </div>
 
+            <div class="modal-steps px-5 py-4">
+              <div
+                class="steps d-flex justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">1</div>
+                  <span>Assign Batch Dimensions</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">2</div>
+                  <span>Print Batch Labels</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">3</div>
+                  <span>Packing Slips</span>
+                </div>
+              </div>
+            </div>
+
             <div class="card mt-1 border-0 shadow bg-white">
               <div class="card-body border-0">
                 <div class="">
@@ -9497,7 +9524,7 @@
             </div>
 
             <div class="card border-0 p-3 mt-2 bg-white mb-2">
-              <div class="card-body p-0 border-0 rounded-2 overflow-hidden">
+              <div class="card-body p-0 border-0 rounded-2">
                 <table class="border-0 mt-3 border-black w-100">
                   <thead>
                     <th class="border fs-13 bg-gold-transparent">Source</th>
@@ -9523,7 +9550,7 @@
                   <tbody>
                     <tr>
                       <td class="border fs-13 p-2">
-                        <select
+                        <!-- <select
                           class="form-select selboxs pull-right"
                           name="carrier1"
                           id="carrier1"
@@ -9559,7 +9586,46 @@
                           <option value="DHL Express">DHL Express</option>
                           <option value="USPS Ground">USPS Ground</option>
                           <option value="LTL">LTL</option>
-                        </select>
+                        </select> -->
+                      
+                        <div
+                      class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                      style="min-width: 150px"
+                    >
+                      <select class="text-golden">
+                        <option value="-1">Please verify carrier</option>
+                          <option value="FedEx Ground">FedEx Ground</option>
+                          <option value="FedEx 2Day">FedEx 2Day</option>
+                          <option value="FedEx 2Day A.M.">
+                            FedEx 2Day A.M.
+                          </option>
+                          <option value="FedEx Express Saver">
+                            FedEx Express Saver
+                          </option>
+                          <option value="FedEx Standard Overnight">
+                            FedEx Standard Overnight
+                          </option>
+                          <option value="FedEx Priority Overnight">
+                            FedEx Priority Overnight
+                          </option>
+                          <option value="UPS Ground">UPS Ground</option>
+                          <option value="UPS 3 Day Select">
+                            UPS 3 Day Select
+                          </option>
+                          <option value="UPS 2nd Day Air">
+                            UPS 2nd Day Air
+                          </option>
+                          <option value="UPS 2nd Day Air A.M.">
+                            UPS 2nd Day Air A.M.
+                          </option>
+                          <option value="UPS Next Day Air">
+                            UPS Next Day Air
+                          </option>
+                          <option value="DHL Express">DHL Express</option>
+                          <option value="USPS Ground">USPS Ground</option>
+                          <option value="LTL">LTL</option>
+                      </select>
+                    </div>
                       </td>
                       <td class="border fs-13 p-2"></td>
                       <td class="border fs-13 p-2"></td>

@@ -352,6 +352,10 @@ button.applyBtn.btn.btn-sm.btn-primary {
   top: 10px;
 }
 
+.modal-content {
+  min-height: 95vh;
+}
+
 .icon {
   height: 80px;
   width: 80px;
@@ -1445,9 +1449,11 @@ ul#settings-items li:nth-child(7) a::before {
 ul#settings-items li:nth-child(8) a::before {
   content: "\f023";
 }
+
 .menu li .child-menu {
   display: none !important;
 }
+
 .menu li.active .child-menu {
   display: block !important;
 }
