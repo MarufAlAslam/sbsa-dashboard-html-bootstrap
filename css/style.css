@@ -356,6 +356,14 @@ button.applyBtn.btn.btn-sm.btn-primary {
   min-height: 95vh;
 }
 
+#history-date-picker{
+  display: none !important;
+}
+
+#history-date-picker.active{
+  display: flex !important;
+}
+
 .icon {
   height: 80px;
   width: 80px;
