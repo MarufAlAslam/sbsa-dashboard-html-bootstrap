@@ -1452,6 +1452,12 @@ ul#settings-items li:nth-child(8) a::before {
   display: block !important;
 }
 
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
 .w-60 {
   width: 60%;
 }
