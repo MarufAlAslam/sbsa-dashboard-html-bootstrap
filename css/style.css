@@ -1361,7 +1361,7 @@ ul#settings-items li a::before {
 
 ul#customer-items li:nth-child(1) a::before,
 ul#vendors-items li:nth-child(1) a::before {
-  content: "\f026";
+  content: "\f57d";
 }
 
 ul#customer-items li:nth-child(2) a::before {
