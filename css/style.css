@@ -2067,6 +2067,20 @@ select.w-100.form-select {
     flex-wrap: nowrap;
   }
 
+  .secondary-tabs.mt-4 .d-flex {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .order-table.active table {
+    display: none !important;
+  }
+
+  .table-filters a {
+    position: relative;
+    z-index: 1000;
+}
+
   .mobile-data {
     display: block;
   }
