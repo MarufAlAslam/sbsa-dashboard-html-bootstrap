@@ -2058,7 +2058,13 @@ select.w-100.form-select {
   }
 
   .d-table {
-    display: none !important;
+    display: table !important;
+    width: 250%;
+  }
+
+  ul#myTab {
+    display: flex;
+    flex-wrap: nowrap;
   }
 
   .mobile-data {
