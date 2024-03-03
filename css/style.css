@@ -1396,13 +1396,16 @@ ul#customer-items li:nth-child(4) a::before {
 ul#inventory-items li:nth-child(2) a::before {
   content: "\f5fd";
 }
-
 ul#inventory-items li:nth-child(3) a::before {
+  content: "\f1c0";
+}
+
+ul#inventory-items li:nth-child(4) a::before {
   content: "\f18d";
   padding-top: 2px;
 }
 
-ul#inventory-items li:nth-child(4) a::before {
+ul#inventory-items li:nth-child(5) a::before {
   content: "\f546";
 }
 
