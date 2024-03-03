@@ -1853,6 +1853,13 @@ select.w-100.form-select {
   transform: translateY(-18%);
 }
 
+.awaiting-steps{
+  display: none;
+}
+.awaiting-steps.act{
+  display: block;
+}
+
 @media screen and (min-width: 1400px) {
   #radarChart .apexcharts-canvas {
     transform-origin: center;

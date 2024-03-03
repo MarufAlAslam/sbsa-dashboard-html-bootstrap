@@ -852,6 +852,35 @@
         <!-- content starts from here -->
         <div class="contents p-30">
           <div class="data-holder shadow">
+
+            <div class="modal-steps awaiting-steps act px-5 py-4">
+              <div
+                class="steps d-flex justify-content-center align-items-center gap-3"
+              >
+                <div
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">1</div>
+                  <span>Select Orders to Ship</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">2</div>
+                  <span>Assign Batch Dimensions</span>
+                </div>
+                <div class="step-line"></div>
+                <div
+                  class="step d-flex gap-2 justify-content-center align-items-center"
+                >
+                  <div class="step-number">3</div>
+                  <span>Print Batch labels / Packing Slips</span>
+                </div>
+              </div>
+            </div>
+
+
             <!-- table filters -->
             <div class="table-filters pt-4">
               <div
@@ -903,6 +932,8 @@
               </div>
             </div>
             <!-- table filters -->
+
+            
 
             <ul class="nav mt-5 nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -8451,14 +8482,14 @@
                 </div>
                 <div class="step-line"></div>
                 <div
-                  class="step d-flex gap-2 justify-content-center align-items-center"
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
                 >
                   <div class="step-number">2</div>
                   <span>Print Batch Labels</span>
                 </div>
                 <div class="step-line"></div>
                 <div
-                  class="step d-flex gap-2 justify-content-center align-items-center"
+                  class="step active d-flex gap-2 justify-content-center align-items-center"
                 >
                   <div class="step-number">3</div>
                   <span>Packing Slips</span>
@@ -10567,6 +10598,13 @@
       // tab-panes
       const awaitingTabPane = document.getElementById("awaiting-tab-pane");
       const completedTabPane = document.getElementById("completed-tab-pane");
+
+      awaitingTab.addEventListener('click', () => {
+        $('.awaiting-steps').addClass('act')
+      })
+      completedTab.addEventListener('click', () => {
+        $('.awaiting-steps').removeClass('act')
+      })
 
       if (id === "#completed") {
         completedTab.classList.add("active");
