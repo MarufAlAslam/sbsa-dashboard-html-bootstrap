@@ -2390,6 +2390,74 @@ select.w-100.form-select {
     left: 15px;
     top: -12px;
   }
+
+  .topbar .col-xl-6 {
+    display: none;
+  }
+
+  .topbar span,
+  .topbar p {
+    display: none;
+  }
+
+  .topbar ul span {
+    display: block;
+  }
+
+  .topbar .col-xl-3 {
+    flex: 0 0 50%;
+    margin: auto;
+  }
+
+  .grid-5 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  /* .fat-chart .h-100 {
+  height: 200px !important;
+} */
+  .sm-col {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .modal .btn-close {
+    position: relative;
+    top: 0;
+    right: -0;
+    background-color: white;
+    z-index: 100;
+  }
+
+  .connectors-data .d-flex {
+    flex-direction: column;
+    gap: 10px !important;
+    margin-bottom: 40px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    margin-top: 15px;
+    border-radius: 10px;
+  }
+
+  .modal-steps.awaiting-steps.act.px-5.py-4 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .col-lg-8 .col-3,
+  .col-xl-8 .col-3 {
+    flex: 0 0 50% !important;
+    max-width: 50% !important;
+  }
+
+  .fat-chart .h-60 {
+    height: 100px;
+  }
+
+  .fat-chart .h-40 {
+    height: 80px;
+  }
 }
 
 @media screen and (min-width: 500px) and (max-width: 520px) {
