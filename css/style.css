@@ -865,7 +865,7 @@ span.new-badge.text-white.fw-bold {
 
 .modal .btn-close {
   position: relative;
-  top: -30px;
+  top: -15px;
   right: -5px;
   background-color: white;
   z-index: 100;
