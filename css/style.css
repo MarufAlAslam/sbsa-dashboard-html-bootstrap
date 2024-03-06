@@ -1148,7 +1148,7 @@ svg.cross {
   display: block;
 }
 
-.overflow-x-auto {
+.overflow-x-mob {
   overflow-x: auto !important;
   cursor: pointer;
 }
@@ -1196,7 +1196,7 @@ svg.cross {
 
 
 
-/* .overflow-x-auto table {
+/* .overflow-x-mob table {
   width: 130%;
 } */
 
@@ -1259,8 +1259,13 @@ td {
   box-shadow: unset !important;
 }
 
-.modal .modal-head .btn-close {
+/* .modal .modal-head .btn-close {
   top: -15px;
+} */
+
+button.btn-close.ms-5.shipment-close {
+  top: -145px;
+  right: -30px;
 }
 
 li.active .child-menu {
@@ -1929,6 +1934,10 @@ select.w-100.form-select {
 @media screen and (max-width: 992px) {
   .hid {
     display: none;
+  }
+
+  .overflow-x-mob {
+    overflow-x: auto !important;
   }
 
   .mob-col {
