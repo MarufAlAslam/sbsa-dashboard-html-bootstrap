@@ -2145,7 +2145,30 @@ select.w-100.form-select {
     height: 100vh;
     overflow-y: scroll;
     position: absolute !important;
+    z-index: 10000;
   }
+
+  .topbar {
+    height: auto;
+    opacity: 1;
+    padding: 10px 30px;
+  }
+
+  .topbar .col-xl-6 {
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin: auto;
+  }
+
+  .topbar .col-xl-3 {
+    flex: 0 0 30%;
+    margin: auto;
+  }
+
+  .topbar .fs-24 {
+    font-size: 18px !important;
+    margin-bottom: 0 !important;
+}
 
   button.btn.d-flex.justify-content-center.gap-2.align-items-center.ms-auto.fs-14.bg-white.shadow-sm {
     margin: 10px auto;
