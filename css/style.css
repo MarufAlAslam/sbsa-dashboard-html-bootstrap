@@ -1396,6 +1396,7 @@ ul#customer-items li:nth-child(4) a::before {
 ul#inventory-items li:nth-child(2) a::before {
   content: "\f5fd";
 }
+
 ul#inventory-items li:nth-child(3) a::before {
   content: "\f1c0";
 }
@@ -1856,10 +1857,11 @@ select.w-100.form-select {
   transform: translateY(-18%);
 }
 
-.awaiting-steps{
+.awaiting-steps {
   display: none;
 }
-.awaiting-steps.act{
+
+.awaiting-steps.act {
   display: block;
 }
 
@@ -1929,6 +1931,43 @@ select.w-100.form-select {
     display: none;
   }
 
+  .mob-col {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: flex-start !important;
+    align-items: flex-start !important;
+  }
+
+  .acc-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    background-color: white;
+    padding: 15px;
+  }
+
+  .mob-250 {
+    width: 250% !important;
+  }
+
+  .modal-steps .steps {
+    flex-direction: column;
+  }
+
+  .modal-steps .step-line {
+    height: 50px;
+    width: 2px;
+  }
+
+  button.btn.btn-light.py-2.px-1.menu-collapse-btn {
+    display: none;
+  }
+
+  .d-flex.justify-content-end.align-items-center.gap-3.p-30 {
+    position: relative;
+    z-index: 1000;
+  }
+
   .d-flex.mob-column.justify-content-center.align-items-center.gap-100 {
     flex-direction: column;
   }
@@ -1939,7 +1978,7 @@ select.w-100.form-select {
     width: 50%;
     justify-content: space-between;
     align-items: center;
-}
+  }
 
   .left.mob-flex-row .connectors svg {
     height: 95px;
@@ -2089,7 +2128,7 @@ select.w-100.form-select {
   .table-filters a {
     position: relative;
     z-index: 1000;
-}
+  }
 
   .mobile-data {
     display: block;
