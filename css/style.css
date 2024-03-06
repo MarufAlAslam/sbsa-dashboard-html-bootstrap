@@ -1938,6 +1938,10 @@ select.w-100.form-select {
     align-items: flex-start !important;
   }
 
+  .col-lg-7.mx-auto {
+    width: 100%;
+  }
+
   .acc-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -2142,10 +2146,15 @@ select.w-100.form-select {
     width: 100%;
     padding: 20px;
     background-color: #0d1317;
-    height: 100vh;
+    min-height: 100vh;
     overflow-y: scroll;
     position: absolute !important;
     z-index: 10000;
+    height: auto;
+  }
+
+  .d-table.no-250-100 {
+    width: 100% !important;
   }
 
   .topbar {
@@ -2168,7 +2177,7 @@ select.w-100.form-select {
   .topbar .fs-24 {
     font-size: 18px !important;
     margin-bottom: 0 !important;
-}
+  }
 
   button.btn.d-flex.justify-content-center.gap-2.align-items-center.ms-auto.fs-14.bg-white.shadow-sm {
     margin: 10px auto;
