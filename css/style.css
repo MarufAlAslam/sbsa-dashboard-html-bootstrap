@@ -1730,6 +1730,26 @@ input:checked+.slider:before {
   font-weight: 600;
 }
 
+label.uploader-label {
+  display: block;
+  border: 1px dashed rgba(0, 0, 0, 0.3);
+  margin-top: 2px;
+  padding: 30px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+label.uploader-label .text-golden {
+  background: #119d16;
+  padding: 5px 20px;
+  border-radius: 5px;
+  margin-bottom: 4px;
+  color: white;
+}
+
 .btn-yellow-50 {
   background: rgba(255, 206, 0, .3) !important;
   border-bottom: 1px solid transparent !important;
