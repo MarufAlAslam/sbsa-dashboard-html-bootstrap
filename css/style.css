@@ -871,6 +871,10 @@ span.new-badge.text-white.fw-bold {
   z-index: 100;
 }
 
+button.btn-close.ms-5.po-close {
+  top: -15px;
+}
+
 .acc-header {
   cursor: pointer;
 }
