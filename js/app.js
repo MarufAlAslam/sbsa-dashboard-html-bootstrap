@@ -1,3 +1,9 @@
+const isLoggedIn = localStorage.getItem("sbsa_logged_in");
+console.log(isLoggedIn);
+if (!isLoggedIn) {
+  window.location.href = "./auth";
+}
+
 const childMenu = document.querySelectorAll(".child-menu");
 const arrow = document.querySelectorAll(".arrow");
 const btns = document.querySelectorAll(".btn");
@@ -67,9 +73,9 @@ reports.addEventListener("click", () => {
   reportsItems.classList.add("active");
 });
 
-$('.menu li').click(function () {
-  $(this).toggleClass('active').siblings().removeClass('active');
-})
+$(".menu li").click(function () {
+  $(this).toggleClass("active").siblings().removeClass("active");
+});
 
 // reports
 const settings = document.getElementById("settings");
@@ -217,8 +223,6 @@ $(".chb").change(function () {
   $(".chb").prop("checked", false);
   $(this).prop("checked", true);
 });
-
-
 
 const addLineBtn = document.getElementById("add-line-btn");
 const addLineBtn1 = document.getElementById("add-line-btn-1");
