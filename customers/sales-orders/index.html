@@ -17209,7 +17209,7 @@
                             <path d="M13 14H11V16H13V14Z" fill="#2E2C34" />
                           </svg>
 
-                          <p class="mb-0 fw-semibold">Wearhouse Info</p>
+                          <p class="mb-0 fw-semibold">Warehouse Info</p>
                         </div>
 
                         <div class="text-end">
@@ -17301,15 +17301,65 @@
 
                     <div class="card-body edit-on-2">
                       <form action="">
+                        <div
+                              class="d-flex justify-content-start align-items-center gap-3 mb-4"
+                            >
+                              <label
+                                style="cursor: pointer"
+                                for="mode"
+                                class="fw-bold fs-14"
+                                >Own Warehouse</label
+                              >
+                              <label style="cursor: pointer" class="switch">
+                                <input
+                                  name="mode"
+                                  id="mode"
+                                  type="checkbox"
+                                  checked
+                                />
+                                <span class="slider round"></span>
+                              </label>
+                              <label
+                                style="cursor: pointer"
+                                for="mode"
+                                class="fw-bold fs-14"
+                                >Dropship</label
+                              >
+                            </div>
                         <div class="row g-2">
                           <div class="col-12">
-                            <input
+                            <!-- <input
                               type="text"
                               class="form-control"
-                              placeholder="Shopbop (BOP LLC)"
+                              placeholder="Shopbopss (BOP LLC)"
                               name=""
                               id=""
-                            />
+                            /> -->
+                            <div
+                            class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                            style="min-width: 150px"
+                            id="warehouse-selector"
+                          >
+                            <select class="text-golden">
+                              <option value="0">Select Warehouse</option>
+                              <option value="Warehouse 1">Warehouse 1</option>
+                              <option value="Warehouse 2">Warehouse 2</option>
+                              <option value="Warehouse 3">Warehouse 3</option>
+                            </select>
+                          </div>
+                          
+                          <div
+                            class="active custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                            style="min-width: 150px"
+                            id="vendor-selector"
+                          >
+                            <select class="text-golden">
+                              <option value="0">Select Vendor</option>
+                              <option value="Vendor 1">Vendor 1</option>
+                              <option value="Vendor 2">Vendor 2</option>
+                              <option value="Vendor 3">Vendor 3</option>
+                            </select>
+                          </div>
                           </div>
                           <div class="col-12">
                             <input
@@ -22981,18 +23031,7 @@
                                 <option value="Warehouse 3">Warehouse 3</option>
                               </select>
                             </div>
-                            <!-- <div
-                              class="active custom-select select-full p-2 d-flex justify-content-between border block mx-auto w-100"
-                              style="border-radius: 6px"
-                              id="vendor-selector"
-                            >
-                              <select class="w-100">
-                                <option value="0">Select Vendor</option>
-                                <option value="Vendor 1">Vendor 1</option>
-                                <option value="Vendor 2">Vendor 2</option>
-                                <option value="Vendor 3">Vendor 3</option>
-                              </select>
-                            </div> -->
+                            
                             <div
                               class="active custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
                               style="min-width: 150px"
