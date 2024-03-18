@@ -1096,6 +1096,7 @@
                     <!-- <img src="../../img/order.svg" class="img-fluid" alt="" /> -->
                     <div
                       class="custom-select p-2 store-selector"
+                      id="test-select"
                       style="width: 220px"
                     >
                       <select>
@@ -1111,6 +1112,8 @@
                         <option value="Dropship Orders">Dropship Orders</option>
                       </select>
                     </div>
+
+                    
                   </button>
                   <button
                     style="width: 140px"
@@ -16399,17 +16402,17 @@
                 >
                   <span class="fw-semibold fs-14">Show</span>
                   <div
-                  class="custom-select text-golden p-2 fs-13 block w-full border rounded"
-                  style="min-width: 130px"
-                >
-                  <select class="text-golden">
-                    <option value="5">5 Rows</option>
-                    <option value="10">10 Rows</option>
-                    <option value="15">15 Rows</option>
-                    <option value="20">20 Rows</option>
-                    <option value="25">25 Rows</option>
-                  </select>
-                </div>
+                    class="custom-select text-golden p-2 fs-13 block w-full border rounded"
+                    style="min-width: 130px"
+                  >
+                    <select class="text-golden">
+                      <option value="5">5 Rows</option>
+                      <option value="10">10 Rows</option>
+                      <option value="15">15 Rows</option>
+                      <option value="20">20 Rows</option>
+                      <option value="25">25 Rows</option>
+                    </select>
+                  </div>
                 </div>
               </div>
             </div>
@@ -17304,58 +17307,57 @@
                     <div class="card-body edit-on-2">
                       <form action="">
                         <div
-                              class="d-flex justify-content-start align-items-center gap-3 mb-4"
-                            >
-                              <label
-                                style="cursor: pointer"
-                                for="mode"
-                                class="fw-bold fs-14"
-                                >Own Warehouse</label
-                              >
-                              <label style="cursor: pointer" class="switch">
-                                <input
-                                  name="mode"
-                                  id="mode"
-                                  type="checkbox"
-                                  checked
-                                />
-                                <span class="slider round"></span>
-                              </label>
-                              <label
-                                style="cursor: pointer"
-                                for="mode"
-                                class="fw-bold fs-14"
-                                >Dropship</label
-                              >
-                            </div>
+                          class="d-flex justify-content-start align-items-center gap-3 mb-4"
+                        >
+                          <label
+                            style="cursor: pointer"
+                            for="mode"
+                            class="fw-bold fs-14"
+                            >Own Warehouse</label
+                          >
+                          <label style="cursor: pointer" class="switch">
+                            <input
+                              name="mode"
+                              id="mode"
+                              type="checkbox"
+                              checked
+                            />
+                            <span class="slider round"></span>
+                          </label>
+                          <label
+                            style="cursor: pointer"
+                            for="mode"
+                            class="fw-bold fs-14"
+                            >Dropship</label
+                          >
+                        </div>
                         <div class="row g-2">
                           <div class="col-12">
-                            
                             <div
-                            class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
-                            style="min-width: 150px"
-                            id="warehouse-selector"
-                          >
-                            <select class="text-golden">
-                              <option value="0">Select Warehouse</option>
-                              <option value="Warehouse 1">Warehouse 1</option>
-                              <option value="Warehouse 2">Warehouse 2</option>
-                              <option value="Warehouse 3">Warehouse 3</option>
-                            </select>
-                          </div>
-                          
-                          <div
-                            class="active custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
-                            style="min-width: 150px"
-                            id="vendor-selector"
-                          >
-                            <select class="text-golden">
-                              <option value="0">Select Vendor</option>
-                              <option value="Vendor 1">Vendor 1</option>
-                              <option value="Vendor 2">Vendor 2</option>
-                              <option value="Vendor 3">Vendor 3</option>
-                            </select>
-                          </div>
+                              class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                              style="min-width: 150px"
+                              id="warehouse-selector"
+                            >
+                              <select class="text-golden">
+                                <option value="0">Select Warehouse</option>
+                                <option value="Warehouse 1">Warehouse 1</option>
+                                <option value="Warehouse 2">Warehouse 2</option>
+                                <option value="Warehouse 3">Warehouse 3</option>
+                              </select>
+                            </div>
+
+                            <div
+                              class="active custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                              style="min-width: 150px"
+                              id="vendor-selector"
+                            >
+                              <select class="text-golden">
+                                <option value="0">Select Vendor</option>
+                                <option value="Vendor 1">Vendor 1</option>
+                                <option value="Vendor 2">Vendor 2</option>
+                                <option value="Vendor 3">Vendor 3</option>
+                              </select>
+                            </div>
                           </div>
                           <div class="col-12">
                             <input
@@ -19434,7 +19436,6 @@
 
             <div class="card border-0 shadow bg-white">
               <div class="card-body border-0">
-                
                 <div
                   class="d-flex flex-md-row flex-column justify-content-between align-items-start gap-24"
                 >
@@ -20821,374 +20822,373 @@
                 </div>
               </div>
             </div>
-            
 
             <div
-                  class="d-flex flex-md-row flex-column justify-content-between align-items-start gap-24"
-                >
-                  <div class="card w-100">
-                    <div class="card-header bg-gold-transparent border-0 bg-f6">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
+              class="d-flex flex-md-row flex-column justify-content-between align-items-start gap-24"
+            >
+              <div class="card w-100">
+                <div class="card-header bg-gold-transparent border-0 bg-f6">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
                       >
-                        <div
-                          class="d-flex justify-content-start align-items-center gap-2"
-                        >
-                          <svg
-                            width="24"
-                            height="24"
-                            viewBox="0 0 24 24"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M20.2317 1.75C20.578 1.74997 20.8919 1.74995 21.15 1.77593C21.4268 1.8038 21.7283 1.86808 22.0063 2.0577C22.2302 2.21048 22.4162 2.41299 22.5488 2.64997C22.7142 2.94548 22.7495 3.25255 22.75 3.53017C22.7505 3.78782 22.7191 4.09746 22.6847 4.43696V4.43698C22.6254 5.02264 22.5687 5.58311 22.4897 5.98104C22.4067 6.39932 22.2796 6.78401 22.0242 7.12846C21.8006 7.42989 21.5177 7.68253 21.193 7.87142C20.8231 8.08661 20.4263 8.17251 19.9991 8.21218C19.5915 8.25003 19.0924 8.25002 18.4954 8.25H5.50459H5.50457C4.90758 8.25002 4.40847 8.25003 4.00093 8.21218C3.57375 8.17251 3.17685 8.08661 2.80698 7.87142C2.48232 7.68253 2.19938 7.42989 1.97582 7.12846C1.72037 6.78401 1.59326 6.39932 1.51028 5.98104C1.43134 5.5831 1.3746 5.02267 1.3153 4.43699C1.28089 4.09748 1.2495 3.78782 1.25001 3.53017C1.25055 3.25255 1.28581 2.94548 1.45121 2.64997C1.58385 2.41299 1.76976 2.21048 1.9937 2.0577C2.27165 1.86808 2.57318 1.8038 2.85005 1.77593C3.10814 1.74995 3.42197 1.74997 3.76831 1.75H3.76838H20.2316H20.2317Z"
-                              fill="#2E2C34"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M3.225 6.75C3.76348 6.75 4.2 7.18279 4.2 7.71667V12.5895C4.2 14.4304 4.20209 15.7133 4.334 16.6811C4.46206 17.6206 4.69604 18.1173 5.05495 18.4713C5.41455 18.826 5.92009 19.0577 6.87491 19.1844C7.85726 19.3146 9.1591 19.3167 11.025 19.3167H12.4875C13.026 19.3167 13.4625 19.7495 13.4625 20.2833C13.4625 20.8172 13.026 21.25 12.4875 21.25H10.954C9.17585 21.25 7.74311 21.25 6.61637 21.1006C5.44714 20.9456 4.46231 20.6139 3.67962 19.8419C2.89625 19.0692 2.55909 18.0957 2.40157 16.94C2.24995 15.8277 2.24997 14.4136 2.25 12.6605L2.25 7.71667C2.25 7.18279 2.68652 6.75 3.225 6.75ZM20.775 6.75C21.3135 6.75 21.75 7.18279 21.75 7.71667V9.16667C21.75 9.70054 21.3135 10.1333 20.775 10.1333C20.2365 10.1333 19.8 9.70054 19.8 9.16667V7.71667C19.8 7.18279 20.2365 6.75 20.775 6.75Z"
-                              fill="#2E2C34"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M18 10.75C15.3696 10.75 13.25 12.9018 13.25 15.5403C13.25 17.0592 13.8644 18.2472 15.0026 19.2558C15.6471 19.8269 16.454 20.8054 16.9311 21.5879C17.1225 21.902 17.4733 22.25 17.9934 22.25C18.5049 22.25 18.8578 21.9118 19.0564 21.6078C19.5758 20.813 20.3617 19.8191 20.9974 19.2558C22.1356 18.2472 22.75 17.0592 22.75 15.5403C22.75 12.9018 20.6304 10.75 18 10.75ZM17.9933 14C17.1686 14 16.5 14.6716 16.5 15.5C16.5 16.3284 17.1686 17 17.9933 17H18.0067C18.8314 17 19.5 16.3284 19.5 15.5C19.5 14.6716 18.8314 14 18.0067 14H17.9933Z"
-                              fill="#2E2C34"
-                            />
-                            <path
-                              fill-rule="evenodd"
-                              clip-rule="evenodd"
-                              d="M9 10.5C9 9.94772 9.44772 9.5 10 9.5H12C12.5523 9.5 13 9.94772 13 10.5C13 11.0523 12.5523 11.5 12 11.5H10C9.44772 11.5 9 11.0523 9 10.5Z"
-                              fill="#2E2C34"
-                            />
-                          </svg>
-                          <p class="mb-0 fw-semibold">Shipping Info</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card-body edit-off">
-                      <h4 class="fw-bold mb-2">Alex Smith</h4>
-                      <p
-                        class="text-muted fs-14 d-flex align-items-center gap-1 mb-0"
-                      >
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M9.00098 8.99976C10.2436 8.99976 11.251 7.9924 11.251 6.74976C11.251 5.50712 10.2436 4.49976 9.00098 4.49976C7.75834 4.49976 6.75098 5.50712 6.75098 6.74976C6.75098 7.9924 7.75834 8.99976 9.00098 8.99976Z"
-                            stroke="#84818A"
-                            stroke-width="1.26316"
-                          />
-                          <path
-                            d="M9 1.49976C6.10051 1.49976 3.75 3.80612 3.75 6.65117C3.75 8.27798 4.40625 9.54289 5.71875 10.6727C6.64387 11.4691 8.3271 13.1774 9 14.2497C9.70696 13.1988 11.3561 11.4691 12.2813 10.6727C13.5938 9.54289 14.25 8.27798 14.25 6.65117C14.25 3.80612 11.8995 1.49976 9 1.49976Z"
-                            stroke="#84818A"
-                            stroke-width="1.26316"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M13.501 12.7498L15.001 16.4998H3.00098L4.50098 12.7498"
-                            stroke="#84818A"
-                            stroke-width="1.26316"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control inp1 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
-                          value="114 Ocean Blvd, Kitty Hawk, NC, 27949, United States"
-                          name=""
-                          id=""
+                        <path
+                          d="M20.2317 1.75C20.578 1.74997 20.8919 1.74995 21.15 1.77593C21.4268 1.8038 21.7283 1.86808 22.0063 2.0577C22.2302 2.21048 22.4162 2.41299 22.5488 2.64997C22.7142 2.94548 22.7495 3.25255 22.75 3.53017C22.7505 3.78782 22.7191 4.09746 22.6847 4.43696V4.43698C22.6254 5.02264 22.5687 5.58311 22.4897 5.98104C22.4067 6.39932 22.2796 6.78401 22.0242 7.12846C21.8006 7.42989 21.5177 7.68253 21.193 7.87142C20.8231 8.08661 20.4263 8.17251 19.9991 8.21218C19.5915 8.25003 19.0924 8.25002 18.4954 8.25H5.50459H5.50457C4.90758 8.25002 4.40847 8.25003 4.00093 8.21218C3.57375 8.17251 3.17685 8.08661 2.80698 7.87142C2.48232 7.68253 2.19938 7.42989 1.97582 7.12846C1.72037 6.78401 1.59326 6.39932 1.51028 5.98104C1.43134 5.5831 1.3746 5.02267 1.3153 4.43699C1.28089 4.09748 1.2495 3.78782 1.25001 3.53017C1.25055 3.25255 1.28581 2.94548 1.45121 2.64997C1.58385 2.41299 1.76976 2.21048 1.9937 2.0577C2.27165 1.86808 2.57318 1.8038 2.85005 1.77593C3.10814 1.74995 3.42197 1.74997 3.76831 1.75H3.76838H20.2316H20.2317Z"
+                          fill="#2E2C34"
                         />
-                      </p>
-                      <p
-                        class="text-muted mt-2 fs-14 d-flex align-items-center gap-1 mb-0"
-                      >
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.6546 13.0116L13.333 13.3332C12.3397 14.3266 8.66644 14.6666 4.99977 11C1.33311 7.3333 1.66637 3.66656 2.66637 2.66656L2.99374 2.33919C3.51433 1.81861 4.38072 1.90474 4.78911 2.5173L6.13588 4.53741C6.44438 5.00014 6.38336 5.6163 5.9901 6.00954L5.29108 6.70854C5.11251 6.8871 5.0527 7.15063 5.16925 7.37465C5.38173 7.78303 5.82493 8.49179 6.66644 9.3333C7.50793 10.1748 8.21662 10.618 8.62497 10.8304C8.84898 10.947 9.1125 10.8872 9.29106 10.7086L9.99008 10.0096C10.3833 9.61635 10.9995 9.55534 11.4622 9.86382L13.4755 11.206C14.0916 11.6167 14.1782 12.4881 13.6546 13.0116Z"
-                            fill="#84818A"
-                          />
-                        </svg>
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control inp1 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
-                          value="--"
-                          name=""
-                          id=""
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M3.225 6.75C3.76348 6.75 4.2 7.18279 4.2 7.71667V12.5895C4.2 14.4304 4.20209 15.7133 4.334 16.6811C4.46206 17.6206 4.69604 18.1173 5.05495 18.4713C5.41455 18.826 5.92009 19.0577 6.87491 19.1844C7.85726 19.3146 9.1591 19.3167 11.025 19.3167H12.4875C13.026 19.3167 13.4625 19.7495 13.4625 20.2833C13.4625 20.8172 13.026 21.25 12.4875 21.25H10.954C9.17585 21.25 7.74311 21.25 6.61637 21.1006C5.44714 20.9456 4.46231 20.6139 3.67962 19.8419C2.89625 19.0692 2.55909 18.0957 2.40157 16.94C2.24995 15.8277 2.24997 14.4136 2.25 12.6605L2.25 7.71667C2.25 7.18279 2.68652 6.75 3.225 6.75ZM20.775 6.75C21.3135 6.75 21.75 7.18279 21.75 7.71667V9.16667C21.75 9.70054 21.3135 10.1333 20.775 10.1333C20.2365 10.1333 19.8 9.70054 19.8 9.16667V7.71667C19.8 7.18279 20.2365 6.75 20.775 6.75Z"
+                          fill="#2E2C34"
                         />
-                      </p>
-                    </div>
-                    <div class="card-body edit-on">
-                      <form action="">
-                        <div class="row g-2">
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Shopbop (BOP LLC)"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="4718 Helgesen Drive"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-lg-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Madison"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-lg-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="WI"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-lg-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="53178-6740"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="US"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder=""
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12 text-end">
-                            <button
-                              type="button"
-                              class="btn btn-golden fs-14 save1"
-                            >
-                              SAVE
-                            </button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="card w-100">
-                    <div class="card-header bg-gold-transparent border-0 bg-f6">
-                      <div
-                        class="d-flex justify-content-between align-items-center"
-                      >
-                        <div
-                          class="d-flex justify-content-start align-items-center gap-2"
-                        >
-                          <svg
-                            width="20"
-                            height="20"
-                            viewBox="0 0 20 20"
-                            fill="none"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path
-                              d="M10 1L0 6V19H4V9H16V19H20V6L10 1Z"
-                              fill="#2E2C34"
-                            />
-                            <path d="M7 17H5V19H7V17Z" fill="#2E2C34" />
-                            <path d="M7 14H5V16H7V14Z" fill="#2E2C34" />
-                            <path d="M7 11H5V13H7V11Z" fill="#2E2C34" />
-                            <path d="M10 11H8V13H10V11Z" fill="#2E2C34" />
-                            <path d="M10 17H8V19H10V17Z" fill="#2E2C34" />
-                            <path d="M10 14H8V16H10V14Z" fill="#2E2C34" />
-                            <path d="M13 17H11V19H13V17Z" fill="#2E2C34" />
-                            <path d="M13 14H11V16H13V14Z" fill="#2E2C34" />
-                          </svg>
-
-                          <p class="mb-0 fw-semibold">Wearhouse Info</p>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="card-body edit-off-2">
-                      <h4 class="fw-bold mb-2">Warehouse 02</h4>
-                      <p
-                        class="text-muted fs-14 d-flex align-items-center gap-1 mb-0"
-                      >
-                        <svg
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M9.00098 8.99976C10.2436 8.99976 11.251 7.9924 11.251 6.74976C11.251 5.50712 10.2436 4.49976 9.00098 4.49976C7.75834 4.49976 6.75098 5.50712 6.75098 6.74976C6.75098 7.9924 7.75834 8.99976 9.00098 8.99976Z"
-                            stroke="#84818A"
-                            stroke-width="1.26316"
-                          />
-                          <path
-                            d="M9 1.49976C6.10051 1.49976 3.75 3.80612 3.75 6.65117C3.75 8.27798 4.40625 9.54289 5.71875 10.6727C6.64387 11.4691 8.3271 13.1774 9 14.2497C9.70696 13.1988 11.3561 11.4691 12.2813 10.6727C13.5938 9.54289 14.25 8.27798 14.25 6.65117C14.25 3.80612 11.8995 1.49976 9 1.49976Z"
-                            stroke="#84818A"
-                            stroke-width="1.26316"
-                            stroke-linejoin="round"
-                          />
-                          <path
-                            d="M13.501 12.7498L15.001 16.4998H3.00098L4.50098 12.7498"
-                            stroke="#84818A"
-                            stroke-width="1.26316"
-                            stroke-linejoin="round"
-                          />
-                        </svg>
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control inp2 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
-                          value="669 Prospect Street, Ladoga, IN, 47954, United States"
-                          name=""
-                          id=""
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M18 10.75C15.3696 10.75 13.25 12.9018 13.25 15.5403C13.25 17.0592 13.8644 18.2472 15.0026 19.2558C15.6471 19.8269 16.454 20.8054 16.9311 21.5879C17.1225 21.902 17.4733 22.25 17.9934 22.25C18.5049 22.25 18.8578 21.9118 19.0564 21.6078C19.5758 20.813 20.3617 19.8191 20.9974 19.2558C22.1356 18.2472 22.75 17.0592 22.75 15.5403C22.75 12.9018 20.6304 10.75 18 10.75ZM17.9933 14C17.1686 14 16.5 14.6716 16.5 15.5C16.5 16.3284 17.1686 17 17.9933 17H18.0067C18.8314 17 19.5 16.3284 19.5 15.5C19.5 14.6716 18.8314 14 18.0067 14H17.9933Z"
+                          fill="#2E2C34"
                         />
-                      </p>
-                      <p
-                        class="text-muted fs-14 mt-2 d-flex align-items-center gap-1 mb-0"
-                      >
-                        <svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 16 16"
-                          fill="none"
-                          xmlns="http://www.w3.org/2000/svg"
-                        >
-                          <path
-                            d="M13.6546 13.0116L13.333 13.3332C12.3397 14.3266 8.66644 14.6666 4.99977 11C1.33311 7.3333 1.66637 3.66656 2.66637 2.66656L2.99374 2.33919C3.51433 1.81861 4.38072 1.90474 4.78911 2.5173L6.13588 4.53741C6.44438 5.00014 6.38336 5.6163 5.9901 6.00954L5.29108 6.70854C5.11251 6.8871 5.0527 7.15063 5.16925 7.37465C5.38173 7.78303 5.82493 8.49179 6.66644 9.3333C7.50793 10.1748 8.21662 10.618 8.62497 10.8304C8.84898 10.947 9.1125 10.8872 9.29106 10.7086L9.99008 10.0096C10.3833 9.61635 10.9995 9.55534 11.4622 9.86382L13.4755 11.206C14.0916 11.6167 14.1782 12.4881 13.6546 13.0116Z"
-                            fill="#84818A"
-                          />
-                        </svg>
-                        <input
-                          type="text"
-                          disabled
-                          class="form-control inp2 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
-                          value="+1 (843) 233-235"
-                          name=""
-                          id=""
+                        <path
+                          fill-rule="evenodd"
+                          clip-rule="evenodd"
+                          d="M9 10.5C9 9.94772 9.44772 9.5 10 9.5H12C12.5523 9.5 13 9.94772 13 10.5C13 11.0523 12.5523 11.5 12 11.5H10C9.44772 11.5 9 11.0523 9 10.5Z"
+                          fill="#2E2C34"
                         />
-                      </p>
-                    </div>
-
-                    <div class="card-body edit-on-2">
-                      <form action="">
-                        <div class="row g-2">
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Shopbop (BOP LLC)"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="4718 Helgesen Drive"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-lg-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="Madison"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-lg-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="WI"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-lg-4">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="53178-6740"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder="US"
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12">
-                            <input
-                              type="text"
-                              class="form-control"
-                              placeholder=""
-                              name=""
-                              id=""
-                            />
-                          </div>
-                          <div class="col-12 text-end">
-                            <button
-                              type="button"
-                              class="btn btn-golden fs-14 save2"
-                            >
-                              SAVE
-                            </button>
-                          </div>
-                        </div>
-                      </form>
+                      </svg>
+                      <p class="mb-0 fw-semibold">Shipping Info</p>
                     </div>
                   </div>
                 </div>
+
+                <div class="card-body edit-off">
+                  <h4 class="fw-bold mb-2">Alex Smith</h4>
+                  <p
+                    class="text-muted fs-14 d-flex align-items-center gap-1 mb-0"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.00098 8.99976C10.2436 8.99976 11.251 7.9924 11.251 6.74976C11.251 5.50712 10.2436 4.49976 9.00098 4.49976C7.75834 4.49976 6.75098 5.50712 6.75098 6.74976C6.75098 7.9924 7.75834 8.99976 9.00098 8.99976Z"
+                        stroke="#84818A"
+                        stroke-width="1.26316"
+                      />
+                      <path
+                        d="M9 1.49976C6.10051 1.49976 3.75 3.80612 3.75 6.65117C3.75 8.27798 4.40625 9.54289 5.71875 10.6727C6.64387 11.4691 8.3271 13.1774 9 14.2497C9.70696 13.1988 11.3561 11.4691 12.2813 10.6727C13.5938 9.54289 14.25 8.27798 14.25 6.65117C14.25 3.80612 11.8995 1.49976 9 1.49976Z"
+                        stroke="#84818A"
+                        stroke-width="1.26316"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.501 12.7498L15.001 16.4998H3.00098L4.50098 12.7498"
+                        stroke="#84818A"
+                        stroke-width="1.26316"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control inp1 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
+                      value="114 Ocean Blvd, Kitty Hawk, NC, 27949, United States"
+                      name=""
+                      id=""
+                    />
+                  </p>
+                  <p
+                    class="text-muted mt-2 fs-14 d-flex align-items-center gap-1 mb-0"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.6546 13.0116L13.333 13.3332C12.3397 14.3266 8.66644 14.6666 4.99977 11C1.33311 7.3333 1.66637 3.66656 2.66637 2.66656L2.99374 2.33919C3.51433 1.81861 4.38072 1.90474 4.78911 2.5173L6.13588 4.53741C6.44438 5.00014 6.38336 5.6163 5.9901 6.00954L5.29108 6.70854C5.11251 6.8871 5.0527 7.15063 5.16925 7.37465C5.38173 7.78303 5.82493 8.49179 6.66644 9.3333C7.50793 10.1748 8.21662 10.618 8.62497 10.8304C8.84898 10.947 9.1125 10.8872 9.29106 10.7086L9.99008 10.0096C10.3833 9.61635 10.9995 9.55534 11.4622 9.86382L13.4755 11.206C14.0916 11.6167 14.1782 12.4881 13.6546 13.0116Z"
+                        fill="#84818A"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control inp1 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
+                      value="--"
+                      name=""
+                      id=""
+                    />
+                  </p>
+                </div>
+                <div class="card-body edit-on">
+                  <form action="">
+                    <div class="row g-2">
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Shopbop (BOP LLC)"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="4718 Helgesen Drive"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Madison"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="WI"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="53178-6740"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="US"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12 text-end">
+                        <button
+                          type="button"
+                          class="btn btn-golden fs-14 save1"
+                        >
+                          SAVE
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="card w-100">
+                <div class="card-header bg-gold-transparent border-0 bg-f6">
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div
+                      class="d-flex justify-content-start align-items-center gap-2"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 20 20"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M10 1L0 6V19H4V9H16V19H20V6L10 1Z"
+                          fill="#2E2C34"
+                        />
+                        <path d="M7 17H5V19H7V17Z" fill="#2E2C34" />
+                        <path d="M7 14H5V16H7V14Z" fill="#2E2C34" />
+                        <path d="M7 11H5V13H7V11Z" fill="#2E2C34" />
+                        <path d="M10 11H8V13H10V11Z" fill="#2E2C34" />
+                        <path d="M10 17H8V19H10V17Z" fill="#2E2C34" />
+                        <path d="M10 14H8V16H10V14Z" fill="#2E2C34" />
+                        <path d="M13 17H11V19H13V17Z" fill="#2E2C34" />
+                        <path d="M13 14H11V16H13V14Z" fill="#2E2C34" />
+                      </svg>
+
+                      <p class="mb-0 fw-semibold">Wearhouse Info</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-body edit-off-2">
+                  <h4 class="fw-bold mb-2">Warehouse 02</h4>
+                  <p
+                    class="text-muted fs-14 d-flex align-items-center gap-1 mb-0"
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9.00098 8.99976C10.2436 8.99976 11.251 7.9924 11.251 6.74976C11.251 5.50712 10.2436 4.49976 9.00098 4.49976C7.75834 4.49976 6.75098 5.50712 6.75098 6.74976C6.75098 7.9924 7.75834 8.99976 9.00098 8.99976Z"
+                        stroke="#84818A"
+                        stroke-width="1.26316"
+                      />
+                      <path
+                        d="M9 1.49976C6.10051 1.49976 3.75 3.80612 3.75 6.65117C3.75 8.27798 4.40625 9.54289 5.71875 10.6727C6.64387 11.4691 8.3271 13.1774 9 14.2497C9.70696 13.1988 11.3561 11.4691 12.2813 10.6727C13.5938 9.54289 14.25 8.27798 14.25 6.65117C14.25 3.80612 11.8995 1.49976 9 1.49976Z"
+                        stroke="#84818A"
+                        stroke-width="1.26316"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M13.501 12.7498L15.001 16.4998H3.00098L4.50098 12.7498"
+                        stroke="#84818A"
+                        stroke-width="1.26316"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control inp2 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
+                      value="669 Prospect Street, Ladoga, IN, 47954, United States"
+                      name=""
+                      id=""
+                    />
+                  </p>
+                  <p
+                    class="text-muted fs-14 mt-2 d-flex align-items-center gap-1 mb-0"
+                  >
+                    <svg
+                      width="16"
+                      height="16"
+                      viewBox="0 0 16 16"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.6546 13.0116L13.333 13.3332C12.3397 14.3266 8.66644 14.6666 4.99977 11C1.33311 7.3333 1.66637 3.66656 2.66637 2.66656L2.99374 2.33919C3.51433 1.81861 4.38072 1.90474 4.78911 2.5173L6.13588 4.53741C6.44438 5.00014 6.38336 5.6163 5.9901 6.00954L5.29108 6.70854C5.11251 6.8871 5.0527 7.15063 5.16925 7.37465C5.38173 7.78303 5.82493 8.49179 6.66644 9.3333C7.50793 10.1748 8.21662 10.618 8.62497 10.8304C8.84898 10.947 9.1125 10.8872 9.29106 10.7086L9.99008 10.0096C10.3833 9.61635 10.9995 9.55534 11.4622 9.86382L13.4755 11.206C14.0916 11.6167 14.1782 12.4881 13.6546 13.0116Z"
+                        fill="#84818A"
+                      />
+                    </svg>
+                    <input
+                      type="text"
+                      disabled
+                      class="form-control inp2 text-muted fs-14 bg-transparent toggleable-input border-0 p-0"
+                      value="+1 (843) 233-235"
+                      name=""
+                      id=""
+                    />
+                  </p>
+                </div>
+
+                <div class="card-body edit-on-2">
+                  <form action="">
+                    <div class="row g-2">
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Shopbop (BOP LLC)"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="4718 Helgesen Drive"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="Madison"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="WI"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="53178-6740"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder="US"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12">
+                        <input
+                          type="text"
+                          class="form-control"
+                          placeholder=""
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-12 text-end">
+                        <button
+                          type="button"
+                          class="btn btn-golden fs-14 save2"
+                        >
+                          SAVE
+                        </button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
             <div class="text-end mb-3"></div>
 
             <div class="card border-0 shadow bg-white">
@@ -21520,100 +21520,141 @@
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <div
-                              class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
-                              style="min-width: 350px"
-                            >
-                              <select class="text-golden">
-                                <option value="-1" selected="">Choose Box</option>
-                                <option value="5">
-                                  Express Box Small: 13'' x 11'' x 2''
-                                </option>
-                                <option value="6">
-                                  Express Box Medium: 16'' x 11'' x 3''
-                                </option>
-                                <option value="7">UPS Express Box - Small</option>
-                                <option value="8">UPS Express Box - Medium</option>
-                                <option value="9">UPS Express Box - Large</option>
-                                <option value="10">UPS 10 KG Box</option>
-                                <option value="11">UPS 25 KG Box</option>
-                                <option value="12">
-                                  FedEx Square Box 8'' x 8'' x 8''
-                                </option>
-                                <option value="13">
-                                  FedEx Square Box 11'' x 11'' x 11''
-                                </option>
-                                <option value="14">
-                                  FedEx Square Box 14'' x 14'' x 14''
-                                </option>
-                                <option value="15">
-                                  FedEx Square Box 16'' x 16'' x 16''
-                                </option>
-                                <option value="16">
-                                  FedEx Square Box 20'' x 20'' x 20''
-                                </option>
-                                <option value="17">
-                                  FedEx Square Box 24'' x 24'' x 24''
-                                </option>
-                                <option value="18">
-                                  FedEx Square Box 28'' x 28'' x 28''
-                                </option>
-                                <option value="19">
-                                  FedEx Rectangular Box 17'' x 17'' x 7''
-                                </option>
-                                <option value="20">
-                                  FedEx Rectangular Box 20'' x 20'' x 12''
-                                </option>
-                                <option value="21">
-                                  FedEx Rectangular Box 13'' x 9'' x 11''
-                                </option>
-                                <option value="22">
-                                  FedEx Rectangular Box 23'' x 17'' x 12''
-                                </option>
-                                <option value="23">
-                                  FedEx Rectangular Box 12'' x 12'' x 18''
-                                </option>
-                              </select>
-                            </div>
+                                <div
+                                  class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                                  style="min-width: 350px"
+                                >
+                                  <select class="text-golden">
+                                    <option value="-1" selected="">
+                                      Choose Box
+                                    </option>
+                                    <option value="5">
+                                      Express Box Small: 13'' x 11'' x 2''
+                                    </option>
+                                    <option value="6">
+                                      Express Box Medium: 16'' x 11'' x 3''
+                                    </option>
+                                    <option value="7">
+                                      UPS Express Box - Small
+                                    </option>
+                                    <option value="8">
+                                      UPS Express Box - Medium
+                                    </option>
+                                    <option value="9">
+                                      UPS Express Box - Large
+                                    </option>
+                                    <option value="10">UPS 10 KG Box</option>
+                                    <option value="11">UPS 25 KG Box</option>
+                                    <option value="12">
+                                      FedEx Square Box 8'' x 8'' x 8''
+                                    </option>
+                                    <option value="13">
+                                      FedEx Square Box 11'' x 11'' x 11''
+                                    </option>
+                                    <option value="14">
+                                      FedEx Square Box 14'' x 14'' x 14''
+                                    </option>
+                                    <option value="15">
+                                      FedEx Square Box 16'' x 16'' x 16''
+                                    </option>
+                                    <option value="16">
+                                      FedEx Square Box 20'' x 20'' x 20''
+                                    </option>
+                                    <option value="17">
+                                      FedEx Square Box 24'' x 24'' x 24''
+                                    </option>
+                                    <option value="18">
+                                      FedEx Square Box 28'' x 28'' x 28''
+                                    </option>
+                                    <option value="19">
+                                      FedEx Rectangular Box 17'' x 17'' x 7''
+                                    </option>
+                                    <option value="20">
+                                      FedEx Rectangular Box 20'' x 20'' x 12''
+                                    </option>
+                                    <option value="21">
+                                      FedEx Rectangular Box 13'' x 9'' x 11''
+                                    </option>
+                                    <option value="22">
+                                      FedEx Rectangular Box 23'' x 17'' x 12''
+                                    </option>
+                                    <option value="23">
+                                      FedEx Rectangular Box 12'' x 12'' x 18''
+                                    </option>
+                                  </select>
+                                </div>
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                                <input type="text" class="form-control" value="0" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="0"
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="10" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="10"
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="0" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="0"
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="0" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="0"
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="0" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="0"
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <a href="" class="text-3c text-decoration-none">
-                                Details
-                              </a>
+                                <a href="" class="text-3c text-decoration-none">
+                                  Details
+                                </a>
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <button class="btn btn-golden" style="min-width: 195px;">
-                                UCC 128 Box Label
-                              </button>
+                                <button
+                                  class="btn btn-golden"
+                                  style="min-width: 195px"
+                                >
+                                  UCC 128 Box Label
+                                </button>
                               </td>
                             </tr>
                           </tbody>
@@ -21771,7 +21812,6 @@
                                 />
                               </svg>
                             </th>
-                            
                           </thead>
 
                           <tbody>
@@ -21779,18 +21819,17 @@
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <div
-                              class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
-                              style="min-width: 350px"
-                            >
-                              <select class="text-golden">
-                                <option value="-1" selected="">Choose Source</option>
-                                <option value="5">
-                                  LTL
-                                </option>
-                                
-                              </select>
-                            </div>
+                                <div
+                                  class="custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
+                                  style="min-width: 350px"
+                                >
+                                  <select class="text-golden">
+                                    <option value="-1" selected="">
+                                      Choose Source
+                                    </option>
+                                    <option value="5">LTL</option>
+                                  </select>
+                                </div>
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
@@ -21800,33 +21839,56 @@
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="LTL" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value="LTL"
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value=""
+                                  name=""
+                                  id=""
+                                />
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <input type="text" class="form-control" value="" name="" id="">
+                                <input
+                                  type="text"
+                                  class="form-control"
+                                  value=""
+                                  name=""
+                                  id=""
+                                />
                               </td>
-                              
-                              
+
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <button class="btn btn-golden" style="min-width: 195px;">
-                               BOL
-                              </button>
+                                <button
+                                  class="btn btn-golden"
+                                  style="min-width: 195px"
+                                >
+                                  BOL
+                                </button>
                               </td>
                               <td
                                 class="border text-black fs-14 fw-semibold p-2"
                               >
-                              <button class="btn btn-golden" style="min-width: 195px;">
-                                Packing Slip
-                              </button>
+                                <button
+                                  class="btn btn-golden"
+                                  style="min-width: 195px"
+                                >
+                                  Packing Slip
+                                </button>
                               </td>
                             </tr>
                           </tbody>
@@ -21836,13 +21898,11 @@
                   </div>
                 </div>
               </div>
-              
             </div>
           </div>
         </div>
       </div>
     </div>
-
 
     <!-- Modal -->
     <div
@@ -22345,7 +22405,7 @@
                 </div>
               </div>
             </div>
-            
+
             <div class="text-end mb-3"></div>
 
             <div class="card border-0 shadow bg-white">
@@ -23027,7 +23087,7 @@
                                 <option value="Warehouse 3">Warehouse 3</option>
                               </select>
                             </div>
-                            
+
                             <div
                               class="active custom-select text-golden p-2 fs-13 block mx-auto w-full border rounded"
                               style="min-width: 150px"

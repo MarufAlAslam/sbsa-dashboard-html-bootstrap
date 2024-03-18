@@ -153,6 +153,11 @@ for (i = 0; i < l; i++) {
       h.click();
     });
     b.appendChild(c);
+
+    // console the selected value only
+    c.addEventListener("click", function () {
+      console.log(this.innerHTML);
+    });
   }
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
