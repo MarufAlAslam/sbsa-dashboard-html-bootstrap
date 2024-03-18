@@ -155,10 +155,17 @@ for (i = 0; i < l; i++) {
     b.appendChild(c);
 
     // console the selected value only
-    c.addEventListener("click", function () {
-      console.log(this.innerHTML);
-    });
+    // c.addEventListener("click", function () {
+    //   console.log(this.innerHTML);
+    // });
   }
+
+  // get value of order-selector - on customers/sales-order page
+  $("#order-selector").click(function () {
+    console.log($(this).children(".select-selected").text());
+  });
+
+  
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
     /*when the select box is clicked, close any other select boxes,
