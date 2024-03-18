@@ -1031,6 +1031,15 @@ button.btn-close.ms-5.po-close {
   border-bottom: 1px solid #e7e6e6;
 }
 
+.t--15 {
+  top: -15px !important;
+}
+
+.r--15 {
+  right: -15px !important;
+
+}
+
 .back-btn.active {
   background-color: #ab8650;
   border: 1px solid #ab8650;
