@@ -835,6 +835,12 @@ td {
   background-color: rgb(227, 225, 225);
 }
 
+.btn.text-3c{
+  outline: unset !important;
+  box-shadow: unset !important;
+  border: unset !important;
+}
+
 .py-20 {
   padding-top: 5px !important;
   padding-bottom: 5px !important;
@@ -2121,6 +2127,8 @@ select.w-100.form-select {
     padding-top: 0;
     margin-top: 0;
   }
+
+  
 
   .hide {
     display: none;
