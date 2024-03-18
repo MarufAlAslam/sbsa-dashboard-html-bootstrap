@@ -1027,6 +1027,10 @@ button.btn-close.ms-5.po-close {
   box-shadow: 0px 0px 2px 0px #e5e7eb;
 }
 
+.modal-head {
+  border-bottom: 2px solid #e7e6e6;
+}
+
 .back-btn.active {
   background-color: #ab8650;
   border: 1px solid #ab8650;
