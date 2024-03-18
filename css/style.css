@@ -835,7 +835,7 @@ td {
   background-color: rgb(227, 225, 225);
 }
 
-.btn.text-3c{
+.btn.text-3c {
   outline: unset !important;
   box-shadow: unset !important;
   border: unset !important;
@@ -1030,6 +1030,10 @@ button.btn-close.ms-5.po-close {
 .back-btn.active {
   background-color: #ab8650;
   border: 1px solid #ab8650;
+}
+
+button.btn.border-0.back-btn {
+  border: 1px solid #c8c8d0 !important;
 }
 
 .text-gray {
@@ -1306,10 +1310,12 @@ button.btn-close.ms-5.shipment-close {
   right: -30px;
 }
 
+
+
 button.btn-close.ms-5.shipment-close.fc-close {
-    top: -35px;
-    right: -25px;
-    color: red;
+  top: -35px;
+  right: -25px;
+  color: red;
 }
 
 li.active .child-menu {
@@ -2134,7 +2140,7 @@ select.w-100.form-select {
     margin-top: 0;
   }
 
-  
+
 
   .hide {
     display: none;
