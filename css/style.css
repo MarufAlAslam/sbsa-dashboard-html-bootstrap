@@ -1306,6 +1306,12 @@ button.btn-close.ms-5.shipment-close {
   right: -30px;
 }
 
+button.btn-close.ms-5.shipment-close.fc-close {
+    top: -35px;
+    right: -25px;
+    color: red;
+}
+
 li.active .child-menu {
   display: none !important;
 }
