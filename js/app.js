@@ -165,7 +165,6 @@ for (i = 0; i < l; i++) {
     console.log($(this).children(".select-selected").text());
   });
 
-  
   x[i].appendChild(b);
   a.addEventListener("click", function (e) {
     /*when the select box is clicked, close any other select boxes,
@@ -296,7 +295,7 @@ addLineBtn.addEventListener("click", () => {
                               />
                             </td>
                             <td class="text-black border fs-14 fw-semibold">
-                              <button class="btn text-danger">
+                              <button class="btn text-danger" onclick="deleteRow()">
                                 <i class="fa fa-trash"></i>
                               </button>
                             </td>
@@ -367,7 +366,7 @@ addLineBtn1.addEventListener("click", () => {
                               />
                             </td>
                             <td class="text-black border fs-14 fw-semibold">
-                              <button class="btn" type="button text-danger">
+                              <button class="btn" type="button text-danger delete-icon" onclick="deleteRow()">
                                 <i class="fa fa-trash text-danger"></i>
                               </button>
                             </td>
@@ -375,6 +374,17 @@ addLineBtn1.addEventListener("click", () => {
 
   adaptiveRow1.appendChild(tr);
 });
+
+function deleteRow() {
+  var td = event.target.parentNode;
+  var tr = td.parentNode; // the row to be removed
+  tr.parentNode.removeChild(tr);
+}
+
+// $(".delete-icon").click(function () {
+//   console.log("clicked");
+//   $(this).closest("tr").remove();
+// });
 
 const consolidatebtn = document.getElementById("consolidatebtn");
 const saveBtn = document.getElementById("saveBtn");
