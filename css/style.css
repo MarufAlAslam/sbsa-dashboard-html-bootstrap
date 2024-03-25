@@ -1040,6 +1040,21 @@ button.btn-close.ms-5.po-close {
 
 }
 
+/* .form-select.dropdown-toggle{
+  position: relative;
+}
+.form-select.dropdown-toggle::after {
+  position: absolute;
+  content: "";
+  top: 50%;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #8f92a166 transparent transparent transparent;
+  transform: translateY(-18%);
+} */
+
 .back-btn.active {
   background-color: #ab8650;
   border: 1px solid #ab8650;
