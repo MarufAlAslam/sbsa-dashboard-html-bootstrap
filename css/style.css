@@ -1055,6 +1055,24 @@ button.btn-close.ms-5.po-close {
   transform: translateY(-18%);
 } */
 
+
+
+.has-x .col-lg-4::after {
+  content: 'X';
+  position: absolute;
+  right: -4px;
+  top: 58%;
+}
+
+
+.has-x .col-lg-4:last-child:after {
+  content: '';
+}
+
+.has-x .col-lg-4 {
+  position: relative;
+}
+
 .back-btn.active {
   background-color: #ab8650;
   border: 1px solid #ab8650;
