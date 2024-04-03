@@ -1124,71 +1124,7 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-
-                <div class="card mt-3">
-                  <div class="card-body">
-                    <p class="fw-bold mb-1">Inventory</p>
-                    <div class="input-group gap-2">
-                      <input type="checkbox" name="" id="invCheck" />
-                      <label for="invCheck"> Track quantity </label>
-                    </div>
-
-                    <div
-                      class="d-flex mt-3 justify-content-between align-items-center gap-3"
-                    >
-                      <p class="fw-bold mb-0">Shop Location</p>
-                      <div
-                        class="custom-select text-golden p-2 fs-13 block ms-auto w-full border rounded"
-                        style="min-width: 350px"
-                      >
-                        <select class="text-golden">
-                          <option value="0">Select Shop Location</option>
-                          <option value="1">USA</option>
-                        </select>
-                      </div>
-                    </div>
-
-                    <div class="row mt-1 g-3">
-                      <div class="col-md-12">
-                        <label for="" class="fw-bold">Quantity in Stock</label>
-                        <input
-                          type="number"
-                          class="form-control mt-2"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label for="" class="fw-bold">
-                          SKU(Stock Keeping Unit)
-                        </label>
-                        <input
-                          type="text"
-                          class="form-control mt-2"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                      <div class="col-md-6">
-                        <label for="" class="fw-bold">
-                          Barcode(ISBN, UPC, GTIN, etc.)
-                        </label>
-                        <input
-                          type="text"
-                          class="form-control mt-2"
-                          name=""
-                          id=""
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="card mt-3">
-                  <div class="card-body">
-                    <p class="fw-bold mb-2">Dimensions</p>
+                    <p class="fw-bold mb-2 mt-3">Dimensions</p>
                     <div class="row mb-3" id="capacity-container">
                       <div class="col-md-6">
                         <div
@@ -1265,6 +1201,65 @@
                     >
                       Add Box Capacity
                     </button>
+                  </div>
+                </div>
+
+                <div class="card mt-3">
+                  <div class="card-body">
+                    <p class="fw-bold mb-1">Inventory</p>
+                    <div class="input-group gap-2">
+                      <input type="checkbox" name="" id="invCheck" />
+                      <label for="invCheck"> Track quantity </label>
+                    </div>
+
+                    <div
+                      class="d-flex mt-3 justify-content-between align-items-center gap-3"
+                    >
+                      <p class="fw-bold mb-0">Shop Location</p>
+                      <div
+                        class="custom-select text-golden p-2 fs-13 block ms-auto w-full border rounded"
+                        style="min-width: 350px"
+                      >
+                        <select class="text-golden">
+                          <option value="0">Select Shop Location</option>
+                          <option value="1">USA</option>
+                        </select>
+                      </div>
+                    </div>
+
+                    <div class="row mt-1 g-3">
+                      <div class="col-md-12">
+                        <label for="" class="fw-bold">Quantity in Stock</label>
+                        <input
+                          type="number"
+                          class="form-control mt-2"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="" class="fw-bold">
+                          SKU(Stock Keeping Unit)
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control mt-2"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                      <div class="col-md-6">
+                        <label for="" class="fw-bold">
+                          Barcode(ISBN, UPC, GTIN, etc.)
+                        </label>
+                        <input
+                          type="text"
+                          class="form-control mt-2"
+                          name=""
+                          id=""
+                        />
+                      </div>
+                    </div>
                   </div>
                 </div>
 
@@ -4275,9 +4270,17 @@
       const capacityBtn = document.getElementById("capacityBtn");
       const capacityContainer = document.getElementById("capacity-container");
 
+
+      let count = 0;
       capacityBtn.addEventListener("click", () => {
         capacityContainer.classList.add("active");
-        capacityBtn.classList.add("d-none");
+        count++;
+
+        // if count > 1, clone the capacity container
+        if (count > 1) {
+          const clone = capacityContainer.cloneNode(true);
+          capacityContainer.after(clone);
+        }
       });
     </script>
   </body>
