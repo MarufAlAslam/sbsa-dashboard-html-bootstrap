@@ -253,7 +253,7 @@ var fatChartOptions = {
     show: true,
   },
   chart: {
-    height: 450,
+    height: 510,
     with: "100%",
     type: "treemap",
   },
