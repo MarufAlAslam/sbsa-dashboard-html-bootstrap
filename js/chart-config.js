@@ -225,3 +225,47 @@ customChartValues.forEach((item) => {
   `;
   customBars.appendChild(bar);
 });
+
+var fatChartOptions = {
+  series: [
+    {
+      data: [
+        {
+          x: "Walmart -65%",
+          y: 65,
+        },
+        {
+          x: "Chewy - 15%",
+          y: 15,
+        },
+        {
+          x: "Grainger - 10%",
+          y: 10,
+        },
+        {
+          x: "Home Depot - 9%",
+          y: 9,
+        },
+      ],
+    },
+  ],
+  legend: {
+    show: true,
+  },
+  chart: {
+    height: 450,
+    with: "100%",
+    type: "treemap",
+  },
+  colors: ["#2B7F75", "#FFC000", "#84818A", "#FFC000"],
+  // hide the download button
+  toolbar: {
+    show: false,
+  },
+};
+
+var fatChart = new ApexCharts(
+  document.querySelector("#fat-chart"),
+  fatChartOptions
+);
+fatChart.render();

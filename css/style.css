@@ -1090,6 +1090,10 @@ button.btn.border-0.back-btn {
   display: flex;
 }
 
+.apexcharts-toolbar{
+  display: none !important;
+}
+
 .text-gray {
   color: #84818a;
 }
