@@ -4,6 +4,11 @@ if (!isLoggedIn) {
   window.location.href = "./auth";
 }
 
+const loadingSpinner = document.getElementById("loading-spinner");
+setTimeout(() => {
+  loadingSpinner.style.display = "none";
+}, 3000);
+
 const childMenu = document.querySelectorAll(".child-menu");
 const arrow = document.querySelectorAll(".arrow");
 const btns = document.querySelectorAll(".btn");
