@@ -4,6 +4,9 @@ if (!isLoggedIn) {
   window.location.href = "./auth";
 }
 
+// set active menu to local storage
+localStorage.setItem('active-menu', $.trim($('.sidebar a.active').text()))
+
 const loadingSpinner = document.getElementById("loading-spinner");
 setTimeout(() => {
   loadingSpinner.style.display = "none";
