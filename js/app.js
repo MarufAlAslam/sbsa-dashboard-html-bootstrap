@@ -7,6 +7,17 @@ if (!isLoggedIn) {
 // set active menu to local storage
 localStorage.setItem('active-menu', $.trim($('.sidebar a.active').text()))
 
+// get active menu from local storage
+const activeMenu = localStorage.getItem('active-menu')
+
+// set active menu to sidebar
+$('.sidebar a').each(function () {
+  if ($.trim($(this).text()) === activeMenu) {
+    // console.log('active menu', activeMenu)
+    $(this).addClass('active')
+  }
+})
+
 const loadingSpinner = document.getElementById("loading-spinner");
 setTimeout(() => {
   loadingSpinner.style.display = "none";
