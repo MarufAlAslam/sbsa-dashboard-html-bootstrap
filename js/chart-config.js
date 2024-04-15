@@ -262,14 +262,6 @@ var fatChartOptions = {
     '#F7B844',
     '#ADD8C7',
     '#EC3C65',
-    '#CDD7B6',
-    '#C1F666',
-    '#D43F97',
-    '#1E5D8C',
-    '#421243',
-    '#7F94B0',
-    '#EF6537',
-    '#C0ADDB'
   ],
   plotOptions: {
     treemap: {
