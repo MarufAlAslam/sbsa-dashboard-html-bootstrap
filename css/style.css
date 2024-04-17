@@ -35,12 +35,12 @@ html,
 }
 
 .modal-body::-webkit-scrollbar-thumb {
-  background: #ab8650;
+  background: #888;
   border-radius: 10px;
 }
 
 .modal-body::-webkit-scrollbar-thumb:hover {
-  background: #ab8650;
+  background: #555;
 }
 
 
