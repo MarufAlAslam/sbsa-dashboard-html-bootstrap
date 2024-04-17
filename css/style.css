@@ -1209,6 +1209,11 @@ svg.cross {
   display: none;
 }
 
+.show-up .select-items {
+  top: unset;
+  bottom: 105%;
+}
+
 .modal-dialog {
   width: 100% !important;
   min-width: 95%;
