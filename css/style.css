@@ -16,14 +16,33 @@ html,
   overflow-y: scroll;
 }
 
-*::-webkit-scrollbar {
+*:not(.modal-body)::-webkit-scrollbar {
   display: none;
 }
 
-* {
+*:not(.modal-body) {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+
+/* customize the scrollbar for modal body */
+.modal-body::-webkit-scrollbar {
+  width: 10px;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background: #ab8650;
+  border-radius: 10px;
+}
+
+.modal-body::-webkit-scrollbar-thumb:hover {
+  background: #ab8650;
+}
+
 
 .menu a:hover svg path,
 .menu .btn:hover svg path,
