@@ -1220,6 +1220,14 @@ svg.cross {
   min-height: 95vh;
 }
 
+.full-modal {
+  min-width: 100% !important;
+  min-height: 100vh !important;
+  height: 100vh !important;
+  margin-top: 0;
+  border-radius: 0 !important;
+}
+
 .header1 {
   cursor: pointer;
 }
